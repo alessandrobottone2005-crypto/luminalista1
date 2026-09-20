@@ -1,20 +1,10 @@
 # Lumina — Lista 1
 
-Landing page animata e interattiva per la campagna studentesca Lumina del Liceo Gentileschi di Napoli.
+Landing page mobile-first, animata e interattiva per la campagna studentesca Lumina del Liceo Gentileschi di Napoli.
 
-La versione attuale usa contenuti provvisori dichiarati come tali. Include navigazione responsive, animazioni accessibili, scena 3D, pagina privacy e un modulo collegato a Google Sheets tramite Google Apps Script.
+La direzione creativa segue un percorso dal buio alla luce: il logo originale diventa una scultura Three.js, i contenuti emergono durante lo scroll e il racconto termina con un modulo collegato al Foglio Google Lumina.
 
-## Stack
-
-- React e TypeScript
-- Vite e Tailwind CSS
-- shadcn/ui e Lucide React
-- Motion, GSAP e Lenis
-- Three.js e React Three Fiber
-- React Router
-- Vitest
-
-## Avvio locale
+## Avvio rapido
 
 ```bash
 npm install
@@ -22,18 +12,47 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Il server di sviluppo usa `http://localhost:4174`.
+Apri `http://localhost:4174`.
 
-## Verifica e build
+## Controllo completo
 
 ```bash
-npm test
-npm run build
-npm run preview
+npm run check
 ```
 
-## Raccolta delle idee
+Il comando verifica formato, TypeScript, test e build di produzione.
 
-Il client invia le proposte all'URL definito in `VITE_GOOGLE_SCRIPT_URL`. Il ricevitore è disponibile in [`google-apps-script/Code.gs`](google-apps-script/Code.gs) e salva ogni invio nel foglio `Idee`, con validazione, honeypot, protezione dalle formule, limite di frequenza e ID idempotente.
+## Struttura
 
-Il modulo può essere usato senza nome e classe. Non aggiungere credenziali Google o file `.env.local` al repository.
+```text
+src/
+├── app/                 router
+├── pages/               composizione delle pagine
+├── components/
+│   ├── brand/           accesso centralizzato agli asset
+│   ├── layout/          header, footer e rail desktop
+│   ├── motion/          wrapper di presentazione
+│   ├── sections/        sezioni narrative
+│   ├── three/           scena WebGL
+│   └── ui/              primitive shadcn/ui
+├── content/             contenuti modificabili
+├── features/ideas/      modulo e trasporto dati
+├── motion/              GSAP, ScrollTrigger e Lenis
+└── styles/              token e stile globale
+```
+
+## Stack
+
+React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React, Motion, React Router, Lenis, GSAP, Three.js e React Three Fiber.
+
+## Contenuti provvisori
+
+Nomi, fotografie, classi, programma, data elettorale e gadget sono dimostrativi. Aggiornali in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+
+## Documentazione
+
+L’indice completo è in [`docs/README.md`](docs/README.md). Le regole operative per agenti e collaboratori sono in [`AGENTS.md`](AGENTS.md); la skill locale ricavata dal brief è in [`.agents/skills/lumina-project/SKILL.md`](.agents/skills/lumina-project/SKILL.md).
+
+## Modulo Google
+
+L’endpoint è configurato con `VITE_GOOGLE_SCRIPT_URL`. Il ricevitore vive in [`google-apps-script/Code.gs`](google-apps-script/Code.gs); dettagli e procedura di verifica sono in [`docs/FORM-AND-DATA.md`](docs/FORM-AND-DATA.md).

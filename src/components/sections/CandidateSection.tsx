@@ -1,0 +1,72 @@
+import { ArrowUpRight } from "lucide-react";
+import { LightReveal } from "@/components/motion/LightReveal";
+import { candidates } from "@/content/site";
+
+export function CandidateSection() {
+  return (
+    <section
+      id="candidati"
+      className="candidates section-pad"
+      aria-labelledby="candidates-title"
+    >
+      <div className="section-top">
+        <span>LE PERSONE, PRIMA DI TUTTO</span>
+        <span>03 VOLTI</span>
+      </div>
+      <LightReveal>
+        <h2 id="candidates-title">
+          CI METTIAMO
+          <br />
+          <span className="yellow">LA FACCIA.</span>
+        </h2>
+      </LightReveal>
+      <p className="section-copy">
+        Stessi corridoi. Stesse sfide.
+        <br />
+        Una nuova voglia di esserci.
+      </p>
+      <p className="demo-note">Nomi, classi e ritratti dimostrativi.</p>
+      <div className="candidate-list">
+        {candidates.map((candidate, index) => (
+          <article
+            className={`candidate candidate-${index}`}
+            key={candidate.id}
+          >
+            <div className="portrait-composition">
+              <span className="candidate-number" aria-hidden="true">
+                {candidate.id}
+              </span>
+              <div className="portrait">
+                <img
+                  src={candidate.image}
+                  alt={`Ritratto dimostrativo per ${candidate.name} ${candidate.surname}, non è una foto del candidato reale`}
+                  loading="lazy"
+                  width="700"
+                  height="880"
+                  style={{ objectPosition: candidate.position }}
+                />
+                <span className="portrait-corner">
+                  <ArrowUpRight size={23} />
+                </span>
+                <span className="portrait-meta">LUMINA / PERSONE</span>
+              </div>
+            </div>
+            <div className="candidate-title">
+              <h3>
+                {candidate.name}
+                <br />
+                {candidate.surname}
+              </h3>
+              <span className="class-label">
+                CLASSE
+                <br />
+                <b>{candidate.className}</b>
+              </span>
+            </div>
+            <blockquote>“{candidate.quote}”</blockquote>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
