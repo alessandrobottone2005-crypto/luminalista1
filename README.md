@@ -2,7 +2,7 @@
 
 Landing page mobile-first, animata e interattiva per la campagna studentesca Lumina del Liceo Gentileschi di Napoli.
 
-La direzione creativa segue un percorso dal buio alla luce: il logo originale diventa una scultura Three.js, i contenuti emergono durante lo scroll e il racconto termina con un modulo collegato al Foglio Google Lumina.
+La direzione creativa segue un percorso dal buio alla luce: l’animazione originale realizzata in Blender apre il racconto, i contenuti emergono durante lo scroll e il percorso termina con un modulo collegato al Foglio Google Lumina.
 
 ## Avvio rapido
 
@@ -33,7 +33,6 @@ src/
 │   ├── layout/          header, footer e rail desktop
 │   ├── motion/          wrapper di presentazione
 │   ├── sections/        sezioni narrative
-│   ├── three/           scena WebGL
 │   └── ui/              primitive shadcn/ui
 ├── content/             contenuti modificabili
 ├── features/ideas/      modulo e trasporto dati
@@ -47,7 +46,11 @@ React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React, Motion, React Ro
 
 ## Contenuti provvisori
 
-Nomi, fotografie, classi, programma, data elettorale e gadget sono dimostrativi. Aggiornali in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+Citazioni, programma e gadget sono ancora dimostrativi. Aggiornali in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+
+## Animazione dell’header
+
+La sorgente approvata è [`LogoLumina_Animazione.blend`](LogoLumina_Animazione.blend). Il video ottimizzato e il poster si rigenerano seguendo [`docs/HEADER-ANIMATION.md`](docs/HEADER-ANIMATION.md).
 
 ## Documentazione
 

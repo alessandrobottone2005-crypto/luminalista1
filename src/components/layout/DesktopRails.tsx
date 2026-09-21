@@ -5,7 +5,7 @@ export function DesktopRails() {
     <>
       <aside className="desktop-rail rail-left" aria-hidden="true">
         <BrandAsset variant="mark" className="rail-symbol" alt="" />
-        <span>LUMINA — LISTA 01</span>
+        <span>LUMINA - LISTA 01</span>
         <span className="rail-bottom">
           UNA NUOVA
           <br />

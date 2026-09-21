@@ -1,7 +1,4 @@
 import { useRef } from "react";
-import { DesktopRails } from "@/components/layout/DesktopRails";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
 import { CandidateSection } from "@/components/sections/CandidateSection";
 import { CountdownSection } from "@/components/sections/CountdownSection";
 import { GadgetGallery } from "@/components/sections/GadgetGallery";
@@ -17,29 +14,24 @@ export function LandingPage() {
   useLandingMotion(root);
 
   return (
-    <>
-      <DesktopRails />
-      <div className="site-shell">
-        <a className="skip-link" href="#intro">
-          Vai al contenuto
-        </a>
-        <SiteHeader />
-        <main ref={root}>
-          <HeroSection />
-          <IntroSection />
-          <CandidateSection />
-          <CountdownSection />
-          <ManifestoSection />
-          <ProgramSection />
-          <GadgetGallery />
-          <div className="daybreak" aria-hidden="true">
-            <span className="small-spark" />
-            <span>ORA TOCCA A TE.</span>
-          </div>
-          <IdeaSection />
-        </main>
-        <SiteFooter />
-      </div>
-    </>
+    <div className="site-shell">
+      <a className="skip-link" href="#intro">
+        Vai al contenuto
+      </a>
+      <main ref={root}>
+        <HeroSection />
+        <IntroSection />
+        <CandidateSection />
+        <CountdownSection />
+        <ManifestoSection />
+        <ProgramSection />
+        <GadgetGallery />
+        <div className="daybreak" aria-hidden="true">
+          <span className="small-spark" />
+          <span>ORA TOCCA A TE.</span>
+        </div>
+        <IdeaSection />
+      </main>
+    </div>
   );
 }

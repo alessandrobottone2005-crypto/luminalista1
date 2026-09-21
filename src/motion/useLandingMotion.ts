@@ -57,13 +57,58 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
         });
       });
 
-      select(".portrait").forEach((element: HTMLElement) => {
-        gsap.from(element, {
-          filter: "brightness(0.2) grayscale(1) blur(3px)",
-          duration: 1.4,
-          ease: "power2.out",
-          scrollTrigger: { trigger: element, start: "top 83%", once: true },
+      select(".candidate").forEach((candidate: HTMLElement) => {
+        const portrait = candidate.querySelector(".portrait");
+        const number = candidate.querySelector(".candidate-number");
+        const name = candidate.querySelector(".candidate-name");
+        const info = candidate.querySelector(".candidate-info");
+
+        const timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: candidate,
+            start: "top 84%",
+            once: true,
+          },
         });
+
+        timeline
+          .from(portrait, {
+            clipPath: "inset(0 0 16% 0)",
+            filter: "brightness(0.42) grayscale(1)",
+            y: 22,
+            duration: 1.05,
+            ease: "power3.out",
+          })
+          .from(
+            number,
+            {
+              autoAlpha: 0,
+              scale: 0.72,
+              duration: 0.45,
+              ease: "back.out(1.8)",
+            },
+            "-=0.7",
+          )
+          .from(
+            name,
+            {
+              autoAlpha: 0,
+              y: 20,
+              duration: 0.6,
+              ease: "power3.out",
+            },
+            "-=0.46",
+          )
+          .from(
+            info,
+            {
+              autoAlpha: 0,
+              y: 12,
+              duration: 0.5,
+              ease: "power3.out",
+            },
+            "-=0.38",
+          );
       });
 
       select(".program-item").forEach((element: HTMLElement) => {

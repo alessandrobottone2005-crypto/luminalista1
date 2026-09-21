@@ -1,70 +1,56 @@
 import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { BrandAsset } from "@/components/brand/BrandAsset";
 
 const collections = [
-  { name: "LA LUCE SI ATTACCA.", kind: "STICKER PACK", number: "01 / 03" },
-  { name: "INDOSSA UN’IDEA.", kind: "TOTE BAG", number: "02 / 03" },
-  { name: "FACCIAMOCI VEDERE.", kind: "CAMPAIGN POSTER", number: "03 / 03" },
+  { name: "FAI LUCE.", kind: "STICKER PACK", number: "01 / 02" },
+  { name: "INDOSSA UN'IDEA.", kind: "SPILLETTE", number: "02 / 02" },
 ] as const;
 
 function GadgetArtwork({ selected }: { selected: number }) {
   if (selected === 1) {
     return (
-      <div className="tote">
-        <div className="tote-handle" />
-        <div className="tote-body">
-          <BrandAsset alt="Concept tote bag Lumina Lista 1" />
-          <small>PORTA CON TE UN’IDEA.</small>
+      <div className="pins-display">
+        <div className="pin pin-1">
+          <div className="pin-shape">
+            <span className="pin-number">01</span>
+          </div>
+          <span className="pin-label">LUMINA</span>
+        </div>
+        <div className="pin pin-2">
+          <div className="pin-shape">
+            <span className="pin-text">FAI LUCE.</span>
+          </div>
+          <span className="pin-label">LISTA 01</span>
+        </div>
+        <div className="pin pin-3">
+          <div className="pin-shape">
+            <span className="pin-text">GENTILESCHI</span>
+          </div>
+          <span className="pin-label">NAPOLI</span>
         </div>
       </div>
     );
   }
 
-  if (selected === 2) {
-    return (
-      <div className="campaign-poster">
-        <span>LICEO GENTILESCHI · NAPOLI</span>
-        <h3>
-          OGNI
-          <br />
-          IDEA
-          <br />
-          MERITA
-          <br />
-          LUCE.
-        </h3>
-        <BrandAsset variant="wordmark" alt="Lumina" />
-        <span>LISTA 01 / IL FUTURO SI ACCENDE</span>
-      </div>
-    );
-  }
-
   return (
-    <>
-      <div className="merch-item sticker sticker-yellow">
-        <span>
-          FAI
-          <br />
-          LUCE.
-        </span>
-        <BrandAsset variant="mark" alt="" />
+    <div className="stickers-display">
+      <div className="sticker-preview sticker-a">
+        <span className="sticker-big-text">FAI LUCE.</span>
+        <div className="sticker-mark" />
       </div>
-      <div className="merch-item sticker sticker-black">
-        <BrandAsset variant="wordmark" alt="Lumina" />
-        <span>LISTA 01 — GENTILESCHI</span>
+      <div className="sticker-preview sticker-b">
+        <span className="sticker-logo">LUMINA</span>
+        <span className="sticker-sub">LISTA 01</span>
       </div>
-      <div className="merch-item round-sticker">
-        <span>01</span>
-        <small>LA TUA VOCE CONTA</small>
+      <div className="sticker-preview sticker-c">
+        <span className="sticker-number">01</span>
+        <span className="sticker-slogan">LA TUA VOCE CONTA</span>
       </div>
-      <div className="merch-item sticker sticker-small">
-        OGNI IDEA
-        <br />
-        MERITA LUCE.
+      <div className="sticker-preview sticker-d">
+        <span className="sticker-quote">OGNI IDEA MERITA LUCE.</span>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -105,7 +91,7 @@ export function GadgetGallery() {
         >
           <GadgetArtwork selected={selected} />
         </motion.div>
-        <span className="merch-concept">CONCEPT GRAFICO · NON IN VENDITA</span>
+        <span className="merch-concept">CONCEPT · IN ARRIVO</span>
       </div>
       <div className="merch-controls">
         <div>

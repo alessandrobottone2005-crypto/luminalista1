@@ -9,7 +9,7 @@ type BrandAssetProps = {
 
 export function BrandAsset({
   variant = "logo",
-  alt = "Lumina — Lista 01",
+  alt = "Lumina - Lista 01",
   className,
 }: BrandAssetProps) {
   return (

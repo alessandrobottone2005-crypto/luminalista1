@@ -2,7 +2,7 @@
 
 ## Obiettivo
 
-La landing racconta un passaggio dal buio alla luce e termina con un’azione verificabile: l’invio di un’idea al Foglio Google Lumina. L’architettura mantiene separate composizione, contenuti, movimento, 3D e trasporto dati.
+La landing racconta un passaggio dal buio alla luce e termina con un’azione verificabile: l’invio di un’idea al Foglio Google Lumina. L’architettura mantiene separate composizione, contenuti, movimento, media e trasporto dati.
 
 ```mermaid
 flowchart TD
@@ -10,7 +10,7 @@ flowchart TD
   Pages --> Layout[components/layout]
   Pages --> Sections[components/sections]
   Sections --> Motion[components/motion + src/motion]
-  Sections --> Three[components/three]
+  Sections --> Media[components/brand + public/media]
   Sections --> Content[src/content]
   Sections --> Ideas[features/ideas]
   Ideas --> Script[Google Apps Script]
@@ -25,7 +25,7 @@ flowchart TD
 | `src/pages`               | Composizione delle pagine, senza logica di basso livello. |
 | `src/components/layout`   | Header, footer e cornice desktop.                         |
 | `src/components/sections` | Sezioni narrative della landing.                          |
-| `src/components/three`    | Rendering WebGL e risorse GPU.                            |
+| `src/components/brand`    | Logo, animazione dell’header e relativi fallback.         |
 | `src/features/ideas`      | Validazione, invio e test del modulo.                     |
 | `src/content`             | Dati editoriali provvisori e navigazione.                 |
 | `src/styles`              | Token e stile globale.                                    |
@@ -34,7 +34,7 @@ flowchart TD
 
 ### Caricamento
 
-`main.tsx` monta React, Router e `MotionConfig`. La pagina principale carica la scena 3D in modo asincrono; se WebGL o il caricamento falliscono, compare il logo SVG statico.
+`main.tsx` monta React, Router e `MotionConfig`. `HeroAnimation` carica il video esportato da Blender con un poster WebP; il resto della pagina rimane indipendente dal media.
 
 ### Movimento
 

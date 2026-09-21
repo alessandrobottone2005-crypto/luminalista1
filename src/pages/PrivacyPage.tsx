@@ -11,7 +11,7 @@ export function PrivacyPage() {
         LA TUA IDEA.
         <br />I TUOI DATI.
       </h1>
-      <p>Informativa provvisoria per la landing Lumina — Lista 1.</p>
+      <p>Informativa provvisoria per la landing Lumina - Lista 1.</p>
       <h2>Raccolta delle idee</h2>
       <p>
         Il modulo registra l’idea, data e ora, un identificativo tecnico

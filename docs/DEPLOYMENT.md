@@ -20,7 +20,7 @@ La landing usa `BrowserRouter`. Il provider deve riscrivere le richieste come `/
 ## Controllo dopo il rilascio
 
 1. Apri home e privacy tramite URL diretto.
-2. Verifica hero, logo 3D e fallback senza WebGL.
+2. Verifica hero, riproduzione video, poster e controllo pausa/ripresa.
 3. Invia un’idea di test chiaramente etichettata.
 4. Controlla la riga nel Foglio Lumina.
 5. Verifica mobile 320, 360 e 430 px più desktop.

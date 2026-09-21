@@ -2,7 +2,7 @@
 
 ## Tesi d’interazione
 
-Lo scroll agisce come una sorgente luminosa: rivela testi, porta i volti fuori dall’ombra, mette a fuoco le proposte e conduce alla superficie chiara del modulo. Il logo risponde al puntatore con uno spostamento limitato, senza sottrarre controllo allo scorrimento.
+Lo scroll agisce come una sorgente luminosa: rivela testi, porta i volti fuori dall’ombra, mette a fuoco le proposte e conduce alla superficie chiara del modulo. L’header riproduce il passaggio di luce preparato nel file Blender originale.
 
 ## Personalità
 
@@ -19,7 +19,7 @@ La personalità scelta è **energetica editoriale**: rapida nei feedback, contro
 - **CSS**: hover, focus, colori e feedback semplici.
 - **Motion**: elementi montati o smontati da React, come menu e conferma del form.
 - **GSAP**: sequenze iniziali, reveal e animazioni legate allo scroll.
-- **Three.js**: moto ambientale e risposta del logo 3D al puntatore.
+- **Video Blender**: animazione principale dell’header, con controllo esplicito e pausa fuori viewport.
 
 ## Regole GSAP
 
@@ -27,4 +27,4 @@ La personalità scelta è **energetica editoriale**: rapida nei feedback, contro
 
 ## Accessibilità e prestazioni
 
-Con `prefers-reduced-motion: reduce`, Lenis e le animazioni GSAP non partono, Motion usa la preferenza dell’utente e Canvas passa a `frameloop="demand"`. Nessuna animazione funzionale dipende esclusivamente dal movimento.
+Con `prefers-reduced-motion: reduce`, Lenis e le animazioni GSAP non partono, Motion usa la preferenza dell’utente e l’header resta sul poster finché l’utente non sceglie di avviarlo. Nessuna animazione funzionale dipende esclusivamente dal movimento.

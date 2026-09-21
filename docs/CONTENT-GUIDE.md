@@ -6,7 +6,7 @@ Modifica [`src/content/site.ts`](../src/content/site.ts) per candidati, data, pr
 
 ## Checklist dei contenuti ufficiali
 
-1. Sostituisci nomi, classi, citazioni e ritratti dimostrativi.
+1. Completa le citazioni e verifica nomi, classi e ritratti prima della pubblicazione.
 2. Inserisci la data reale delle elezioni con offset di Roma.
 3. Sostituisci le cinque proposte con il programma approvato.
 4. Completa informativa privacy, responsabile e contatti.

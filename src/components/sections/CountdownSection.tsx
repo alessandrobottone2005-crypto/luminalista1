@@ -47,7 +47,7 @@ export function CountdownSection() {
         {labels.map((label, index) => (
           <div key={label}>
             <span className="count-number" aria-hidden="true">
-              {time ? String(time[index]).padStart(2, "0") : "—"}
+              {time ? String(time[index]).padStart(2, "0") : "--"}
             </span>
             <span className="count-label" aria-hidden="true">
               {label}
@@ -61,9 +61,11 @@ export function CountdownSection() {
         </span>
         <span>LISTA 01</span>
       </div>
-      <p className="demo-note">
-        Data dimostrativa. Le elezioni ufficiali saranno annunciate qui.
-      </p>
+      {siteConfig.electionDateIsProvisional ? (
+        <p className="demo-note">
+          Data dimostrativa. Le elezioni ufficiali saranno annunciate qui.
+        </p>
+      ) : null}
     </section>
   );
 }

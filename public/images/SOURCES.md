@@ -1,4 +1,7 @@
-Portraits: stock reference images, not actual candidates.
-sofia.webp: https://images.unsplash.com/photo-1524504388940-b1c1722653e1
-andrea.webp: https://images.unsplash.com/photo-1500648767791-00dcc994a43e
-giulia.webp: https://images.unsplash.com/photo-1534528741775-53994a69daeb
+# Fonti immagini
+
+## Candidati
+
+Le fotografie di Valeria Bottone, Luca Pagliarulo e Marco Mondiello sono state fornite con il progetto. Gli originali PNG sono conservati in `assets/source/candidates`; il sito usa copie WebP da 900 × 900 px, qualità 84.
+
+Quando una fotografia viene sostituita, aggiorna sia la sorgente sia la versione ottimizzata mantenendo lo stesso nome file pubblico.

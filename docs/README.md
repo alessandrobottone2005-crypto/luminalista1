@@ -6,7 +6,7 @@ Apri il documento relativo al lavoro che devi fare:
 2. [`ARCHITECTURE.md`](ARCHITECTURE.md) — responsabilità delle cartelle e flussi principali.
 3. [`DESIGN-SYSTEM.md`](DESIGN-SYSTEM.md) — Design DNA, token, tipografia e componenti.
 4. [`MOTION-SYSTEM.md`](MOTION-SYSTEM.md) — tesi d’interazione, GSAP, Motion e accessibilità.
-5. [`THREEJS-SCENE.md`](THREEJS-SCENE.md) — scena 3D costruita dal logo originale.
+5. [`HEADER-ANIMATION.md`](HEADER-ANIMATION.md) — sorgente Blender, esportazione e comportamento dell’header.
 
 Altri riferimenti:
 

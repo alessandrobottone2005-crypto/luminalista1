@@ -17,7 +17,7 @@ Usa questa sequenza per valutare ogni sezione:
 
 ### One owner per effect
 
-Usa CSS per micro-feedback, Motion per stati React, GSAP per scroll e timeline, Three.js per la scena 3D. Non animare la stessa proprietà con due sistemi.
+Usa CSS per micro-feedback, Motion per stati React, GSAP per scroll e timeline e il render Blender per l’header. Non animare la stessa proprietà con due sistemi.
 
 ### Content truth
 
@@ -25,7 +25,7 @@ Preserva le etichette provvisorie. Non inventare persone, date, account o propos
 
 ### Performance envelope
 
-Mantieni lazy loading del Canvas, DPR massimo 1.5, nessuna allocazione dentro `useFrame`, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
+Mantieni `preload="metadata"` per il video, poster locale, pausa fuori viewport, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
 
 ## Topic index
 
@@ -34,7 +34,7 @@ Mantieni lazy loading del Canvas, DPR massimo 1.5, nessuna allocazione dentro `u
 - **Design DNA** → [`docs/DESIGN-SYSTEM.md`](../../../docs/DESIGN-SYSTEM.md)
 - **Form e dati** → [`docs/FORM-AND-DATA.md`](../../../docs/FORM-AND-DATA.md)
 - **Motion** → [`docs/MOTION-SYSTEM.md`](../../../docs/MOTION-SYSTEM.md)
-- **Three.js** → [`docs/THREEJS-SCENE.md`](../../../docs/THREEJS-SCENE.md)
+- **Animazione header** → [`docs/HEADER-ANIMATION.md`](../../../docs/HEADER-ANIMATION.md)
 
 ## Definition of done
 

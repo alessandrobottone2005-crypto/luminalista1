@@ -10,7 +10,7 @@
 
 ## Prestazioni
 
-- La scena 3D è caricata in lazy loading e usa DPR limitato.
+- Il video dell’header usa `preload="metadata"`, un poster WebP e viene sospeso fuori viewport.
 - Immagini dei candidati usano WebP, dimensioni esplicite e lazy loading.
 - Le animazioni privilegiano trasformazioni e opacità.
 - ScrollTrigger viene aggiornato solo dopo cambi di layout significativi.

@@ -10,7 +10,7 @@
 | ---------- | ----------------------------------------------------------------------------------------- |
 | Sistema    | Colori misurabili, tipografia ad alto contrasto, spaziatura compatta, geometria quadrata. |
 | Stile      | Editoriale, cinematografico, urbano, diretto, con un tono giovane ma non infantile.       |
-| Effetti    | Logo 3D, luce reattiva, reveal al scroll, progressivo passaggio dal nero al bianco.       |
+| Effetti    | Logo Blender illuminato, reveal al scroll, progressivo passaggio dal nero al bianco.      |
 
 ## Token principali
 
@@ -27,7 +27,7 @@ I valori eseguibili vivono in [`src/styles/tokens.css`](../src/styles/tokens.css
 
 ## Logo
 
-[`public/Logo.svg`](../public/Logo.svg) è l’asset canonico caricato dal committente. La scena Three.js legge direttamente questo file. `favicon.svg` e `wordmark.svg` sono derivati per contesti piccoli o orizzontali e non sostituiscono l’originale.
+[`LogoLumina_Animazione.blend`](../LogoLumina_Animazione.blend) è la sorgente canonica dell’header animato. [`public/Logo.svg`](../public/Logo.svg) resta l’asset statico ufficiale; `favicon.svg` e `wordmark.svg` sono derivati per contesti piccoli o orizzontali e non sostituiscono l’originale.
 
 ## Regole dei componenti
 

@@ -12,13 +12,14 @@ Apri `http://localhost:4174`.
 
 ## Comandi
 
-| Comando             | Scopo                                                  |
-| ------------------- | ------------------------------------------------------ |
-| `npm run dev`       | Avvia Vite e rigenera il fallback statico.             |
-| `npm test`          | Esegue i test del client e del ricevitore Apps Script. |
-| `npm run typecheck` | Controlla TypeScript senza produrre file.              |
-| `npm run build`     | Genera la build in `dist`.                             |
-| `npm run check`     | Esegue formato, tipi, test e build.                    |
+| Comando                | Scopo                                                  |
+| ---------------------- | ------------------------------------------------------ |
+| `npm run dev`          | Avvia Vite e rigenera il fallback statico.             |
+| `npm test`             | Esegue i test del client e del ricevitore Apps Script. |
+| `npm run typecheck`    | Controlla TypeScript senza produrre file.              |
+| `npm run media:header` | Rigenera video e poster dal file Blender.              |
+| `npm run build`        | Genera la build in `dist`.                             |
+| `npm run check`        | Esegue formato, tipi, test e build.                    |
 
 ## Workflow concentrato
 

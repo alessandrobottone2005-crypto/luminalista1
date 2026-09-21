@@ -2,7 +2,7 @@
 
 ## Fonti
 
-- [Three.js Skills](https://github.com/CloudAI-X/threejs-skills) — scene graph, SVG loader, geometrie, luci, interazione, cleanup e budget GPU.
+- [Three.js Skills](https://github.com/CloudAI-X/threejs-skills) — valutazione di scena, animazione, luci, formati di esportazione e budget GPU.
 - [GSAP Skills](https://github.com/greensock/gsap-skills) — `useGSAP`, ScrollTrigger, trasformazioni, refresh e cleanup.
 - [Design DNA](https://github.com/zanwei/design-dna) — separazione fra token, stile percepito ed effetti visivi.
 - [Motion Design Skill](https://github.com/lottiefiles/motion-design-skill) — intento emotivo, durata, easing e coreografia.
@@ -12,4 +12,4 @@
 
 ## Applicazione nel repository
 
-Il brief è stato trasformato in token, regole operative e una skill locale in [`.agents/skills/lumina-project`](../.agents/skills/lumina-project). Le librerie di animazione hanno responsabilità separate; il logo SVG originale alimenta direttamente la scena 3D; documentazione e workflow sono organizzati per rendere subito visibile la prossima azione.
+Il brief è stato trasformato in token, regole operative e una skill locale in [`.agents/skills/lumina-project`](../.agents/skills/lumina-project). Le librerie di animazione hanno responsabilità separate. Le indicazioni Three.js sono state usate per valutare l’esportazione GLB; i materiali Cycles e la nebbia volumetrica hanno portato alla scelta del video renderizzato, che conserva fedelmente il file Blender originale.
