@@ -2,6 +2,8 @@
 
 Landing page mobile-first, animata e interattiva per la campagna studentesca Lumina del Liceo Gentileschi di Napoli.
 
+**Sito pubblico:** [luminalista1.vercel.app](https://luminalista1.vercel.app)
+
 La direzione creativa segue un percorso dal buio alla luce: l’animazione originale realizzata in Blender apre il racconto, i contenuti emergono durante lo scroll e il percorso termina con un modulo collegato al Foglio Google Lumina.
 
 ## Avvio rapido
