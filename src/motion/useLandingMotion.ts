@@ -134,7 +134,7 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
         });
       });
 
-      gsap.from(select(".merch-item"), {
+      gsap.from(select(".merch-stage"), {
         y: 35,
         autoAlpha: 0.2,
         stagger: 0.12,
