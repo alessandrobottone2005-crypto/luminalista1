@@ -45,7 +45,7 @@
   --ease-signature: cubic-bezier(0.2, 0, 0, 1);
 
   color: var(--foreground);
-  background: #10110f;
+  background: var(--background);
   font-family: var(--body);
   font-synthesis: none;
   text-rendering: optimizeLegibility;

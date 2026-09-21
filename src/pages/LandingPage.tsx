@@ -19,6 +19,9 @@ export function LandingPage() {
         Vai al contenuto
       </a>
       <main ref={root}>
+        <div className="story-progress" aria-hidden="true">
+          <span className="story-progress-fill" />
+        </div>
         <HeroSection />
         <IntroSection />
         <CandidateSection />

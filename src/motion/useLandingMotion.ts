@@ -47,6 +47,17 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
         ease: "power3.out",
       });
 
+      gsap.to(select(".story-progress-fill"), {
+        scaleX: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: root.current,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 0.2,
+        },
+      });
+
       select(".light-reveal").forEach((element: HTMLElement) => {
         gsap.from(element, {
           clipPath: "inset(0 100% 0 0)",
@@ -122,17 +133,47 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
         });
       });
 
-      select(".manifesto-line").forEach((element: HTMLElement) => {
-        gsap.from(element, {
-          color: "#5a5018",
-          scrollTrigger: {
-            trigger: element,
-            start: "top 84%",
-            end: "top 56%",
-            scrub: true,
-          },
-        });
-      });
+      const manifesto = select(".manifesto")[0];
+      const manifestoLines = select(".manifesto-line");
+      if (manifesto && manifestoLines.length) {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: manifesto,
+              start: "top top",
+              end: "bottom bottom",
+              scrub: 0.65,
+            },
+          })
+          .from(manifestoLines, {
+            autoAlpha: 0.12,
+            y: 26,
+            stagger: 0.16,
+            duration: 0.52,
+            ease: "none",
+          })
+          .from(
+            select(".manifesto-star"),
+            {
+              autoAlpha: 0.2,
+              rotation: -45,
+              scale: 0.35,
+              duration: 0.7,
+              ease: "none",
+            },
+            0,
+          )
+          .from(
+            select(".manifesto p"),
+            {
+              autoAlpha: 0.2,
+              y: 12,
+              duration: 0.3,
+              ease: "none",
+            },
+            "-=0.2",
+          );
+      }
 
       gsap.from(select(".merch-stage"), {
         y: 35,

@@ -72,7 +72,27 @@ p {
   background: var(--background);
   position: relative;
   isolation: isolate;
-  box-shadow: 0 15px 60px #0004;
+  box-shadow: none;
+}
+.story-progress {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 80;
+  width: min(100%, 480px);
+  height: 3px;
+  transform: translateX(-50%);
+  background: #ffffff14;
+  pointer-events: none;
+}
+.story-progress-fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--yellow);
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
 }
 .section-pad {
   padding-left: 24px;
@@ -285,6 +305,7 @@ p {
   padding-top: 76px;
   padding-bottom: 94px;
   position: relative;
+  background: var(--background);
 }
 .intro-line {
   height: 74px;
@@ -336,7 +357,7 @@ p {
   top: 6px;
 }
 .candidates {
-  background: #0c0c0b;
+  background: var(--background);
   padding-top: 28px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -486,11 +507,11 @@ p {
 .countdown {
   padding-top: 31px;
   padding-bottom: 36px;
-  background: var(--yellow);
-  color: #0b0b08;
+  background: var(--background);
+  color: var(--foreground);
 }
 .countdown .section-top {
-  border-color: #0005;
+  border-color: #ffffff30;
 }
 .countdown h2 {
   font-size: 71px;
@@ -504,7 +525,7 @@ p {
 .countdown-grid > div {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #0008;
+  border-top: 1px solid #ffffff2e;
   padding-top: 8px;
 }
 .count-number {
@@ -513,33 +534,48 @@ p {
   font-size: clamp(48px, 14vw, 68px);
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
+  color: var(--yellow);
 }
 .count-label {
   font-size: 9px;
   letter-spacing: 0.12em;
   margin-top: 5px;
+  color: #b8b7b0;
 }
 .election-date {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #0008;
+  border-top: 1px solid #ffffff2e;
   margin-top: 29px;
   padding-top: 16px;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.03em;
 }
+.election-date > span:first-child {
+  color: var(--yellow);
+}
 .countdown .demo-note {
-  color: #4b420a;
+  color: #aaa99f;
   font-size: 10px;
 }
 .manifesto {
-  background: var(--yellow);
-  color: #080808;
-  padding-top: 64px;
-  padding-bottom: 47px;
-  border-top: 1px solid #0004;
-  overflow: hidden;
+  min-height: 190svh;
+  background: var(--background);
+  color: var(--foreground);
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: clip;
+}
+.manifesto-stage {
+  position: sticky;
+  top: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 .manifesto h2 {
   font-size: clamp(72px, 21vw, 102px);
@@ -552,18 +588,19 @@ p {
 }
 .manifesto-outline {
   color: transparent !important;
-  -webkit-text-stroke: 1.5px #080808;
+  -webkit-text-stroke: 1.5px var(--yellow);
 }
 .manifesto p {
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.11em;
   padding-top: 32px;
+  color: #b8b7b0;
 }
 .manifesto-star {
   width: 58px;
   height: 58px;
-  background: #080808;
+  background: var(--yellow);
   clip-path: polygon(
     50% 0,
     59% 41%,
@@ -578,7 +615,7 @@ p {
   margin-bottom: 27px;
 }
 .program {
-  background: #10110e;
+  background: var(--background);
   padding-top: 55px;
   padding-bottom: 59px;
 }
@@ -680,7 +717,7 @@ p {
 .gadgets {
   padding-top: 34px;
   padding-bottom: 55px;
-  background: #191a15;
+  background: var(--background);
 }
 .gadgets h2 {
   font-size: 66px;
@@ -1043,7 +1080,7 @@ p {
 }
 .daybreak {
   height: 215px;
-  background: linear-gradient(#191a15, #5e5e4f 45%, #f7f6ef);
+  background: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1053,22 +1090,22 @@ p {
 .daybreak > span:last-child {
   font-size: 9px;
   letter-spacing: 0.18em;
-  color: #eeecd9;
+  color: #aaa99f;
 }
 .idea-section {
-  background: #f7f6ef;
-  color: #11130d;
+  background: var(--background);
+  color: var(--foreground);
   padding-top: 25px;
   padding-bottom: 55px;
-  --input: #949487;
-  --border: #aaa99a;
-  --foreground: #11130d;
-  --background: #f7f6ef;
-  --muted-foreground: #67685a;
-  --ring: #5d5410;
+  --input: #4b4b45;
+  --border: #4b4b45;
+  --foreground: #f5f4ef;
+  --background: #080808;
+  --muted-foreground: #aaa99f;
+  --ring: var(--yellow);
 }
 .idea-section .section-top {
-  border-color: #2225;
+  border-color: #ffffff30;
 }
 .idea-section h2 {
   font-size: clamp(49px, 14.5vw, 69px);
@@ -1076,19 +1113,20 @@ p {
 }
 .highlight-mark {
   background: var(--yellow);
+  color: #080808;
   box-shadow:
     5px 0 var(--yellow),
     -2px 0 var(--yellow);
 }
 .idea-section > .section-copy {
-  color: #54564a;
+  color: #b6b5b0;
   margin-top: 27px;
   font-size: 16px;
 }
 .form-availability {
   font-size: 11px;
   line-height: 1.7;
-  color: #66684f;
+  color: #aaa99f;
   display: flex;
   gap: 8px;
   margin-top: 22px;
@@ -1098,7 +1136,7 @@ p {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #7b7c46;
+  background: var(--yellow);
   flex-shrink: 0;
   margin-top: 7px;
 }
@@ -1115,7 +1153,7 @@ p {
 .idea-form label > span {
   font-size: 10px;
   font-weight: 400;
-  color: #727364;
+  color: #aaa99f;
 }
 .field-header {
   display: flex;
@@ -1125,33 +1163,38 @@ p {
 }
 .field-header > span {
   font-size: 10px;
-  color: #6a6a5f;
+  color: #aaa99f;
 }
 .idea-form textarea {
   min-height: 155px;
   resize: vertical;
-  background: #fff5;
+  background: #ffffff08;
   border-radius: 0;
   padding: 14px;
   font-family: var(--body);
   font-size: 16px;
-  border: 1px solid #97988b;
+  border: 1px solid #4b4b45;
   line-height: 1.7;
   box-shadow: none;
 }
 .idea-form input {
   height: 49px;
   border: 0;
-  border-bottom: 1px solid #97988b;
+  border-bottom: 1px solid #4b4b45;
   border-radius: 0;
   font-size: 16px;
   box-shadow: none;
   background: transparent;
   padding: 0 0 8px;
 }
+.idea-form input::placeholder,
+.idea-form textarea::placeholder {
+  color: #8f8e84;
+  opacity: 1;
+}
 .idea-form input:focus-visible,
 .idea-form textarea:focus-visible {
-  outline: 2px solid #67601f;
+  outline: 2px solid var(--yellow);
   outline-offset: 3px;
   box-shadow: none;
 }
@@ -1167,7 +1210,7 @@ p {
 .privacy-note {
   font-size: 10px;
   line-height: 1.9;
-  color: #616354;
+  color: #aaa99f;
   margin-top: 24px;
 }
 .privacy-note a {
@@ -1180,31 +1223,31 @@ p {
   display: flex !important;
   justify-content: space-between !important;
   border-radius: 0 !important;
-  background: #10130c !important;
-  color: var(--yellow) !important;
+  background: var(--yellow) !important;
+  color: #080808 !important;
   font-family: var(--body);
   font-size: 11px !important;
   letter-spacing: 0.06em;
   margin-top: 23px;
   padding: 0 19px !important;
-  border: 1px solid #10130c;
+  border: 1px solid var(--yellow);
 }
 .form-end {
   font-size: 8px;
   letter-spacing: 0.09em;
   text-align: center;
-  color: #6f715d;
+  color: #8f8e84;
   margin-top: 28px;
 }
 .field-error {
   font-size: 12px;
-  color: #a3251a;
+  color: #ff766d;
   line-height: 1.7;
   margin-top: 9px;
 }
 .submission-error {
   padding: 12px;
-  border: 1px solid #c8a59d;
+  border: 1px solid #ff766d80;
 }
 .honeypot {
   position: absolute;
@@ -1230,7 +1273,7 @@ p {
   border-radius: 0;
 }
 .footer {
-  background: #10120c;
+  background: var(--background);
   padding-top: 31px;
   overflow: hidden;
 }
@@ -1426,7 +1469,7 @@ p {
     color: var(--yellow);
   }
   .submit-button:hover {
-    background: #303522 !important;
+    background: #f5f4ef !important;
   }
   .menu-panel a:hover {
     color: var(--yellow);
@@ -1452,6 +1495,19 @@ p {
   }
   .header-animation {
     transition: none;
+  }
+  .story-progress {
+    display: none;
+  }
+  .manifesto {
+    min-height: auto;
+    padding-top: 64px;
+    padding-bottom: 47px;
+  }
+  .manifesto-stage {
+    position: relative;
+    min-height: auto;
+    padding: 0;
   }
   .light-reveal {
     will-change: auto;
@@ -1518,12 +1574,16 @@ p {
 
 @media (min-width: 900px) {
   body {
-    background: #050505;
+    background: var(--background);
   }
 
   .site-shell {
     max-width: 1180px;
-    box-shadow: 0 15px 80px #0008;
+    box-shadow: none;
+  }
+
+  .story-progress {
+    width: min(100%, 1180px);
   }
 
   .site-header {
@@ -1712,13 +1772,18 @@ p {
   }
 
   .manifesto {
-    padding-top: 100px;
-    padding-bottom: 82px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .manifesto-stage {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .manifesto h2 {
     max-width: 960px;
-    font-size: clamp(100px, 13vw, 180px);
+    font-size: clamp(96px, 10.8vw, 136px);
   }
 
   .manifesto p {

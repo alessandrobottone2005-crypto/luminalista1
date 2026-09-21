@@ -6,11 +6,11 @@
 
 ## Design DNA
 
-| Dimensione | Decisione                                                                                 |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| Sistema    | Colori misurabili, tipografia ad alto contrasto, spaziatura compatta, geometria quadrata. |
-| Stile      | Editoriale, cinematografico, urbano, diretto, con un tono giovane ma non infantile.       |
-| Effetti    | Logo Blender illuminato, reveal al scroll, progressivo passaggio dal nero al bianco.      |
+| Dimensione | Decisione                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| Sistema    | Colori misurabili, tipografia ad alto contrasto, spaziatura compatta, geometria quadrata.   |
+| Stile      | Editoriale, cinematografico, urbano, diretto, con un tono giovane ma non infantile.         |
+| Effetti    | Logo Blender illuminato, palco nero continuo e contenuti accesi progressivamente in giallo. |
 
 ## Token principali
 
@@ -33,6 +33,7 @@ I valori eseguibili vivono in [`src/styles/tokens.css`](../src/styles/tokens.css
 
 - CTA e controlli mantengono un’area interattiva minima di 44 × 44 px.
 - Il raggio resta quasi nullo: la forma è editoriale, non “app card”.
+- Tutte le sezioni principali usano lo stesso sfondo `#080808`; la profondità nasce da ritmo, immagini e movimento.
 - Il giallo indica scelta o rivelazione; non riempie superfici decorative senza funzione.
 - I testi funzionali rimangono almeno a 16 px sulle viste mobili.
 - I contenuti provvisori devono restare esplicitamente riconoscibili.

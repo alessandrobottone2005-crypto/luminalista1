@@ -31,6 +31,7 @@ export function CountdownSection() {
 
   return (
     <section
+      id="elezioni"
       className="countdown section-pad"
       aria-labelledby="countdown-title"
     >
@@ -41,7 +42,7 @@ export function CountdownSection() {
       <h2 id="countdown-title">
         OGNI VOCE
         <br />
-        CONTA.
+        <span className="yellow">CONTA.</span>
       </h2>
       <div className="countdown-grid" aria-label={accessibleLabel}>
         {labels.map((label, index) => (

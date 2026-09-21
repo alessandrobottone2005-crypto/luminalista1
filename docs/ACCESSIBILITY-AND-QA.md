@@ -6,6 +6,7 @@
 - Contrasto verificato per testi, CTA, errori e stato disabilitato.
 - Touch target di almeno 44 px e testo funzionale di almeno 16 px su mobile.
 - Esperienza completa con `prefers-reduced-motion: reduce`.
+- Il manifesto resta leggibile e perde sticky e scrub quando il movimento è ridotto.
 - Form leggibile da screen reader con errori associati e stato annunciato.
 
 ## Prestazioni
@@ -13,6 +14,7 @@
 - Il video dell’header usa `preload="metadata"`, un poster WebP e viene sospeso fuori viewport.
 - Immagini dei candidati usano WebP, dimensioni esplicite e lazy loading.
 - Le animazioni privilegiano trasformazioni e opacità.
+- Il progresso dello scroll usa una sola trasformazione `scaleX` e non modifica il layout.
 - ScrollTrigger viene aggiornato solo dopo cambi di layout significativi.
 - La build segnala i chunk grandi: controllare la dimensione quando si aggiungono librerie o asset.
 
