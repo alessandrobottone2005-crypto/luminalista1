@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Aggiunta la configurazione Vercel per build Vite, output `dist` e deep link delle route React.
 - Uniformato il sito su un unico sfondo nero e introdotto uno scrollytelling continuo con progresso globale e manifesto sticky che si illumina riga per riga.
 - Ridisegnata la sezione candidati con ritratti reali ottimizzati, composizione editoriale sfalsata, nomi sovrapposti e reveal coordinato durante lo scroll.
 - Sostituita la scena 3D ricostruita con l’animazione originale `LogoLumina_Animazione.blend`, esportata in MP4 con poster WebP e controllo pausa/riproduzione.

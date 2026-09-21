@@ -15,7 +15,13 @@ Configura `VITE_GOOGLE_SCRIPT_URL` nell’ambiente della piattaforma usando l’
 
 ## Routing
 
-La landing usa `BrowserRouter`. Il provider deve riscrivere le richieste come `/privacy` verso `index.html`; asset e file reali devono continuare a essere serviti direttamente.
+La landing usa `BrowserRouter`. [`vercel.json`](../vercel.json) riscrive le richieste come `/privacy` verso `index.html`; Vercel continua a servire direttamente asset e file reali.
+
+## Vercel
+
+Il progetto Vercel è collegato alla repository GitHub `alessandrobottone2005-crypto/luminalista1` e usa `main` come branch di produzione. Ogni push completato su `main` avvia automaticamente una nuova build e aggiorna il dominio `vercel.app`.
+
+Configura `VITE_GOOGLE_SCRIPT_URL` sia per Production sia per Preview. Se il valore cambia, esegui un nuovo deployment perché Vite lo incorpora durante la build.
 
 ## Controllo dopo il rilascio
 
