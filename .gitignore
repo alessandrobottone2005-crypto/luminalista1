@@ -11,3 +11,4 @@ dist/
 /Poppins-*.ttf
 /DxPlayhigh-Expanded.otf
 *.blend1
+.vercel

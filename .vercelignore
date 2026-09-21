@@ -1,0 +1,7 @@
+.agents/
+.claude/
+agent/
+assets/source/
+*.blend
+skills-lock.json
+public/Risorsa 1.png
