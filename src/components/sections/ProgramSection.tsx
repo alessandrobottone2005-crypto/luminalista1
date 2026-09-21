@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowUpRight, Plus } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { LightReveal } from "@/components/motion/LightReveal";
 import {
   Accordion,
@@ -15,10 +15,6 @@ export function ProgramSection() {
       className="program section-pad"
       aria-labelledby="program-title"
     >
-      <div className="section-top">
-        <span>DALLE PAROLE AI PASSI</span>
-        <ArrowDownRight size={20} />
-      </div>
       <LightReveal>
         <h2 id="program-title">
           METTIAMO
@@ -31,9 +27,6 @@ export function ProgramSection() {
         Cinque punti da cui partire.
         <br />
         Tanto spazio per costruire insieme.
-      </p>
-      <p className="demo-note">
-        Proposte illustrative, in attesa del programma ufficiale.
       </p>
       <Accordion type="single" collapsible className="program-list">
         {programPoints.map((point) => (

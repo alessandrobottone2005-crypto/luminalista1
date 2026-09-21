@@ -98,30 +98,11 @@ p {
   padding-left: 24px;
   padding-right: 24px;
 }
-.section-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  border-top: 1px solid #ffffff30;
-  padding-top: 17px;
-  margin-bottom: 34px;
-  font-size: 9px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-}
 .section-copy {
   color: #b6b5b0;
   margin-top: 25px;
   font-size: 16px;
   line-height: 1.8;
-}
-.demo-note {
-  font-size: 11px;
-  line-height: 1.65;
-  color: #aaa99f;
-  margin-top: 15px;
 }
 .light-reveal {
   will-change: clip-path;
@@ -284,22 +265,6 @@ p {
 .header-animation.is-paused .header-animation-media {
   filter: brightness(0.38) saturate(0.72);
   opacity: 0.78;
-}
-.hero-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 24px;
-  gap: 18px;
-}
-.hero-bottom p {
-  font-size: 13px;
-  line-height: 1.9;
-  color: #aaa9a0;
-}
-.hero-bottom strong {
-  color: #fff;
-  font-weight: 500;
 }
 .intro {
   padding-top: 76px;
@@ -494,24 +459,11 @@ p {
   max-width: none;
   line-height: 1.65;
 }
-.candidate-quote-pending {
-  justify-self: end;
-  padding-left: 13px;
-  border-left: 1px solid #ffffff32;
-  color: #8f8e84;
-  font-size: 9px;
-  line-height: 1.55;
-  letter-spacing: 0.13em;
-  text-align: right;
-}
 .countdown {
   padding-top: 31px;
   padding-bottom: 36px;
   background: var(--background);
   color: var(--foreground);
-}
-.countdown .section-top {
-  border-color: #ffffff30;
 }
 .countdown h2 {
   font-size: 71px;
@@ -555,10 +507,6 @@ p {
 .election-date > span:first-child {
   color: var(--yellow);
 }
-.countdown .demo-note {
-  color: #aaa99f;
-  font-size: 10px;
-}
 .manifesto {
   min-height: 190svh;
   background: var(--background);
@@ -589,13 +537,6 @@ p {
 .manifesto-outline {
   color: transparent !important;
   -webkit-text-stroke: 1.5px var(--yellow);
-}
-.manifesto p {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.11em;
-  padding-top: 32px;
-  color: #b8b7b0;
 }
 .manifesto-star {
   width: 58px;
@@ -836,16 +777,6 @@ p {
   font-size: 22px;
   line-height: 1;
 }
-.merch-concept {
-  position: absolute;
-  bottom: 12px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 7px;
-  letter-spacing: 0.15em;
-  color: #c9c6b4;
-}
 .merch-controls {
   display: flex;
   justify-content: space-between;
@@ -1085,12 +1016,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-}
-.daybreak > span:last-child {
-  font-size: 9px;
-  letter-spacing: 0.18em;
-  color: #aaa99f;
 }
 .idea-section {
   background: var(--background);
@@ -1103,9 +1028,6 @@ p {
   --background: #080808;
   --muted-foreground: #aaa99f;
   --ring: var(--yellow);
-}
-.idea-section .section-top {
-  border-color: #ffffff30;
 }
 .idea-section h2 {
   font-size: clamp(49px, 14.5vw, 69px);
@@ -1232,13 +1154,6 @@ p {
   padding: 0 19px !important;
   border: 1px solid var(--yellow);
 }
-.form-end {
-  font-size: 8px;
-  letter-spacing: 0.09em;
-  text-align: center;
-  color: #8f8e84;
-  margin-top: 28px;
-}
 .field-error {
   font-size: 12px;
   color: #ff766d;
@@ -1315,14 +1230,9 @@ p {
 .footer-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
   padding-top: 19px;
-}
-.footer-links > span {
-  font-size: 7px;
-  letter-spacing: 0.1em;
-  color: #adaf9c;
 }
 .footer-links a {
   min-height: 44px;
@@ -1343,15 +1253,6 @@ p {
   align-items: flex-end;
   gap: 24px;
   padding: 12px 0 30px;
-}
-.footer-number span {
-  font-family: var(--body);
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.7;
-  padding-bottom: 10px;
-  color: #d6d8c1;
 }
 .footer-bottom {
   display: flex;
@@ -1413,9 +1314,6 @@ p {
     margin-left: -19px;
     margin-right: -19px;
   }
-  .hero-bottom p {
-    font-size: 12px;
-  }
   .candidate-name {
     font-size: 40px;
   }
@@ -1444,9 +1342,6 @@ p {
   .footer-number {
     font-size: 190px;
     gap: 15px;
-  }
-  .footer-number span {
-    font-size: 8px;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -1486,8 +1381,7 @@ p {
   }
   .light-reveal,
   .program-item,
-  .portrait,
-  .hero-enter {
+  .portrait {
     opacity: 1 !important;
     filter: none !important;
     clip-path: none !important;
@@ -1517,8 +1411,7 @@ p {
 .program-description,
 .program-detail,
 .intro-copy p,
-.candidate blockquote,
-.hero-bottom p {
+.candidate blockquote {
   font-size: 16px !important;
 }
 .idea-form label,
@@ -1550,9 +1443,6 @@ p {
   .form-row {
     grid-template-columns: 1fr;
     gap: 22px;
-  }
-  .hero-bottom p {
-    font-size: 16px !important;
   }
 }
 .privacy-note,
@@ -1629,12 +1519,7 @@ p {
   }
 
   .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "art"
-      "bottom";
-    padding: 0 0 28px;
+    padding: 0;
   }
 
   .hero-art {
@@ -1642,20 +1527,6 @@ p {
     height: clamp(440px, 42vw, 610px);
     margin: 0;
     align-self: stretch;
-  }
-
-  .hero-bottom {
-    grid-area: bottom;
-    align-self: start;
-    margin-top: 0;
-    padding: 25px 64px 0;
-    border-top: 1px solid #424137;
-  }
-
-  .hero-bottom p {
-    max-width: 320px;
-    font-size: 18px !important;
-    line-height: 1.7;
   }
 
   .section-pad {
@@ -1699,8 +1570,7 @@ p {
   }
 
   .candidates h2,
-  .candidates > .section-copy,
-  .candidates > .demo-note {
+  .candidates > .section-copy {
     max-width: 720px;
   }
 
@@ -1766,8 +1636,7 @@ p {
   }
 
   .count-label,
-  .election-date,
-  .countdown .demo-note {
+  .election-date {
     font-size: 14px;
   }
 
@@ -1786,26 +1655,16 @@ p {
     font-size: clamp(96px, 10.8vw, 136px);
   }
 
-  .manifesto p {
-    font-size: 13px;
-  }
-
   .program {
     display: grid;
     grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
     grid-template-areas:
-      "top top"
       "title list"
       "copy list"
-      "note list"
       "link link";
     column-gap: 80px;
     padding-top: 72px;
     padding-bottom: 86px;
-  }
-
-  .program > .section-top {
-    grid-area: top;
   }
 
   .program > h2 {
@@ -1816,11 +1675,6 @@ p {
   .program > .section-copy {
     grid-area: copy;
     font-size: 18px;
-  }
-
-  .program > .demo-note {
-    grid-area: note;
-    align-self: start;
   }
 
   .program-list {
@@ -1845,7 +1699,6 @@ p {
     display: grid;
     grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
     grid-template-areas:
-      "top top"
       "title stage"
       "copy stage"
       ". controls"
@@ -1853,10 +1706,6 @@ p {
     column-gap: 72px;
     padding-top: 64px;
     padding-bottom: 86px;
-  }
-
-  .gadgets > .section-top {
-    grid-area: top;
   }
 
   .gadgets > h2 {
@@ -1905,18 +1754,12 @@ p {
     display: grid;
     grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
     grid-template-areas:
-      "top top"
       "title form"
       "copy form"
-      "availability form"
-      "end end";
+      "availability form";
     column-gap: 80px;
     padding-top: 64px;
     padding-bottom: 80px;
-  }
-
-  .idea-section > .section-top {
-    grid-area: top;
   }
 
   .idea-section > h2 {
@@ -1943,11 +1786,6 @@ p {
     min-height: 210px;
   }
 
-  .form-end {
-    grid-area: end;
-    margin-top: 52px;
-  }
-
   .footer {
     padding-top: 56px;
   }
@@ -1964,7 +1802,6 @@ p {
     font-size: 16px;
   }
 
-  .footer-links > span,
   .footer-links a {
     font-size: 11px;
   }

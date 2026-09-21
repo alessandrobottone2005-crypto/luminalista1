@@ -8,10 +8,6 @@ export function CandidateSection() {
       className="candidates section-pad"
       aria-labelledby="candidates-title"
     >
-      <div className="section-top">
-        <span>LE PERSONE, PRIMA DI TUTTO</span>
-        <span>03 VOLTI</span>
-      </div>
       <LightReveal>
         <h2 id="candidates-title">
           CI METTIAMO
@@ -24,7 +20,6 @@ export function CandidateSection() {
         <br />
         Una nuova voglia di esserci.
       </p>
-      <p className="demo-note">Citazioni da definire.</p>
       <div className="candidate-list">
         {candidates.map((candidate, index) => (
           <article
@@ -61,15 +56,9 @@ export function CandidateSection() {
                 <br />
                 <b>{candidate.className}</b>
               </span>
-              {candidate.quote === "Citazione da definire." ? (
-                <span className="candidate-quote-pending">
-                  LE SUE PAROLE
-                  <br />
-                  ARRIVANO PRESTO.
-                </span>
-              ) : (
+              {candidate.quote ? (
                 <blockquote>“{candidate.quote}”</blockquote>
-              )}
+              ) : null}
             </div>
           </article>
         ))}

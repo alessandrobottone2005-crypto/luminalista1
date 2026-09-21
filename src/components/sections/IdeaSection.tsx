@@ -82,10 +82,6 @@ export function IdeaSection() {
       className="idea-section section-pad"
       aria-labelledby="idea-title"
     >
-      <div className="section-top">
-        <span>IL PROSSIMO PASSO È TUO</span>
-        <ArrowUpRight size={19} />
-      </div>
       <h2 id="idea-title">
         ORA METTI
         <br />
@@ -230,7 +226,6 @@ export function IdeaSection() {
           </motion.form>
         )}
       </AnimatePresence>
-      <p className="form-end">LE IDEE FANNO LUCE. INSIEME, DI PIÙ.</p>
     </section>
   );
 }

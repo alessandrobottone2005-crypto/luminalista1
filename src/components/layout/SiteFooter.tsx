@@ -18,22 +18,15 @@ export function SiteFooter() {
         Napoli, Italia
       </p>
       <div className="footer-links">
-        <span>CANALI SOCIAL IN ARRIVO</span>
         <Link to="/privacy">
           PRIVACY <ArrowUpRight size={12} />
         </Link>
       </div>
       <div className="footer-number" aria-hidden="true">
         01
-        <span>
-          IL FUTURO
-          <br />
-          SI ACCENDE.
-        </span>
       </div>
       <div className="footer-bottom">
         <span>© 2026 LUMINA</span>
-        <span>ANTEPRIMA · CONTENUTI PROVVISORI</span>
       </div>
     </footer>
   );

@@ -70,10 +70,6 @@ export function GadgetGallery() {
       className="gadgets section-pad"
       aria-labelledby="gadgets-title"
     >
-      <div className="section-top">
-        <span>FUORI DALLO SCHERMO</span>
-        <span>EDIZIONE 01</span>
-      </div>
       <h2 id="gadgets-title">
         LUMINA <span className="yellow">IRL.</span>
       </h2>
@@ -91,7 +87,6 @@ export function GadgetGallery() {
         >
           <GadgetArtwork selected={selected} />
         </motion.div>
-        <span className="merch-concept">CONCEPT · IN ARRIVO</span>
       </div>
       <div className="merch-controls">
         <div>

@@ -15,7 +15,6 @@ export function ManifestoSection() {
           ))}
           <span className="manifesto-line manifesto-outline">VISTA.</span>
         </h2>
-        <p>LA NOSTRA DIREZIONE È INSIEME.</p>
       </div>
     </section>
   );

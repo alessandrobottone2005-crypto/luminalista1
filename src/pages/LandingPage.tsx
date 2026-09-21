@@ -31,7 +31,6 @@ export function LandingPage() {
         <GadgetGallery />
         <div className="daybreak" aria-hidden="true">
           <span className="small-spark" />
-          <span>ORA TOCCA A TE.</span>
         </div>
         <IdeaSection />
       </main>

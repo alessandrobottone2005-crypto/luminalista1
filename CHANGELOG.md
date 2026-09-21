@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Rimossi microtesti decorativi, note provvisorie e slogan di passaggio per rendere lo scrollytelling più diretto.
 - Aggiunta la configurazione Vercel per build Vite, output `dist` e deep link delle route React.
 - Uniformato il sito su un unico sfondo nero e introdotto uno scrollytelling continuo con progresso globale e manifesto sticky che si illumina riga per riga.
 - Ridisegnata la sezione candidati con ritratti reali ottimizzati, composizione editoriale sfalsata, nomi sovrapposti e reveal coordinato durante lo scroll.

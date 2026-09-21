@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ArrowDownRight } from "lucide-react";
 import { siteConfig } from "@/content/site";
 import { getCountdown } from "@/lib/countdown";
 
@@ -35,10 +34,6 @@ export function CountdownSection() {
       className="countdown section-pad"
       aria-labelledby="countdown-title"
     >
-      <div className="section-top">
-        <span>IL FUTURO HA UN APPUNTAMENTO</span>
-        <ArrowDownRight size={21} />
-      </div>
       <h2 id="countdown-title">
         OGNI VOCE
         <br />
@@ -62,11 +57,6 @@ export function CountdownSection() {
         </span>
         <span>LISTA 01</span>
       </div>
-      {siteConfig.electionDateIsProvisional ? (
-        <p className="demo-note">
-          Data dimostrativa. Le elezioni ufficiali saranno annunciate qui.
-        </p>
-      ) : null}
     </section>
   );
 }

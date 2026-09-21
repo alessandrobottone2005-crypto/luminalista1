@@ -38,15 +38,6 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
       if (reduceMotion) return;
 
       const select = gsap.utils.selector(root);
-      gsap.from(select(".hero-enter"), {
-        y: 18,
-        autoAlpha: 0,
-        duration: 1.1,
-        stagger: 0.14,
-        delay: 0.3,
-        ease: "power3.out",
-      });
-
       gsap.to(select(".story-progress-fill"), {
         scaleX: 1,
         ease: "none",
@@ -162,16 +153,6 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
               ease: "none",
             },
             0,
-          )
-          .from(
-            select(".manifesto p"),
-            {
-              autoAlpha: 0.2,
-              y: 12,
-              duration: 0.3,
-              ease: "none",
-            },
-            "-=0.2",
           );
       }
 
