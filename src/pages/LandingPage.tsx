@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
 import { CandidateSection } from "@/components/sections/CandidateSection";
 import { CountdownSection } from "@/components/sections/CountdownSection";
 import { GadgetGallery } from "@/components/sections/GadgetGallery";
@@ -18,6 +20,7 @@ export function LandingPage() {
       <a className="skip-link" href="#intro">
         Vai al contenuto
       </a>
+      <SiteHeader />
       <main ref={root}>
         <div className="story-progress" aria-hidden="true">
           <span className="story-progress-fill" />
@@ -30,10 +33,11 @@ export function LandingPage() {
         <ProgramSection />
         <GadgetGallery />
         <div className="daybreak" aria-hidden="true">
-          <span className="small-spark" />
+          <img src="/Stella.svg" alt="" className="small-spark" />
         </div>
         <IdeaSection />
       </main>
+      <SiteFooter />
     </div>
   );
 }

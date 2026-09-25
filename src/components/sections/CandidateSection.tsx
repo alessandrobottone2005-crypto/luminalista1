@@ -26,39 +26,24 @@ export function CandidateSection() {
             className={`candidate candidate-${index}`}
             key={candidate.id}
           >
-            <div className="portrait-composition">
-              <span className="candidate-number" aria-hidden="true">
-                {candidate.id}
-              </span>
-              <div className="portrait">
+            <div className="candidate-card">
+              <div className="candidate-photo">
                 <img
                   src={candidate.image}
                   alt={`Ritratto di ${candidate.name} ${candidate.surname}`}
                   loading="lazy"
                   width="900"
                   height="900"
-                  sizes="(min-width: 900px) 330px, 86vw"
+                  sizes="(min-width: 900px) 300px, 86vw"
                   style={{ objectPosition: candidate.position }}
                 />
-                <span className="portrait-meta" aria-hidden="true">
-                  <span>CANDIDATO</span>
-                  <span>LISTA 01</span>
-                </span>
-                <h3 className="candidate-name">
-                  <span>{candidate.name}</span>
-                  <span>{candidate.surname}</span>
-                </h3>
               </div>
-            </div>
-            <div className="candidate-info">
-              <span className="class-label">
-                CLASSE
-                <br />
-                <b>{candidate.className}</b>
-              </span>
-              {candidate.quote ? (
-                <blockquote>“{candidate.quote}”</blockquote>
-              ) : null}
+              <div className="candidate-footer">
+                <span className="candidate-name">
+                  {candidate.name} {candidate.surname}
+                </span>
+                <span className="candidate-code">{candidate.className}</span>
+              </div>
             </div>
           </article>
         ))}

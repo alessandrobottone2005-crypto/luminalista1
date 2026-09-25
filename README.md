@@ -48,7 +48,7 @@ React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React, Motion, React Ro
 
 ## Contenuti provvisori
 
-Citazioni, programma e gadget sono ancora dimostrativi. Aggiornali in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+Le otto proposte del programma e gli sticker gadget sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare i contenuti dei candidati non ancora confermati in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
 
 ## Animazione dell’header
 

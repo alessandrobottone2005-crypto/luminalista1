@@ -1,12 +1,5 @@
 export const siteConfig = {
-  name: "Lumina",
-  listNumber: "01",
-  school: "Liceo Gentileschi",
-  city: "Napoli",
-  demo: true,
   electionDate: "2026-10-05T08:00:00+01:00",
-  instagram: "",
-  tiktok: "",
 };
 
 export const navigation = [
@@ -21,27 +14,32 @@ export const candidates = [
     id: "01",
     name: "Valeria",
     surname: "Bottone",
-    className: "5CE",
-    quote: "",
+    className: "VCE",
     image: "/images/candidates/valeria-bottone.webp",
-    position: "center 35%",
+    position: "center 50%",
   },
   {
     id: "02",
     name: "Luca",
     surname: "Pagliarulo",
-    className: "5AC",
-    quote: "",
+    className: "VAC",
     image: "/images/candidates/luca-pagliarulo.webp",
-    position: "center 38%",
+    position: "center 20%",
   },
   {
     id: "03",
     name: "Marco",
     surname: "Mondiello",
-    className: "5AC",
-    quote: "",
+    className: "VAC",
     image: "/images/candidates/marco-mondiello.webp",
+    position: "center 30%",
+  },
+  {
+    id: "04",
+    name: "Giulia",
+    surname: "Bisceglia",
+    className: "IVBSU",
+    image: "/images/candidates/giulia-bisceglia.webp",
     position: "center 30%",
   },
 ];
@@ -49,46 +47,42 @@ export const candidates = [
 export const programPoints = [
   {
     id: "01",
-    title: "LA TUA VOCE,\nOGNI GIORNO.",
-    category: "ASCOLTO",
-    description:
-      "Uno spazio aperto alle idee di tutti, anche tra un’assemblea e l’altra.",
-    detail:
-      "Proponiamo una raccolta continua di suggerimenti e incontri periodici con i rappresentanti di classe. Ogni mese, un aggiornamento sulle idee ricevute e sui passi fatti.",
+    title: "SETTIMANA\nDELLO STUDENTE.",
+    text: "La Settimana dello Studente è ormai una tradizione del nostro istituto e da anni si basa su quattro attività principali: Talent Show, torneo di pallavolo, Peer Education e servizio d’ordine.\n\nNon vogliamo cambiare ciò che negli anni ha funzionato, ma migliorarlo ancora di più, partendo anche dalle difficoltà dello scorso anno, garantendo un programma più organizzato. Inoltre, per la prima volta, proponiamo di svolgere la Settimana dello Studente nell’ultima settimana prima delle vacanze di Natale, così da dedicare il secondo quadrimestre allo studio, e vivere l’atmosfera natalizia al meglio.",
   },
   {
     id: "02",
-    title: "PIÙ SPAZIO\nALLE PASSIONI.",
-    category: "CULTURA",
-    description:
-      "Musica, cinema, arte. Portiamo a scuola quello che ci accende.",
-    detail:
-      "Laboratori autogestiti, cineforum e una giornata dedicata ai talenti degli studenti, da progettare insieme alla scuola e alle associazioni del territorio.",
+    title: "GENTILESCHI X\nFONDAZIONE CIRILLO.",
+    text: "Vogliamo rafforzare il legame tra il nostro istituto e la Fondazione Domenico Cirillo, una realtà vicina al nostro territorio e ai giovani. L’obiettivo è portare in Auditorium incontri su sicurezza stradale, uso consapevole dell’alcol, educazione e responsabilità, oltre a far conoscere agli studenti le numerose attività, conferenze e iniziative organizzate dalla Fondazione durante l’anno.\n\nScuola e territorio insieme, per parlare ai ragazzi attraverso altri ragazzi.",
   },
   {
     id: "03",
-    title: "STARE BENE\nÈ UN DIRITTO.",
-    category: "BENESSERE",
-    description:
-      "Una scuola che ascolta, include e si prende cura delle persone.",
-    detail:
-      "Vogliamo rendere più visibili i servizi di ascolto e costruire momenti di confronto sul benessere, sul rispetto e sulle relazioni tra studenti.",
+    title: "CINQUE MINUTI\nCON I RAPPRESENTANTI.",
+    text: "Quante volte è successo di perdersi una comunicazione, una novità o semplicemente di non sapere cosa stesse succedendo a scuola? Per questo nasce “Cinque minuti con i rappresentanti”, un nuovo format pensato per raccontare la vita del nostro istituto in modo semplice, diretto e… social!\n\nAlla fine di ogni mese, i rappresentanti realizzeranno un reel con un breve resoconto di tutto ciò che è successo: problematiche segnalate, soluzioni trovate e progetti in arrivo.",
   },
   {
     id: "04",
-    title: "FACCIAMO\nSQUADRA.",
-    category: "COMUNITÀ",
-    description:
-      "Sport, tornei e occasioni per conoscerci oltre la nostra classe.",
-    detail:
-      "Un calendario condiviso di tornei e attività, aperto a tutti i livelli. Occasioni semplici per incontrarci e vivere la scuola anche come comunità.",
+    title: "IL NOSTRO MERCH,\nLA NOSTRA IDENTITÀ.",
+    text: "Il merchandising scolastico è una proposta che i rappresentanti portano avanti da anni e che continua a coinvolgere tantissimi studenti. In collaborazione con Outsider School, anche quest’anno vogliamo dare la possibilità di acquistare articoli personalizzati del nostro istituto, con vantaggi e sconti dedicati agli studenti.\n\nMa quest’anno… il design lo scegliamo insieme! Attraverso un vero e proprio contest di grafiche, ogni studente potrà proporre la propria idea e contribuire a decidere lo stile del prossimo merch.",
   },
   {
     id: "05",
-    title: "IL CAMBIAMENTO\nPARTE DA QUI.",
-    category: "SOSTENIBILITÀ",
-    description: "Piccoli gesti concreti per una scuola più responsabile.",
-    detail:
-      "Una proposta per migliorare la raccolta differenziata, scambiare libri e materiali e organizzare giornate di cura degli spazi, in accordo con l’istituto.",
+    title: "SPORT E BENESSERE\nCON IL CUS.",
+    text: "Da ormai due anni la nostra scuola ha una convenzione con il CUS, una realtà sportiva presente nel quartiere di Fuorigrotta, ma non tutti gli studenti ne sono ancora a conoscenza. Attraverso questa convenzione è possibile usufruire di sconti dedicati agli studenti su numerose attività sportive. Vogliamo far conoscere meglio questa opportunità e valorizzarla, perché lo sport non deve essere visto solo come un’attività extra, ma come un modo per prenderci cura del nostro benessere, della nostra salute e del nostro equilibrio anche durante gli anni di scuola.",
+  },
+  {
+    id: "06",
+    title: "PRIMO SOCCORSO\nA SCUOLA.",
+    text: "Proponiamo l’introduzione di lezioni di primo soccorso durante l’anno scolastico, organizzate in palestra con esperti qualificati. Attraverso spiegazioni, esercitazioni e simulazioni pratiche di situazioni reali, vogliamo rendere questo percorso concreto, accessibile e coinvolgente per tutti gli studenti, imparando a mantenere la calma e a intervenire correttamente quando serve.",
+  },
+  {
+    id: "07",
+    title: "PIÙ SCELTA\nALLE MACCHINETTE.",
+    text: "Quella delle macchinette è una proposta che gli studenti portano avanti da tempo e che vogliamo finalmente provare a trasformare in realtà. Vogliamo ampliare l’offerta dei distributori con alternative più sostanziose e varie, come mandorle, tramezzini e altri snack, soprattutto per chi rimane a scuola fino a tardi. Vogliamo inoltre garantire una maggiore presenza di prodotti senza glutine, così da permettere anche agli studenti celiaci di avere più scelta. Perché a volte sono proprio le piccole attenzioni a rendere la scuola più comoda e inclusiva per tutti.",
+  },
+  {
+    id: "08",
+    title: "IL SITO\nDI LUMINA.",
+    text: "Il sito ufficiale di Lumina, dove trovare tutto ciò che riguarda la nostra lista: i quattro candidati, le nostre storie, le proposte, la nostra identità e tutto quello che c’è da sapere su di noi.\n\nCi sarà un box aperto a tutti gli studenti, anche in forma anonima, dove lasciare idee, proposte. E soprattutto, il sito non finirà con le elezioni: vogliamo trasformarlo in uno spazio ufficiale del Gentileschi, mantenendo il box sempre attivo e portando le proposte più interessanti nelle assemblee d’istituto mensili.",
   },
 ];

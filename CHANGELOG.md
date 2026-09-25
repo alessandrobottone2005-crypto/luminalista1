@@ -12,3 +12,12 @@
 - Allineati GSAP, Lenis e reduced motion; aggiunti token temporali.
 - Aggiunta documentazione completa e skill locale del progetto.
 - Aggiunti comandi di formato, typecheck e controllo completo.
+- Le 8 proposte ufficiali della Lista 1 hanno sostituito i 5 punti dimostrativi del programma; l'accordion è stato rimosso in favore di titolo + testo sempre visibile.
+- Aggiunto il quarto candidato (Giulia Bisceglia); le card candidati sono state ridisegnate secondo i design Figma forniti (foto arrotondata con bagliore, nome e classe in un footer nero).
+- La sezione sticker ("Lumina IRL") è stata ridisegnata: da un carosello disegnato in CSS a tre sticker fotografici reali ritagliati da un mockup, con bagliore giallo all'hover.
+- Tutte le "stelline" del sito (favicon, manifesto, intro) sono state unificate sul vero asset `Stella.svg`; la favicon è stata ridisegnata con sfondo nero e la stella grande al centro.
+- Installate localmente tre skill Claude Code in `.agents/skills/` (`design-taste-frontend`, `motion-dev-animations`, `ui-ux-pro-max`), tracciate in `skills-lock.json`.
+- **Corretto un bug**: `SiteHeader` e `SiteFooter` non erano mai stati montati in `LandingPage.tsx` dal refactor iniziale (commit `f2c3df6`) — il sito era sempre stato pubblicato senza barra di navigazione né footer. Ora sono correttamente renderizzati. Rimosso anche `DesktopRails.tsx`, un componente mai finito e senza stile CSS corrispondente.
+- Aggiunto un `<h1>` mancante nella homepage (era assente: ogni sezione usava `<h2>`, nessuna aveva `<h1>`).
+- Rimosse le dipendenze npm inutilizzate `three`, `@react-three/fiber` (retaggio della vecchia scena 3D, sostituita dal video Blender), `@radix-ui/react-accordion`, `@radix-ui/react-slot` (ridondanti col pacchetto unificato `radix-ui` già in uso), `@fontsource/barlow-condensed` (mai caricato) e `@playwright/test` (mai configurato); rimosso `src/components/ui/accordion.tsx`, ormai orfano.
+- Ripulita la struttura del progetto: rimossi duplicati residui di un'installazione di skill precedente (`agent/`, `.claude/skills/design-taste-frontend/`), non più necessari accanto alla copia canonica in `.agents/skills/`.

@@ -39,9 +39,16 @@ export function SiteHeader() {
             id="main-nav"
             className="menu-panel"
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.28, ease: [0.2, 0, 0, 1] }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+              transition: { duration: 0.28, ease: [0.2, 0, 0, 1] },
+            }}
+            exit={{
+              height: 0,
+              opacity: 0,
+              transition: { duration: 0.18, ease: [0.2, 0, 0, 1] },
+            }}
             onKeyDown={(event) => {
               if (event.key !== "Escape") return;
               setOpen(false);

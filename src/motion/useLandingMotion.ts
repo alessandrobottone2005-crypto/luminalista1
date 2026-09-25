@@ -60,10 +60,8 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
       });
 
       select(".candidate").forEach((candidate: HTMLElement) => {
-        const portrait = candidate.querySelector(".portrait");
-        const number = candidate.querySelector(".candidate-number");
-        const name = candidate.querySelector(".candidate-name");
-        const info = candidate.querySelector(".candidate-info");
+        const photo = candidate.querySelector(".candidate-photo");
+        const footer = candidate.querySelector(".candidate-footer");
 
         const timeline = gsap.timeline({
           scrollTrigger: {
@@ -74,7 +72,7 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
         });
 
         timeline
-          .from(portrait, {
+          .from(photo, {
             clipPath: "inset(0 0 16% 0)",
             filter: "brightness(0.42) grayscale(1)",
             y: 22,
@@ -82,34 +80,14 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
             ease: "power3.out",
           })
           .from(
-            number,
+            footer,
             {
               autoAlpha: 0,
-              scale: 0.72,
-              duration: 0.45,
-              ease: "back.out(1.8)",
-            },
-            "-=0.7",
-          )
-          .from(
-            name,
-            {
-              autoAlpha: 0,
-              y: 20,
-              duration: 0.6,
+              y: 16,
+              duration: 0.55,
               ease: "power3.out",
             },
-            "-=0.46",
-          )
-          .from(
-            info,
-            {
-              autoAlpha: 0,
-              y: 12,
-              duration: 0.5,
-              ease: "power3.out",
-            },
-            "-=0.38",
+            "-=0.5",
           );
       });
 
@@ -156,14 +134,14 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
           );
       }
 
-      gsap.from(select(".merch-stage"), {
+      gsap.from(select(".sticker-pin"), {
         y: 35,
         autoAlpha: 0.2,
         stagger: 0.12,
         duration: 0.8,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: ".merch-stage",
+          trigger: ".tape-wall",
           start: "top 80%",
           once: true,
         },

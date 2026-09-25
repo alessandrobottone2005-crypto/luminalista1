@@ -13,3 +13,11 @@
 ## Applicazione nel repository
 
 Il brief è stato trasformato in token, regole operative e una skill locale in [`.agents/skills/lumina-project`](../.agents/skills/lumina-project). Le librerie di animazione hanno responsabilità separate. Le indicazioni Three.js sono state usate per valutare l’esportazione GLB; i materiali Cycles e la nebbia volumetrica hanno portato alla scelta del video renderizzato, che conserva fedelmente il file Blender originale.
+
+## Skill locali vendorizzate
+
+Tre skill Claude Code sono installate localmente in [`.agents/skills/`](../.agents/skills/) e tracciate in [`skills-lock.json`](../skills-lock.json):
+
+- `design-taste-frontend` — audit anti-slop per landing page.
+- `motion-dev-animations` — pattern di animazione Motion.dev per React.
+- `ui-ux-pro-max` — checklist di priorità UI/UX, installata in versione leggera (solo guida, nessun tooling Python vendorizzato).

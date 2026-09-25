@@ -278,7 +278,7 @@ p {
   background: linear-gradient(transparent, var(--yellow));
   margin-bottom: 31px;
 }
-.intro h2 {
+.intro h1 {
   font-size: clamp(59px, 18vw, 85px);
   line-height: 0.91;
 }
@@ -300,21 +300,9 @@ p {
   font-weight: 500;
 }
 .small-spark {
-  width: 24px;
-  height: 24px;
+  width: 42px;
+  height: 42px;
   display: block;
-  background: var(--yellow);
-  mask: url("/favicon.svg") center/cover;
-  clip-path: polygon(
-    50% 0,
-    60% 40%,
-    100% 50%,
-    60% 60%,
-    50% 100%,
-    40% 60%,
-    0 50%,
-    40% 40%
-  );
 }
 .intro-copy > .small-spark {
   position: absolute;
@@ -329,135 +317,65 @@ p {
 }
 .candidate-list {
   display: grid;
-  gap: 78px;
+  gap: 56px;
   padding-top: 54px;
 }
 .candidate {
   position: relative;
-  width: 92%;
-  max-width: 430px;
+  width: 78%;
+  max-width: 340px;
 }
 .candidate:nth-child(even) {
   margin-left: auto;
 }
-.portrait-composition {
+.candidate-card {
   position: relative;
-}
-.candidate-number {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  z-index: 4;
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
-  background: var(--yellow);
-  color: #0c0c0b;
-  font-family: var(--display);
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1;
-  transition:
-    background var(--motion-standard) var(--ease-signature),
-    color var(--motion-standard) var(--ease-signature);
-}
-.portrait {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1080/1769;
+  border-radius: 14px;
   overflow: hidden;
-  aspect-ratio: 4/5;
-  background: #171814;
-  border: 1px solid #ffffff1f;
-  isolation: isolate;
+  background: #0b0b0a;
+  box-shadow:
+    4px 16px 28px rgba(0, 0, 0, 0.55),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow var(--motion-standard) var(--ease-signature);
 }
-.portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    180deg,
-    #090a0714 0,
-    transparent 42%,
-    #080906e8 100%
-  );
-  pointer-events: none;
+.candidate-photo {
+  position: relative;
+  aspect-ratio: 1080/1350;
+  overflow: hidden;
 }
-.portrait img {
+.candidate-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(0.82) brightness(0.82) contrast(1.08);
-  transform: scale(1.012);
-  transition:
-    filter var(--motion-slow) var(--ease-signature),
-    transform var(--motion-slow) var(--ease-signature);
+  transition: transform var(--motion-slow) var(--ease-signature);
 }
-.portrait-meta {
-  position: absolute;
-  top: 18px;
-  right: 17px;
-  z-index: 2;
+.candidate-footer {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 3px;
-  color: #f7f6ef;
-  font-size: 7px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px 14px 16px;
+  text-align: center;
+}
+.candidate-name,
+.candidate-code {
+  font-family: var(--display);
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-shadow: 0 1px 12px #000;
+  color: var(--yellow);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 .candidate-name {
-  position: absolute;
-  left: 17px;
-  right: 14px;
-  bottom: 17px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: clamp(43px, 12vw, 58px);
-  text-transform: uppercase;
-  line-height: 0.86;
-  letter-spacing: -0.02em;
-  color: #f5f4ef;
-  text-shadow: 0 3px 20px #000c;
+  font-size: clamp(16px, 5.2vw, 21px);
 }
-.candidate-name span:last-child {
-  color: var(--yellow);
-}
-.candidate-info {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: end;
-  gap: 22px;
-  padding: 17px 0 15px;
-  border-bottom: 1px solid #ffffff29;
-}
-.class-label {
-  font-size: 8px;
-  letter-spacing: 0.12em;
-  text-align: left;
-  color: #aaa99d;
-}
-.class-label b {
-  display: inline-block;
-  font-family: var(--display);
-  font-size: 34px;
-  line-height: 1;
-  color: var(--yellow);
-  font-weight: 600;
-  margin-top: 7px;
-}
-.candidate blockquote {
-  padding-left: 13px;
-  margin: 0;
-  border-left: 1px solid var(--yellow);
-  font-size: 14px;
-  color: #bdbbb0;
-  max-width: none;
-  line-height: 1.65;
+.candidate-code {
+  font-size: clamp(16px, 5.2vw, 21px);
 }
 .countdown {
   padding-top: 31px;
@@ -539,19 +457,8 @@ p {
   -webkit-text-stroke: 1.5px var(--yellow);
 }
 .manifesto-star {
-  width: 58px;
-  height: 58px;
-  background: var(--yellow);
-  clip-path: polygon(
-    50% 0,
-    59% 41%,
-    100% 50%,
-    59% 59%,
-    50% 100%,
-    41% 59%,
-    0 50%,
-    41% 41%
-  );
+  width: 96px;
+  height: 96px;
   margin-left: auto;
   margin-bottom: 27px;
 }
@@ -560,30 +467,25 @@ p {
   padding-top: 55px;
   padding-bottom: 59px;
 }
+.program > .section-copy {
+  margin-top: 0;
+}
 .program-list {
-  margin-top: 35px;
+  list-style: none;
+  margin: 35px 0 0;
+  padding: 0;
 }
 .program-item {
   border-top: 1px solid #4c4b3d !important;
   border-bottom: 0 !important;
   padding: 10px 0 13px;
 }
-.program-trigger {
-  display: flex !important;
-  gap: 17px !important;
-  text-align: left;
-  align-items: flex-start !important;
-  padding: 22px 0 !important;
+.program-row {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  padding: 22px 0;
   min-height: 44px;
-  color: inherit;
-  cursor: pointer;
-  white-space: normal;
-}
-.program-trigger > svg {
-  display: none;
-}
-.program-trigger:hover {
-  text-decoration: none !important;
 }
 .program-index {
   font-family: var(--display);
@@ -597,15 +499,6 @@ p {
 .program-info {
   display: block;
 }
-.program-category {
-  display: block;
-  font-family: var(--body);
-  font-size: 8px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  color: #b6b295;
-  margin-bottom: 17px;
-}
 .program-heading {
   display: block;
   white-space: pre-line;
@@ -615,39 +508,20 @@ p {
   line-height: 0.97;
   letter-spacing: -0.01em;
 }
-.program-description {
+.program-text {
   display: block;
   margin-top: 18px;
+  padding-bottom: 12px;
+}
+.program-text p {
   font-family: var(--body);
   font-size: 14px;
   font-weight: 400;
   color: #bcbbae;
   line-height: 1.8;
 }
-.program-read {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 32px;
-  font-family: var(--body);
-  font-size: 8px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--yellow);
-  margin-top: 17px;
-}
-.program-read svg {
-  transition: transform 0.3s;
-}
-.program-trigger[data-state="open"] .program-read svg {
-  transform: rotate(45deg);
-}
-.program-detail {
-  padding-left: 43px !important;
-  padding-bottom: 25px !important;
-  font-size: 14px !important;
-  line-height: 1.85 !important;
-  color: #d3d1c5;
+.program-text p + p {
+  margin-top: 14px;
 }
 .program > .text-link {
   border-top: 1px solid #4c4b3d;
@@ -655,359 +529,136 @@ p {
   color: var(--yellow);
   font-size: 10px;
 }
+/* ─── Gadget section — Tape Wall ───────────────────────────── */
 .gadgets {
-  padding-top: 34px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   background: var(--background);
 }
-.gadgets h2 {
-  font-size: 66px;
-}
-.merch-stage {
-  height: 405px;
+
+/* ─── Tape Wall container ────────────────────────────────── */
+.tape-wall {
   position: relative;
-  margin: 30px -24px 0;
-  overflow: hidden;
-  background: #25261e;
+  margin: 32px -24px 0;
+  height: 400px;
+  background: #1a1b14;
   isolation: isolate;
+  overflow: hidden;
 }
-.merch-stage:before {
+
+/* Noise texture overlay */
+.tape-wall::before {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.17;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.35' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.12;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.4' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 0;
 }
-.merch-scene {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  max-width: 390px;
-  margin: auto;
-}
-.sticker {
-  position: absolute;
-  box-shadow: 4px 14px 20px #0006;
-  border-radius: 3px;
-}
-.sticker-yellow {
-  width: 174px;
-  height: 206px;
-  background: var(--yellow);
-  color: #10110b;
-  top: 30px;
-  left: 31px;
-  transform: rotate(-12deg);
-  padding: 18px;
-}
-.sticker-yellow > span {
-  font-family: var(--display);
-  font-weight: 800;
-  font-size: 67px;
-  line-height: 0.9;
-  display: block;
-  letter-spacing: -0.02em;
-}
-.sticker-yellow img {
-  position: absolute;
-  width: 38px;
-  right: 14px;
-  bottom: 12px;
-}
-.sticker-black {
-  width: 210px;
-  height: 106px;
-  background: #11120d;
-  top: 160px;
-  left: 135px;
-  transform: rotate(13deg);
-  padding: 14px;
-  border: 1px solid #ffcf0240;
-}
-.sticker-black img {
-  height: 51px;
-  max-width: 100%;
-  margin: auto;
-}
-.sticker-black span {
-  display: block;
-  font-size: 7px;
-  letter-spacing: 0.12em;
-  text-align: center;
-  margin-top: 9px;
-  color: #dedccc;
-}
-.round-sticker {
-  position: absolute;
-  top: 242px;
-  left: 43px;
-  transform: rotate(-15deg);
-  height: 115px;
-  width: 115px;
-  border-radius: 50%;
-  background: #dedccf;
-  color: #11120c;
-  box-shadow: 3px 12px 17px #0005;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.round-sticker > span {
-  font-family: var(--display);
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 0.9;
-}
-.round-sticker small {
-  font-size: 6px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin-top: 8px;
-}
-.sticker-small {
-  top: 302px;
-  right: 22px;
-  transform: rotate(-5deg);
-  background: var(--yellow);
-  color: #17180f;
-  padding: 10px 20px;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1;
-}
-.merch-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding-top: 23px;
-}
-.merch-controls > div > span {
-  font-size: 8px;
-  letter-spacing: 0.16em;
-  color: #b5b297;
-}
-.merch-controls h3 {
-  font-size: 24px;
-  line-height: 1.1;
-  margin-top: 7px;
-}
-.merch-arrows {
-  display: flex;
-  gap: 6px;
-}
-.merch-arrows button {
-  height: 44px;
-  width: 44px;
-  border: 1px solid #74705a;
-  display: grid;
-  place-items: center;
-  color: var(--yellow);
-  background: transparent;
-}
-.merch-pagination {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
-.merch-pagination button {
-  height: 44px;
-  width: 25px;
-  background: transparent;
-  border: 0;
-  display: flex;
-  align-items: center;
-}
-.merch-pagination button > span {
-  height: 2px;
-  width: 100%;
-  background: #686753;
-}
-.merch-pagination .is-active > span {
-  background: var(--yellow);
-}
-.merch-pagination > span {
-  margin-left: auto;
-  font-size: 9px;
-  color: #b5b297;
-  letter-spacing: 0.12em;
-}
-.stickers-display {
+
+/* Faint horizontal grain lines */
+.tape-wall::after {
+  content: "";
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(255, 255, 255, 0.018) 3px,
+    rgba(255, 255, 255, 0.018) 4px
+  );
+  z-index: 0;
 }
-.sticker-preview {
-  box-shadow: 4px 14px 24px #0007;
+
+/* ─── Base sticker-pin ───────────────────────────────────── */
+.sticker-pin {
+  position: absolute;
+  z-index: 1;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1);
-}
-.sticker-preview:hover {
-  transform: scale(1.04) rotate(0deg) !important;
-}
-.sticker-a {
-  width: 160px;
-  height: 190px;
-  background: var(--yellow);
-  color: #111;
-  transform: rotate(-8deg);
-  padding: 18px;
-}
-.sticker-big-text {
-  font-family: var(--display);
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 0.9;
-  letter-spacing: -0.02em;
-}
-.sticker-mark {
-  width: 32px;
-  height: 32px;
-  border: 3px solid #111;
-  border-radius: 50%;
-  margin-top: auto;
-}
-.sticker-b {
-  width: 180px;
-  height: 90px;
-  background: #111;
-  color: var(--yellow);
-  border: 1px solid #ffcf0240;
-  transform: rotate(6deg);
-  padding: 12px;
-  gap: 6px;
-}
-.sticker-logo {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 0.08em;
-}
-.sticker-sub {
-  font-size: 8px;
-  letter-spacing: 0.14em;
-  color: #dedccc;
-}
-.sticker-c {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background: #dedccf;
-  color: #111;
-  transform: rotate(-12deg);
-}
-.sticker-number {
-  font-family: var(--display);
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1;
-}
-.sticker-slogan {
-  font-size: 6px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin-top: 4px;
-}
-.sticker-d {
-  width: 130px;
-  height: 50px;
-  background: var(--yellow);
-  color: #111;
-  transform: rotate(4deg);
-  padding: 8px 14px;
-}
-.sticker-quote {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-}
-.pins-display {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  padding: 40px;
-}
-.pin {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1);
-}
-.pin:hover {
-  transform: translateY(-6px);
-}
-.pin-shape {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: var(--yellow);
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   box-shadow:
-    0 6px 20px #0006,
-    inset 0 -3px 6px #0002;
-  position: relative;
+    4px 16px 28px rgba(0, 0, 0, 0.55),
+    0 2px 6px rgba(0, 0, 0, 0.3);
+  transition:
+    transform var(--motion-standard) var(--ease-signature),
+    box-shadow var(--motion-standard) var(--ease-signature);
+  /* Washi tape pseudo-element */
 }
-.pin-shape::after {
+
+.sticker-pin img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Washi tape strip on every sticker */
+.sticker-pin::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: -10px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #d4d4d4;
-  border: 2px solid #aaa;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 52px;
+  height: 18px;
+  background: rgba(255, 207, 2, 0.28);
+  border-radius: 2px;
+  backdrop-filter: blur(1px);
+  z-index: 2;
 }
-.pin-number {
-  font-family: var(--display);
-  font-size: 36px;
-  font-weight: 800;
-  margin-top: 8px;
+
+/* Lift + yellow glow on hover / active (touch) */
+.sticker-pin:hover,
+.sticker-pin:active {
+  transform: var(--sp-rotate, rotate(0deg)) translateY(-8px) scale(1.06) !important;
+  box-shadow:
+    0 0 32px rgba(255, 207, 2, 0.45),
+    8px 28px 44px rgba(0, 0, 0, 0.65),
+    0 4px 12px rgba(0, 0, 0, 0.35);
 }
-.pin-text {
-  font-family: var(--display);
-  font-size: 13px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.1;
-  margin-top: 8px;
+
+/* Suppress lift when prefers-reduced-motion */
+[data-reduced="true"] .sticker-pin,
+[data-reduced="true"] .sticker-pin:hover,
+[data-reduced="true"] .sticker-pin:active {
+  transition: none;
+  transform: var(--sp-rotate, rotate(0deg)) !important;
+  box-shadow:
+    4px 16px 28px rgba(0, 0, 0, 0.55),
+    0 2px 6px rgba(0, 0, 0, 0.3);
 }
-.pin-label {
-  font-size: 8px;
-  letter-spacing: 0.14em;
-  color: #b5b297;
-  text-transform: uppercase;
+
+/* ─── Sticker: sticker rotondo con i nomi dei candidati ─── */
+.sticker-pin-candidates {
+  --sp-rotate: rotate(-7deg);
+  transform: rotate(-7deg);
+  width: 128px;
+  height: 180px;
+  top: 20px;
+  left: 14px;
 }
-.pin-1 .pin-shape {
-  background: #111;
-  color: var(--yellow);
+
+/* ─── Sticker: LUMINA LISTA 1 ──────────────────────────── */
+.sticker-pin-lumina {
+  --sp-rotate: rotate(6deg);
+  transform: rotate(6deg);
+  width: 150px;
+  height: 158px;
+  top: 150px;
+  right: 16px;
 }
-.pin-2 .pin-shape {
-  background: var(--yellow);
-}
-.pin-3 .pin-shape {
-  background: #dedccf;
-  color: #111;
+
+/* ─── Sticker: LA TUA VOCE FA LUCE ─────────────────────── */
+.sticker-pin-voce {
+  --sp-rotate: rotate(-4deg);
+  transform: rotate(-4deg);
+  width: 190px;
+  height: 113px;
+  bottom: 20px;
+  left: 96px;
 }
 .daybreak {
   height: 215px;
@@ -1016,6 +667,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.daybreak .small-spark {
+  width: 68px;
+  height: 68px;
 }
 .idea-section {
   background: var(--background);
@@ -1314,21 +969,11 @@ p {
     margin-left: -19px;
     margin-right: -19px;
   }
-  .candidate-name {
-    font-size: 40px;
-  }
   .program-heading {
     font-size: 33px;
   }
-  .program-trigger {
-    gap: 12px !important;
-  }
-  .program-detail {
-    padding-left: 38px !important;
-  }
-  .merch-stage {
-    margin-left: -19px;
-    margin-right: -19px;
+  .program-row {
+    gap: 12px;
   }
   .form-row {
     gap: 12px;
@@ -1346,18 +991,15 @@ p {
 }
 @media (hover: hover) and (pointer: fine) {
   .menu-toggle:hover,
-  .merch-arrows button:hover,
   .back-top:hover {
     background: var(--yellow);
     color: #111;
   }
-  .portrait:hover img {
-    filter: grayscale(0);
-    transform: scale(1.045);
+  .candidate-card:hover {
+    box-shadow: 10px 26px 70px rgba(255, 207, 2, 0.5);
   }
-  .candidate:hover .candidate-number {
-    background: #f5f4ef;
-    color: #080808;
+  .candidate-photo:hover img {
+    transform: scale(1.045);
   }
   .header-actions > a:hover,
   .text-link:hover {
@@ -1381,7 +1023,7 @@ p {
   }
   .light-reveal,
   .program-item,
-  .portrait {
+  .candidate-photo {
     opacity: 1 !important;
     filter: none !important;
     clip-path: none !important;
@@ -1408,10 +1050,8 @@ p {
   }
 }
 /* Functional copy stays readable on small screens. */
-.program-description,
-.program-detail,
-.intro-copy p,
-.candidate blockquote {
+.program-text p,
+.intro-copy p {
   font-size: 16px !important;
 }
 .idea-form label,
@@ -1428,14 +1068,6 @@ p {
 .field-error {
   font-size: 13px;
 }
-.merch-pagination button {
-  width: 44px;
-  min-width: 44px;
-  justify-content: center;
-}
-.merch-pagination button > span {
-  width: 25px;
-}
 .form-row {
   grid-template-columns: 1.15fr 1fr;
 }
@@ -1447,8 +1079,7 @@ p {
 }
 .privacy-note,
 .form-availability,
-.field-error,
-.program-read {
+.field-error {
   font-size: 16px !important;
 }
 .header-actions > a {
@@ -1549,7 +1180,7 @@ p {
     margin: 0 auto;
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: clamp(76px, 9vw, 126px);
   }
 
@@ -1596,25 +1227,27 @@ p {
   }
 
   .candidate-0 {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
   }
 
   .candidate-1 {
-    grid-column: 5 / span 4;
-    margin-top: 92px;
+    grid-column: 4 / span 3;
+    margin-top: 64px;
   }
 
   .candidate-2 {
-    grid-column: 9 / span 4;
-    margin-top: 30px;
+    grid-column: 7 / span 3;
+    margin-top: 20px;
   }
 
-  .candidate-name {
-    font-size: clamp(38px, 3.8vw, 53px);
+  .candidate-3 {
+    grid-column: 10 / span 3;
+    margin-top: 84px;
   }
 
-  .candidate blockquote {
-    font-size: 15px;
+  .candidate-name,
+  .candidate-code {
+    font-size: clamp(15px, 1.35vw, 19px);
   }
 
   .countdown {
@@ -1686,7 +1319,7 @@ p {
     font-size: 42px;
   }
 
-  .program-detail {
+  .program-text p {
     font-size: 16px !important;
   }
 
@@ -1696,54 +1329,43 @@ p {
   }
 
   .gadgets {
-    display: grid;
-    grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
-    grid-template-areas:
-      "title stage"
-      "copy stage"
-      ". controls"
-      ". pagination";
-    column-gap: 72px;
     padding-top: 64px;
     padding-bottom: 86px;
   }
 
   .gadgets > h2 {
-    grid-area: title;
     font-size: clamp(72px, 7vw, 106px);
-    align-self: end;
   }
 
   .gadgets > .section-copy {
-    grid-area: copy;
-    align-self: start;
     font-size: 18px;
   }
 
-  .merch-stage {
-    grid-area: stage;
-    width: 100%;
-    height: 500px;
-    margin: 0;
+  .tape-wall {
+    margin: 36px 0 0;
+    height: 480px;
+    border-radius: 4px;
   }
 
-  .merch-scene {
-    max-width: 500px;
-    transform: scale(1.15);
+  .sticker-pin-candidates {
+    width: 156px;
+    height: 219px;
+    top: 40px;
+    left: 48px;
   }
 
-  .merch-controls {
-    grid-area: controls;
-    padding-top: 26px;
+  .sticker-pin-lumina {
+    width: 182px;
+    height: 191px;
+    top: 168px;
+    right: 60px;
   }
 
-  .merch-controls h3 {
-    font-size: 32px;
-  }
-
-  .merch-pagination {
-    grid-area: pagination;
-    padding-top: 10px;
+  .sticker-pin-voce {
+    width: 232px;
+    height: 138px;
+    bottom: 44px;
+    left: 260px;
   }
 
   .daybreak {

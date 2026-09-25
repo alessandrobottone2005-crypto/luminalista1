@@ -27,7 +27,11 @@ I valori eseguibili vivono in [`src/styles/tokens.css`](../src/styles/tokens.css
 
 ## Logo
 
-[`LogoLumina_Animazione.blend`](../LogoLumina_Animazione.blend) è la sorgente canonica dell’header animato. [`public/Logo.svg`](../public/Logo.svg) resta l’asset statico ufficiale; `favicon.svg` e `wordmark.svg` sono derivati per contesti piccoli o orizzontali e non sostituiscono l’originale.
+[`LogoLumina_Animazione.blend`](../LogoLumina_Animazione.blend) è la sorgente canonica dell’header animato. [`public/Logo.svg`](../public/Logo.svg) resta l’asset statico ufficiale; `wordmark.svg` è derivato per contesti orizzontali e non sostituisce l’originale. `favicon.svg` non deriva dal logo: è uno sfondo nero arrotondato con la stella al centro (stessi path di `Stella.svg`).
+
+## Stella
+
+[`public/Stella.svg`](../public/Stella.svg) è l’asset stella canonico del brand. Ha sostituito tre stelle disegnate a mano in CSS in punti diversi del sito: la favicon, `.manifesto-star` in `ManifestoSection.tsx` e `.small-spark` in `IntroSection.tsx`.
 
 ## Regole dei componenti
 

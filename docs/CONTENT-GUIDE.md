@@ -8,7 +8,7 @@ Modifica [`src/content/site.ts`](../src/content/site.ts) per candidati, data, pr
 
 1. Completa le citazioni e verifica nomi, classi e ritratti prima della pubblicazione.
 2. Inserisci la data reale delle elezioni con offset di Roma.
-3. Sostituisci le cinque proposte con il programma approvato.
+3. `programPoints` contiene le otto proposte ufficiali della Lista 1 (forma `{ id, title, text }`, senza categoria/teaser); aggiorna qui se il programma cambia.
 4. Completa informativa privacy, responsabile e contatti.
 5. Rimuovi tutte le etichette “dimostrativo” solo dopo la verifica con la lista.
 
