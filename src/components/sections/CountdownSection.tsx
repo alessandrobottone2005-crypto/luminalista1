@@ -57,7 +57,6 @@ export function CountdownSection() {
         <span>
           {ended ? "IL CONTO ALLA ROVESCIA È TERMINATO" : formattedDate}
         </span>
-        <span>LISTA 01</span>
       </div>
     </section>
   );

@@ -9,12 +9,12 @@ export const STICKER_WALL = {
     {
       id: "candidati",
       src: "/media/stickers/sticker-candidati.webp",
-      width: 466,
-      height: 454,
+      width: 475,
+      height: 469,
       // Posizione sulla tela 1376×768, in percentuale.
       left: 7.994,
-      top: 1.953,
-      size: 33.866,
+      top: 2.604,
+      size: 34.52,
     },
     {
       id: "lumina",
