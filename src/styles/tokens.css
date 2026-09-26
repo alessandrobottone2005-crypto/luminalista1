@@ -37,6 +37,7 @@
   --accent: #ffcf02;
   --accent-foreground: #080808;
   --yellow: #ffcf02;
+  --header-h: 77px;
   --display: "DX Playhigh", "Barlow Condensed", sans-serif;
   --body: "Poppins", sans-serif;
   --motion-quick: 140ms;
@@ -50,4 +51,10 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --header-h: 88px;
+  }
 }

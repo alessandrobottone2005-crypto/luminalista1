@@ -25,7 +25,7 @@ Preserva le etichette provvisorie. Non inventare persone, date, account o propos
 
 ### Performance envelope
 
-Mantieni `preload="metadata"` per il video, poster locale, pausa fuori viewport, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
+Mantieni il primo fotogramma dell’hero visibile subito, pausa fuori viewport, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
 
 ## Topic index
 

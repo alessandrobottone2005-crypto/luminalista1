@@ -1,58 +1,101 @@
-import { useReducedMotion } from "motion/react";
+import { useRef, type CSSProperties, type MouseEvent } from "react";
+import { STICKER_WALL } from "@/config/stickerWall";
+import { stickerSection } from "@/content/site";
+import { useStickerDrag } from "@/motion/useStickerDrag";
+
+// Riavvia l'impulso a ogni tap, anche se il precedente non è finito.
+function pulse(event: MouseEvent<HTMLButtonElement>) {
+  const sticker = event.currentTarget;
+  sticker.removeAttribute("data-pulse");
+  void sticker.offsetWidth;
+  sticker.setAttribute("data-pulse", "");
+}
 
 export function GadgetGallery() {
-  const reduceMotion = useReducedMotion();
+  const { canvas, background, stickers } = STICKER_WALL;
+  const sectionRef = useRef<HTMLElement>(null);
+  const { handlers, consumeDrag } = useStickerDrag(sectionRef);
 
   return (
     <section
-      id="irl"
+      ref={sectionRef}
+      id={stickerSection.id}
       className="gadgets section-pad"
       aria-labelledby="gadgets-title"
     >
+      <picture className="gadgets-backdrop" aria-hidden="true">
+        <source media="(min-width: 900px)" srcSet={background.landscape} />
+        <img src={background.portrait} alt="" loading="lazy" />
+      </picture>
+
       <h2 id="gadgets-title">
-        FAI LUCE. <span className="yellow">ANCHE FUORI.</span>
+        {stickerSection.title}{" "}
+        <span className="yellow">{stickerSection.titleAccent}</span>
       </h2>
       <p className="section-copy">
-        Sticker pensati per stare ovunque
+        {stickerSection.copy[0]}
         <br />
-        tu stia cambiando le cose.
+        {stickerSection.copy[1]}
+      </p>
+
+      <p id="sticker-drag-hint" className="sr-only">
+        {stickerSection.dragHint}
       </p>
 
       <div
-        className="tape-wall"
-        aria-label="3 sticker Lumina Lista 01"
-        data-reduced={reduceMotion ? "true" : undefined}
+        className="sticker-wall"
+        role="group"
+        aria-label="Gli sticker di Lumina Lista 1"
+        style={
+          {
+            "--wall-ratio": `${canvas.width} / ${canvas.height}`,
+          } as CSSProperties
+        }
       >
-        <div className="sticker-pin sticker-pin-candidates">
-          <img
-            src="/images/gadgets/sticker-candidates.webp"
-            alt="Sticker con i nomi dei quattro candidati Lumina"
-            loading="lazy"
-            width={322}
-            height={452}
-          />
-        </div>
-
-        <div className="sticker-pin sticker-pin-lumina">
-          <img
-            src="/images/gadgets/sticker-lumina.webp"
-            alt="Sticker Lumina Lista 01"
-            loading="lazy"
-            width={392}
-            height={412}
-          />
-        </div>
-
-        <div className="sticker-pin sticker-pin-voce">
-          <img
-            src="/images/gadgets/sticker-voce.webp"
-            alt="Sticker La tua voce fa luce"
-            loading="lazy"
-            width={520}
-            height={308}
-          />
-        </div>
+        {stickers.map((sticker) => (
+          <button
+            key={sticker.id}
+            type="button"
+            className={`sticker sticker-${sticker.id}`}
+            aria-label={stickerSection.stickers[sticker.id]}
+            aria-roledescription="sticker trascinabile"
+            aria-describedby="sticker-drag-hint"
+            {...handlers}
+            onClick={(event) => {
+              if (!consumeDrag()) pulse(event);
+            }}
+            onAnimationEnd={(event) => {
+              event.currentTarget.removeAttribute("data-pulse");
+              event.currentTarget.removeAttribute("data-drop");
+            }}
+            style={
+              {
+                "--sticker-left": `${sticker.left}%`,
+                "--sticker-top": `${sticker.top}%`,
+                "--sticker-size": `${sticker.size}%`,
+              } as CSSProperties
+            }
+          >
+            <span className="sticker-body">
+              <img
+                src={sticker.src}
+                alt=""
+                width={sticker.width}
+                height={sticker.height}
+                loading="lazy"
+                draggable={false}
+              />
+            </span>
+          </button>
+        ))}
       </div>
+
+      <img
+        src="/Stella.svg"
+        alt=""
+        aria-hidden="true"
+        className="small-spark gadgets-spark"
+      />
     </section>
   );
 }

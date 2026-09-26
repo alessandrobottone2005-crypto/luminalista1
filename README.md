@@ -50,9 +50,9 @@ React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React, Motion, React Ro
 
 Le otto proposte del programma e gli sticker gadget sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare i contenuti dei candidati non ancora confermati in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
 
-## Animazione dell’header
+## Animazione dell’hero
 
-La sorgente approvata è [`LogoLumina_Animazione.blend`](LogoLumina_Animazione.blend). Il video ottimizzato e il poster si rigenerano seguendo [`docs/HEADER-ANIMATION.md`](docs/HEADER-ANIMATION.md).
+La sorgente approvata è [`LogoLumina_Animazione.blend`](LogoLumina_Animazione.blend). La sequenza di 108 fotogrammi, riprodotta in loop su canvas a schermo intero, si rigenera seguendo [`docs/HEADER-ANIMATION.md`](docs/HEADER-ANIMATION.md).
 
 ## Documentazione
 

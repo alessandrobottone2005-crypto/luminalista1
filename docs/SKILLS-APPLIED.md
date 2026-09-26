@@ -12,7 +12,7 @@
 
 ## Applicazione nel repository
 
-Il brief è stato trasformato in token, regole operative e una skill locale in [`.agents/skills/lumina-project`](../.agents/skills/lumina-project). Le librerie di animazione hanno responsabilità separate. Le indicazioni Three.js sono state usate per valutare l’esportazione GLB; i materiali Cycles e la nebbia volumetrica hanno portato alla scelta del video renderizzato, che conserva fedelmente il file Blender originale.
+Il brief è stato trasformato in token, regole operative e una skill locale in [`.agents/skills/lumina-project`](../.agents/skills/lumina-project). Le librerie di animazione hanno responsabilità separate. Le indicazioni Three.js sono state usate per valutare l’esportazione GLB; i materiali Cycles e la nebbia volumetrica hanno portato alla scelta della sequenza renderizzata, che conserva fedelmente il file Blender originale.
 
 ## Skill locali vendorizzate
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, Plus, X } from "lucide-react";
 import { BrandAsset } from "@/components/brand/BrandAsset";
@@ -6,9 +6,28 @@ import { navigation } from "@/content/site";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [overHero, setOverHero] = useState(true);
+
+  useEffect(() => {
+    const hero = document.getElementById("inizio");
+    if (!hero) {
+      setOverHero(false);
+      return;
+    }
+    const header = document.querySelector<HTMLElement>(".site-header");
+    const observer = new IntersectionObserver(
+      ([entry]) => setOverHero(entry.isIntersecting),
+      { rootMargin: `-${header?.offsetHeight ?? 0}px 0px 0px 0px` },
+    );
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <header className="site-header">
+    <header
+      className="site-header"
+      data-over-hero={overHero && !open ? "true" : undefined}
+    >
       <a
         href="#inizio"
         className="header-brand"

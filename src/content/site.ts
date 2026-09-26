@@ -2,6 +2,11 @@ export const siteConfig = {
   electionDate: "2026-10-05T08:00:00+01:00",
 };
 
+export const hero = {
+  scrollCue: "Scorri",
+  scrollTarget: "intro",
+};
+
 export const navigation = [
   { label: "I candidati", id: "candidati" },
   { label: "Il programma", id: "programma" },
@@ -86,3 +91,16 @@ export const programPoints = [
     text: "Il sito ufficiale di Lumina, dove trovare tutto ciò che riguarda la nostra lista: i quattro candidati, le nostre storie, le proposte, la nostra identità e tutto quello che c’è da sapere su di noi.\n\nCi sarà un box aperto a tutti gli studenti, anche in forma anonima, dove lasciare idee, proposte. E soprattutto, il sito non finirà con le elezioni: vogliamo trasformarlo in uno spazio ufficiale del Gentileschi, mantenendo il box sempre attivo e portando le proposte più interessanti nelle assemblee d’istituto mensili.",
   },
 ];
+
+export const stickerSection = {
+  id: "irl",
+  title: "FAI LUCE.",
+  titleAccent: "ANCHE FUORI.",
+  copy: ["Sticker pensati per stare ovunque", "tu stia cambiando le cose."],
+  dragHint: "Tieni premuto e trascina, oppure usa le frecce per spostarlo.",
+  stickers: {
+    candidati: "Sticker rotondo con i nomi dei quattro candidati Lumina",
+    lumina: "Sticker Lumina Lista 1",
+    voce: "Sticker La tua voce fa luce",
+  },
+};

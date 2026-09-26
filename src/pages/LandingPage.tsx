@@ -32,9 +32,6 @@ export function LandingPage() {
         <ManifestoSection />
         <ProgramSection />
         <GadgetGallery />
-        <div className="daybreak" aria-hidden="true">
-          <img src="/Stella.svg" alt="" className="small-spark" />
-        </div>
         <IdeaSection />
       </main>
       <SiteFooter />

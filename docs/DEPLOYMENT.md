@@ -28,7 +28,7 @@ Configura `VITE_GOOGLE_SCRIPT_URL` sia per Production sia per Preview. Se il val
 ## Controllo dopo il rilascio
 
 1. Apri home e privacy tramite URL diretto.
-2. Verifica hero, riproduzione video, poster e controllo pausa/ripresa.
+2. Verifica hero a schermo intero, loop della sequenza, barra trasparente e indicatore “Scorri”.
 3. Invia un’idea di test chiaramente etichettata.
 4. Controlla la riga nel Foglio Lumina.
 5. Verifica mobile 320, 360 e 430 px più desktop.

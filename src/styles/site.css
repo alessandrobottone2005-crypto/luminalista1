@@ -8,6 +8,8 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  /* The full-bleed hero spans 100vw, which includes the scrollbar. */
+  overflow-x: clip;
 }
 button,
 a,
@@ -131,16 +133,23 @@ p {
   transform: translateY(0);
 }
 .site-header {
-  height: 77px;
+  height: var(--header-h);
   position: sticky;
   top: 0;
   z-index: 50;
   background: #080808f5;
   border-bottom: 1px solid #292926;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 21px;
+}
+.site-header[data-over-hero="true"] {
+  background: transparent;
+  border-bottom-color: transparent;
 }
 .header-brand {
   display: flex;
@@ -216,14 +225,19 @@ p {
   color: var(--yellow);
 }
 .hero {
-  padding: 0 24px;
-  background: #080808;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  min-height: 480px;
+  margin-top: calc(-1 * var(--header-h));
+  margin-inline: calc(50% - 50vw);
+  background: #000;
   overflow: hidden;
 }
 .hero-art {
-  height: 345px;
-  position: relative;
-  margin: 0 -24px;
+  position: absolute;
+  inset: 0;
   isolation: isolate;
 }
 .header-animation {
@@ -231,40 +245,62 @@ p {
   inset: 0;
   z-index: 2;
   overflow: hidden;
-  background: #111517;
-  transition:
-    filter 0.7s ease,
-    opacity 0.7s ease;
+  background: #000;
 }
 
+/* Hands the render's pure black over to the page background. */
 .header-animation::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: auto 0 0;
+  height: 18%;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    #080808 0,
-    transparent 16%,
-    transparent 78%,
-    #080808 100%
-  );
+  background: linear-gradient(180deg, transparent, var(--background));
 }
 
 .header-animation-media {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  transition:
-    filter 0.7s ease,
-    opacity 0.7s ease;
 }
 
-.header-animation.is-paused .header-animation-media {
-  filter: brightness(0.38) saturate(0.72);
-  opacity: 0.78;
+.hero-scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 3;
+  transform: translateX(-50%);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--foreground);
+}
+.hero-scroll-cue svg {
+  color: var(--yellow);
+  animation: hero-cue 2.4s ease-in-out infinite;
+}
+.hero-scroll-cue:hover svg {
+  animation-play-state: paused;
+}
+@keyframes hero-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
 }
 .intro {
   padding-top: 76px;
@@ -529,149 +565,197 @@ p {
   color: var(--yellow);
   font-size: 10px;
 }
-/* ─── Gadget section — Tape Wall ───────────────────────────── */
+/* ─── Gadget section — Sticker wall ──────────────────────── */
 .gadgets {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  background: var(--background);
-}
-
-/* ─── Tape Wall container ────────────────────────────────── */
-.tape-wall {
   position: relative;
-  margin: 32px -24px 0;
-  height: 400px;
-  background: #1a1b14;
   isolation: isolate;
   overflow: hidden;
+  padding-top: 56px;
+  padding-bottom: 120px;
+  background: var(--background);
 }
 
-/* Noise texture overlay */
-.tape-wall::before {
+/* Il nero delle sezioni vicine entra nella texture da tutti i lati. */
+.gadgets::after {
+  --gadgets-side-fade: 8%;
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.12;
+  z-index: -1;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.4' filter='url(%23n)'/%3E%3C/svg%3E");
-  z-index: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      var(--background) 0%,
+      transparent 25%,
+      transparent 75%,
+      var(--background) 100%
+    ),
+    linear-gradient(
+      to right,
+      var(--background) 0%,
+      transparent var(--gadgets-side-fade),
+      transparent calc(100% - var(--gadgets-side-fade)),
+      var(--background) 100%
+    );
 }
 
-/* Faint horizontal grain lines */
-.tape-wall::after {
-  content: "";
+.gadgets-backdrop,
+.gadgets-backdrop img {
   position: absolute;
   inset: 0;
-  pointer-events: none;
-  background-image: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 3px,
-    rgba(255, 255, 255, 0.018) 3px,
-    rgba(255, 255, 255, 0.018) 4px
-  );
-  z-index: 0;
-}
-
-/* ─── Base sticker-pin ───────────────────────────────────── */
-.sticker-pin {
-  position: absolute;
-  z-index: 1;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow:
-    4px 16px 28px rgba(0, 0, 0, 0.55),
-    0 2px 6px rgba(0, 0, 0, 0.3);
-  transition:
-    transform var(--motion-standard) var(--ease-signature),
-    box-shadow var(--motion-standard) var(--ease-signature);
-  /* Washi tape pseudo-element */
-}
-
-.sticker-pin img {
-  display: block;
+  z-index: -1;
   width: 100%;
   height: 100%;
+}
+
+/* Lo zoom porta fuori campo le cuciture ai bordi della foto. */
+.gadgets-backdrop img {
   object-fit: cover;
+  transform: scale(1.2);
 }
 
-/* Washi tape strip on every sticker */
-.sticker-pin::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-2deg);
-  width: 52px;
-  height: 18px;
-  background: rgba(255, 207, 2, 0.28);
-  border-radius: 2px;
-  backdrop-filter: blur(1px);
-  z-index: 2;
-}
-
-/* Lift + yellow glow on hover / active (touch) */
-.sticker-pin:hover,
-.sticker-pin:active {
-  transform: var(--sp-rotate, rotate(0deg)) translateY(-8px) scale(1.06) !important;
-  box-shadow:
-    0 0 32px rgba(255, 207, 2, 0.45),
-    8px 28px 44px rgba(0, 0, 0, 0.65),
-    0 4px 12px rgba(0, 0, 0, 0.35);
-}
-
-/* Suppress lift when prefers-reduced-motion */
-[data-reduced="true"] .sticker-pin,
-[data-reduced="true"] .sticker-pin:hover,
-[data-reduced="true"] .sticker-pin:active {
-  transition: none;
-  transform: var(--sp-rotate, rotate(0deg)) !important;
-  box-shadow:
-    4px 16px 28px rgba(0, 0, 0, 0.55),
-    0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* ─── Sticker: sticker rotondo con i nomi dei candidati ─── */
-.sticker-pin-candidates {
-  --sp-rotate: rotate(-7deg);
-  transform: rotate(-7deg);
-  width: 128px;
-  height: 180px;
-  top: 20px;
-  left: 14px;
-}
-
-/* ─── Sticker: LUMINA LISTA 1 ──────────────────────────── */
-.sticker-pin-lumina {
-  --sp-rotate: rotate(6deg);
-  transform: rotate(6deg);
-  width: 150px;
-  height: 158px;
-  top: 150px;
-  right: 16px;
-}
-
-/* ─── Sticker: LA TUA VOCE FA LUCE ─────────────────────── */
-.sticker-pin-voce {
-  --sp-rotate: rotate(-4deg);
-  transform: rotate(-4deg);
-  width: 190px;
-  height: 113px;
-  bottom: 20px;
-  left: 96px;
-}
-.daybreak {
-  height: 215px;
-  background: var(--background);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.daybreak .small-spark {
+.gadgets-spark {
   width: 68px;
   height: 68px;
+  margin: 64px auto 0;
 }
+
+.gadgets > h2,
+.gadgets > .section-copy {
+  position: relative;
+}
+
+.gadgets > .section-copy {
+  color: #d4d3cc;
+}
+
+/* Telefono: gli sticker si impilano in diagonale, grandi. */
+.sticker-wall {
+  display: flex;
+  flex-direction: column;
+  margin: 40px -24px 0;
+}
+
+.sticker {
+  --sticker-glow: drop-shadow(0 0 18px rgba(255, 207, 2, 0.75))
+    drop-shadow(0 0 42px rgba(255, 207, 2, 0.4));
+  --sticker-shade: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.55));
+  position: relative;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: grab;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  /* Lo scroll verticale resta libero finché lo sticker non è preso. */
+  touch-action: pan-y;
+}
+
+.sticker:focus-visible {
+  outline: none;
+}
+
+.sticker-body {
+  display: block;
+}
+
+.sticker img {
+  width: 100%;
+  height: auto;
+  filter: var(--sticker-shade);
+  transition:
+    transform var(--motion-standard) var(--ease-signature),
+    filter var(--motion-standard) var(--ease-signature);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.sticker:focus-visible img {
+  transform: scale(1.06);
+  filter: var(--sticker-shade) var(--sticker-glow);
+}
+
+.sticker:focus-visible,
+.sticker[data-pulse] {
+  z-index: 3;
+}
+
+.sticker[data-pulse] img {
+  animation: sticker-pulse 640ms var(--ease-signature);
+}
+
+/* Preso: si solleva dal muro. */
+.sticker[data-dragging] {
+  cursor: grabbing;
+}
+
+.sticker-wall .sticker[data-dragging] img {
+  transform: scale(1.1) rotate(-3deg);
+  filter: drop-shadow(0 28px 34px rgba(0, 0, 0, 0.6)) var(--sticker-glow);
+  transition-duration: 160ms;
+}
+
+/* Lasciato: si riattacca con un piccolo rimbalzo. */
+.sticker[data-drop] img {
+  animation: sticker-drop 420ms var(--ease-signature);
+}
+
+@keyframes sticker-drop {
+  0% {
+    transform: scale(1.1) rotate(-3deg);
+    filter: drop-shadow(0 28px 34px rgba(0, 0, 0, 0.6)) var(--sticker-glow);
+  }
+  55% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+    filter: var(--sticker-shade);
+  }
+}
+
+@keyframes sticker-pulse {
+  0% {
+    transform: scale(1);
+    filter: var(--sticker-shade);
+  }
+  35% {
+    transform: scale(1.08);
+    filter: var(--sticker-shade) var(--sticker-glow);
+  }
+  100% {
+    transform: scale(1);
+    filter: var(--sticker-shade);
+  }
+}
+
+.sticker-candidati {
+  width: 76%;
+  align-self: flex-end;
+  margin-right: 6%;
+  transform: rotate(5deg);
+}
+
+.sticker-lumina {
+  width: 70%;
+  align-self: flex-start;
+  margin-top: -14%;
+  margin-left: 6%;
+  transform: rotate(-4deg);
+}
+
+/* Lo sticker esce dal bordo destro, come nel mockup. */
+.sticker-voce {
+  width: 86%;
+  align-self: flex-end;
+  margin-top: -3%;
+}
+
 .idea-section {
   background: var(--background);
   color: var(--foreground);
@@ -944,14 +1028,8 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 820px) {
-  .hero-art {
-    height: 365px;
-  }
-}
 @media (max-width: 359px) {
-  .section-pad,
-  .hero {
+  .section-pad {
     padding-left: 19px;
     padding-right: 19px;
   }
@@ -963,11 +1041,6 @@ p {
   }
   .header-actions > a {
     font-size: 8px;
-  }
-  .hero-art {
-    height: 292px;
-    margin-left: -19px;
-    margin-right: -19px;
   }
   .program-heading {
     font-size: 33px;
@@ -1011,6 +1084,13 @@ p {
   .menu-panel a:hover {
     color: var(--yellow);
   }
+  .sticker:hover {
+    z-index: 3;
+  }
+  .sticker:hover img {
+    transform: scale(1.06);
+    filter: var(--sticker-shade) var(--sticker-glow);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1029,11 +1109,14 @@ p {
     clip-path: none !important;
     transform: none !important;
   }
-  .header-animation {
-    transition: none;
-  }
   .story-progress {
     display: none;
+  }
+  .sticker img {
+    transform: none !important;
+  }
+  .sticker:active img {
+    filter: var(--sticker-shade) var(--sticker-glow);
   }
   .manifesto {
     min-height: auto;
@@ -1108,7 +1191,6 @@ p {
   }
 
   .site-header {
-    height: 88px;
     padding: 0 64px;
   }
 
@@ -1147,17 +1229,6 @@ p {
     margin: 0 64px;
     font-size: 40px;
     padding: 23px 0;
-  }
-
-  .hero {
-    padding: 0;
-  }
-
-  .hero-art {
-    grid-area: art;
-    height: clamp(440px, 42vw, 610px);
-    margin: 0;
-    align-self: stretch;
   }
 
   .section-pad {
@@ -1330,7 +1401,17 @@ p {
 
   .gadgets {
     padding-top: 64px;
-    padding-bottom: 86px;
+    padding-bottom: 150px;
+  }
+
+  .gadgets::after {
+    --gadgets-side-fade: 12%;
+  }
+
+  .gadgets-spark {
+    width: 72px;
+    height: 72px;
+    margin-top: 96px;
   }
 
   .gadgets > h2 {
@@ -1341,35 +1422,20 @@ p {
     font-size: 18px;
   }
 
-  .tape-wall {
-    margin: 36px 0 0;
-    height: 480px;
-    border-radius: 4px;
+  .sticker-wall {
+    position: relative;
+    display: block;
+    aspect-ratio: var(--wall-ratio);
+    margin: 24px -64px 0;
   }
 
-  .sticker-pin-candidates {
-    width: 156px;
-    height: 219px;
-    top: 40px;
-    left: 48px;
-  }
-
-  .sticker-pin-lumina {
-    width: 182px;
-    height: 191px;
-    top: 168px;
-    right: 60px;
-  }
-
-  .sticker-pin-voce {
-    width: 232px;
-    height: 138px;
-    bottom: 44px;
-    left: 260px;
-  }
-
-  .daybreak {
-    height: 280px;
+  .sticker-wall .sticker {
+    position: absolute;
+    left: var(--sticker-left);
+    top: var(--sticker-top);
+    width: var(--sticker-size);
+    margin: 0;
+    transform: none;
   }
 
   .idea-section {

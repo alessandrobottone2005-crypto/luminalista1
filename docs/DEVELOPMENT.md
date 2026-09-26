@@ -17,7 +17,8 @@ Apri `http://localhost:4174`.
 | `npm run dev`          | Avvia Vite e rigenera il fallback statico.             |
 | `npm test`             | Esegue i test del client e del ricevitore Apps Script. |
 | `npm run typecheck`    | Controlla TypeScript senza produrre file.              |
-| `npm run media:header` | Rigenera video e poster dal file Blender.              |
+| `npm run media:header` | Renderizza il file Blender e rigenera i frame web.     |
+| `npm run media:hero`   | Rigenera i frame WebP dai PNG in `assets/source`.      |
 | `npm run build`        | Genera la build in `dist`.                             |
 | `npm run check`        | Esegue formato, tipi, test e build.                    |
 

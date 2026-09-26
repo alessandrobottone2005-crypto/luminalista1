@@ -10,11 +10,13 @@
     "test": "vitest run",
     "typecheck": "tsc -b",
     "media:header": "node scripts/render-header-animation.mjs",
+    "media:hero": "node scripts/build-hero-frames.mjs",
     "check": "npm run format:check && npm run typecheck && npm test && npm run build",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.mjs\" vite.config.ts components.json package.json README.md AGENTS.md CHANGELOG.md \"docs/**/*.md\" \".agents/**/*.md\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.mjs\" vite.config.ts components.json package.json README.md AGENTS.md CHANGELOG.md \"docs/**/*.md\" \".agents/**/*.md\"",
     "predev": "node scripts/static-page.mjs",
-    "prebuild": "node scripts/static-page.mjs"
+    "prebuild": "node scripts/static-page.mjs",
+    "media:stickers": "node scripts/build-sticker-assets.mjs"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

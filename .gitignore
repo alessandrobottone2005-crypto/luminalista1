@@ -12,3 +12,6 @@ dist/
 /DxPlayhigh-Expanded.otf
 *.blend1
 .vercel
+
+# Frame PNG del render hero, rigenerabili dal .blend
+/assets/source/RenderHero/

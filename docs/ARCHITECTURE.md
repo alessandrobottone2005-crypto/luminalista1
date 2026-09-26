@@ -34,7 +34,7 @@ flowchart TD
 
 ### Caricamento
 
-`main.tsx` monta React, Router e `MotionConfig`. `HeroAnimation` carica il video esportato da Blender con un poster WebP; il resto della pagina rimane indipendente dal media.
+`main.tsx` monta React, Router e `MotionConfig`. `HeroAnimation` disegna su canvas la sequenza WebP renderizzata da Blender, mostrando subito il primo fotogramma; il resto della pagina rimane indipendente dal media.
 
 ### Movimento
 

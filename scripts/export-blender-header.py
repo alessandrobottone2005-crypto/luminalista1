@@ -1,4 +1,4 @@
-"""Render the approved Blender header animation for the web.
+"""Render the approved Blender hero animation as a PNG sequence.
 
 Run from the repository root:
   /Applications/Blender.app/Contents/MacOS/Blender \
@@ -12,33 +12,21 @@ import bpy
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = ROOT / "public" / "media"
-FRAMES_DIR = ROOT / ".artifacts" / "lumina-header-frames"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+FRAMES_DIR = ROOT / "assets" / "source" / "RenderHero"
 FRAMES_DIR.mkdir(parents=True, exist_ok=True)
 
 scene = bpy.context.scene
-scene.render.resolution_x = 960
-scene.render.resolution_y = 540
+scene.render.resolution_x = 1920
+scene.render.resolution_y = 1080
 scene.render.resolution_percentage = 100
 scene.render.fps = 24
 
-if scene.render.engine == "CYCLES":
-    scene.cycles.samples = 24
-    scene.cycles.use_denoising = True
-
-# Render a still frame for reduced-motion users and as the video poster.
-scene.frame_set(54)
-scene.render.image_settings.file_format = "WEBP"
-scene.render.image_settings.quality = 92
-scene.render.filepath = str(OUTPUT_DIR / "lumina-header-poster.webp")
-bpy.ops.render.render(write_still=True)
-
-# Render the complete sequence. The Node wrapper encodes these frames to H.264.
+# Render the complete sequence as 0001.png … 0108.png.
+# scripts/build-hero-frames.mjs turns these into the WebP frames served on the web.
 scene.frame_set(scene.frame_start)
 scene.render.image_settings.file_format = "PNG"
 scene.render.image_settings.color_mode = "RGB"
-scene.render.filepath = str(FRAMES_DIR / "frame-")
+scene.render.filepath = str(FRAMES_DIR / "####")
 bpy.ops.render.render(animation=True)
 
-print(f"Lumina header frames exported to {FRAMES_DIR}")
+print(f"Lumina hero frames exported to {FRAMES_DIR}")

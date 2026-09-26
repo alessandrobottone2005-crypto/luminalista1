@@ -18,9 +18,10 @@ La personalità scelta è **energetica editoriale**: rapida nei feedback, contro
 
 ## Responsabilità
 
-- **CSS**: hover, focus, colori e feedback semplici.
+- **CSS**: hover, focus, colori e feedback semplici, compreso il bagliore degli sticker (`drop-shadow` all’hover/focus e impulso `sticker-pulse` al tap).
 - **Motion**: elementi montati o smontati da React, come menu e conferma del form.
 - **GSAP**: sequenze iniziali, reveal e animazioni legate allo scroll.
+- **Pointer events** (`src/motion/useStickerDrag.ts`): trascinamento degli sticker. Lo spostamento usa la proprietà CSS `translate`, che si somma alla rotazione CSS senza sovrascriverla. Col dito la presa richiede una pressione prolungata e blocca lo scroll solo dopo la presa. Le posizioni non vengono salvate.
 - **Video Blender**: animazione principale dell’header, con controllo esplicito e pausa fuori viewport.
 
 ## Regole GSAP
@@ -29,4 +30,4 @@ La personalità scelta è **energetica editoriale**: rapida nei feedback, contro
 
 ## Accessibilità e prestazioni
 
-Con `prefers-reduced-motion: reduce`, Lenis e le animazioni GSAP non partono, la linea di avanzamento viene nascosta e il manifesto torna a un blocco statico senza tratto sticky. Motion usa la preferenza dell’utente e l’header resta sul poster finché l’utente non sceglie di avviarlo. Nessuna informazione dipende esclusivamente dal movimento.
+Con `prefers-reduced-motion: reduce`, Lenis e le animazioni GSAP non partono, la linea di avanzamento viene nascosta e il manifesto torna a un blocco statico senza tratto sticky. Gli sticker non si ingrandiscono e mantengono solo il bagliore statico. Motion usa la preferenza dell’utente. Il loop dell’hero resta attivo per scelta concordata (vedi [`HEADER-ANIMATION.md`](HEADER-ANIMATION.md)). Nessuna informazione dipende esclusivamente dal movimento.

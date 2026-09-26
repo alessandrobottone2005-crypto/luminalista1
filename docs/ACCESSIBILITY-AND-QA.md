@@ -8,10 +8,11 @@
 - Esperienza completa con `prefers-reduced-motion: reduce`.
 - Il manifesto resta leggibile e perde sticky e scrub quando il movimento è ridotto.
 - Form leggibile da screen reader con errori associati e stato annunciato.
+- Sticker trascinabili: col mouse si spostano al primo movimento; col dito solo dopo una pressione di 0,3 s, mentre uno swipe veloce continua a far scorrere la pagina. Da tastiera si spostano con le frecce (Shift per passi lunghi). Va provato su iOS Safari e Android Chrome reali, controllando che non compaia il menu contestuale dell’immagine.
 
 ## Prestazioni
 
-- Il video dell’header usa `preload="metadata"`, un poster WebP e viene sospeso fuori viewport.
+- La sequenza dell’hero mostra subito il primo fotogramma, viene sospesa fuori viewport e con la scheda nascosta; l’indicatore “Scorri” è un link da 44 px verso `#intro`.
 - Immagini dei candidati usano WebP, dimensioni esplicite e lazy loading.
 - Le animazioni privilegiano trasformazioni e opacità.
 - Il progresso dello scroll usa una sola trasformazione `scaleX` e non modifica il layout.

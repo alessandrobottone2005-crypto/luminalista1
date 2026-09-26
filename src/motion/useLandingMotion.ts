@@ -134,15 +134,18 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
           );
       }
 
-      gsap.from(select(".sticker-pin"), {
-        y: 35,
-        autoAlpha: 0.2,
-        stagger: 0.12,
-        duration: 0.8,
-        ease: "power3.out",
+      // Attacchinaggio: ogni sticker arriva sollevato e si incolla al muro.
+      gsap.from(select(".sticker-body"), {
+        autoAlpha: 0,
+        scale: 1.18,
+        rotation: (index: number) => (index % 2 ? 7 : -7),
+        y: -18,
+        stagger: 0.16,
+        duration: 0.62,
+        ease: "back.out(1.6)",
         scrollTrigger: {
-          trigger: ".tape-wall",
-          start: "top 80%",
+          trigger: ".sticker-wall",
+          start: "top 78%",
           once: true,
         },
       });

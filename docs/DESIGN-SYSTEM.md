@@ -27,7 +27,7 @@ I valori eseguibili vivono in [`src/styles/tokens.css`](../src/styles/tokens.css
 
 ## Logo
 
-[`LogoLumina_Animazione.blend`](../LogoLumina_Animazione.blend) è la sorgente canonica dell’header animato. [`public/Logo.svg`](../public/Logo.svg) resta l’asset statico ufficiale; `wordmark.svg` è derivato per contesti orizzontali e non sostituisce l’originale. `favicon.svg` non deriva dal logo: è uno sfondo nero arrotondato con la stella al centro (stessi path di `Stella.svg`).
+[`LogoLumina_Animazione.blend`](../LogoLumina_Animazione.blend) è la sorgente canonica dell’hero animato. [`public/Logo.svg`](../public/Logo.svg) resta l’asset statico ufficiale. `favicon.svg` non deriva dal logo: è uno sfondo nero arrotondato con la stella al centro (stessi path di `Stella.svg`).
 
 ## Stella
 
@@ -37,7 +37,8 @@ I valori eseguibili vivono in [`src/styles/tokens.css`](../src/styles/tokens.css
 
 - CTA e controlli mantengono un’area interattiva minima di 44 × 44 px.
 - Il raggio resta quasi nullo: la forma è editoriale, non “app card”.
-- Tutte le sezioni principali usano lo stesso sfondo `#080808`; la profondità nasce da ritmo, immagini e movimento.
+- Tutte le sezioni principali usano lo stesso sfondo `#080808`; la profondità nasce da ritmo, immagini e movimento. Unica eccezione: la sezione sticker (`#irl`) poggia sulla texture fotografica `SfondoStickers`. La texture è ingrandita del 20% e sfuma nel nero `#080808` su tutti i lati, così non ha bordi visibili. La stella che fa da passaggio verso la sezione idea sta dentro la sfumatura inferiore.
+- Gli sticker si generano da `assets/source/stickers/` con `npm run media:stickers`, che produce i WebP ritagliati e `src/config/stickerWall.ts`. Non vanno posizionati a mano.
 - Il giallo indica scelta o rivelazione; non riempie superfici decorative senza funzione.
 - I testi funzionali rimangono almeno a 16 px sulle viste mobili.
 - I contenuti provvisori devono restare esplicitamente riconoscibili.
