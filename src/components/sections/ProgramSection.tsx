@@ -1,5 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
-import { LightReveal } from "@/components/motion/LightReveal";
+import { LightReveal } from "@/components/LightReveal";
 import { programPoints } from "@/content/site";
 
 export function ProgramSection() {
@@ -39,9 +38,6 @@ export function ProgramSection() {
           </li>
         ))}
       </ol>
-      <a className="text-link" href="#idea">
-        E LA TUA IDEA? METTILA IN LUCE <ArrowUpRight size={19} />
-      </a>
     </section>
   );
 }

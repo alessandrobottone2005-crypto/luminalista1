@@ -7,13 +7,15 @@ const labels = ["GIORNI", "ORE", "MIN", "SEC"] as const;
 export function CountdownSection() {
   const [now, setNow] = useState(Date.now());
   const time = getCountdown(siteConfig.electionDate, now);
-  const ended = time?.every((value) => value === 0);
+  // Il timer serve solo finché la data è valida e non ancora passata.
+  const running = Boolean(time && time.some((value) => value > 0));
+  const ended = Boolean(time) && !running;
 
   useEffect(() => {
-    if (ended || !time) return;
+    if (!running) return;
     const timer = window.setInterval(() => setNow(Date.now()), 1_000);
     return () => window.clearInterval(timer);
-  }, [ended, time]);
+  }, [running]);
 
   const accessibleLabel = time
     ? `${time[0]} giorni, ${time[1]} ore e ${time[2]} minuti alle elezioni`
@@ -39,7 +41,7 @@ export function CountdownSection() {
         <br />
         <span className="yellow">CONTA.</span>
       </h2>
-      <div className="countdown-grid" aria-label={accessibleLabel}>
+      <div className="countdown-grid" role="group" aria-label={accessibleLabel}>
         {labels.map((label, index) => (
           <div key={label}>
             <span className="count-number" aria-hidden="true">

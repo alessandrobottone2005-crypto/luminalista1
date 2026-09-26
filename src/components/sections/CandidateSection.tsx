@@ -1,4 +1,4 @@
-import { LightReveal } from "@/components/motion/LightReveal";
+import { LightReveal } from "@/components/LightReveal";
 import { candidates } from "@/content/site";
 
 export function CandidateSection() {

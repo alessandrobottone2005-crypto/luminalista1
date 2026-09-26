@@ -4,7 +4,7 @@ Landing page mobile-first, animata e interattiva per la campagna studentesca Lum
 
 **Sito pubblico:** [luminalista1.vercel.app](https://luminalista1.vercel.app)
 
-La direzione creativa segue un percorso dal buio alla luce: l’animazione originale realizzata in Blender apre il racconto, i contenuti emergono durante lo scroll e il percorso termina con un modulo collegato al Foglio Google Lumina.
+La direzione creativa segue un percorso dal buio alla luce: l’animazione originale realizzata in Blender apre il racconto a schermo intero, i contenuti emergono durante lo scroll e il percorso termina con un modulo collegato al Foglio Google Lumina.
 
 ## Avvio rapido
 
@@ -24,35 +24,43 @@ npm run check
 
 Il comando verifica formato, TypeScript, test e build di produzione.
 
+## Percorso della pagina
+
+Hero (sequenza Blender su canvas) → Intro (unico `h1`) → Candidati → Countdown → Manifesto → Programma → Sticker → La tua idea → riga finale “© 2026 LUMINA · PRIVACY”.
+
+Il sito non ha navbar, menu né footer. Le route sono `/`, `/privacy` e una pagina 404.
+
 ## Struttura
 
 ```text
 src/
-├── app/                 router
-├── pages/               composizione delle pagine
+├── app/                 router e reset dello scroll tra le route
+├── pages/               LandingPage, PrivacyPage, NotFoundPage
 ├── components/
-│   ├── brand/           accesso centralizzato agli asset
-│   ├── layout/          header, footer e rail desktop
-│   ├── motion/          wrapper di presentazione
-│   ├── sections/        sezioni narrative
-│   └── ui/              primitive shadcn/ui
-├── content/             contenuti modificabili
-├── features/ideas/      modulo e trasporto dati
-├── motion/              GSAP, ScrollTrigger e Lenis
-└── styles/              token e stile globale
+│   ├── LightReveal.tsx  wrapper per i reveal di luce
+│   └── sections/        sezioni narrative, HeroAnimation e StickerSection
+├── config/              heroFrames.ts e stickerWall.ts, generati dagli script
+├── content/             site.ts: testi, candidati, programma, sticker
+├── features/ideas/      validazione, invio e test del modulo
+├── lib/                 countdown e relativi test
+├── motion/              useLandingMotion (GSAP, ScrollTrigger, Lenis) e useStickerDrag
+└── styles/              index.css, tokens.css, site.css
+scripts/                 render Blender, frame hero, sticker e fallback statico
+assets/source/           sorgenti non pubblicate (vedi SOURCES.md)
+google-apps-script/      ricevitore del modulo
 ```
 
 ## Stack
 
-React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React, Motion, React Router, Lenis, GSAP, Three.js e React Three Fiber.
+Vite 8, React 19, TypeScript, React Router, GSAP con ScrollTrigger e `@gsap/react`, Lenis, Motion (stati del form), Lucide React, Poppins via `@fontsource` e il font locale DX Playhigh. Lo stile è CSS semplice in `src/styles`, con un reset in `@layer reset` all’inizio di `site.css`.
 
 ## Contenuti provvisori
 
-Le otto proposte del programma e gli sticker gadget sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare i contenuti dei candidati non ancora confermati in [`src/content/site.ts`](src/content/site.ts) seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+Le otto proposte del programma, i quattro candidati e i tre sticker sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare l’informativa privacy in [`src/content/site.ts`](src/content/site.ts) e [`src/pages/PrivacyPage.tsx`](src/pages/PrivacyPage.tsx), seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
 
 ## Animazione dell’hero
 
-La sorgente approvata è [`LogoLumina_Animazione.blend`](LogoLumina_Animazione.blend). La sequenza di 108 fotogrammi, riprodotta in loop su canvas a schermo intero, si rigenera seguendo [`docs/HEADER-ANIMATION.md`](docs/HEADER-ANIMATION.md).
+La sorgente approvata è [`LogoLumina_Animazione.blend`](LogoLumina_Animazione.blend). La sequenza di 108 fotogrammi, riprodotta in loop su canvas a schermo intero, si rigenera seguendo [`docs/HERO-ANIMATION.md`](docs/HERO-ANIMATION.md).
 
 ## Documentazione
 

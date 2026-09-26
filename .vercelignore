@@ -1,7 +1,6 @@
 .agents/
-.claude/
-agent/
 assets/source/
+docs/
+dist/
 *.blend
-skills-lock.json
-public/Risorsa 1.png
+*.docx

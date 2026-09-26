@@ -31,32 +31,59 @@ export function validateIdea(data: IdeaData) {
   return errors;
 }
 
+/** Errore mostrabile all’utente: il messaggio è già in italiano. */
+export class SubmitError extends Error {
+  name = "SubmitError";
+}
+
+const unconfirmed =
+  "Invio non confermato. Riprova: la tua idea è ancora nel modulo.";
+
 export async function submitIdea(data: IdeaData) {
   if (Object.keys(validateIdea(data)).length)
-    throw new Error("Controlla i campi del modulo.");
+    throw new SubmitError("Controlla i campi del modulo.");
   const endpoint = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
   if (!endpoint) {
-    throw new Error(
+    throw new SubmitError(
       "La raccolta delle idee non è ancora attiva. Il testo resta qui: riprova quando apriremo le proposte.",
     );
   }
 
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify(data),
-    signal: AbortSignal.timeout(timeoutMs),
-    redirect: "follow",
-  });
-
-  if (!response.ok)
-    throw new Error(
-      "Invio non confermato. Riprova: la tua idea è ancora nel modulo.",
+  let response: Response;
+  try {
+    response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(data),
+      signal: AbortSignal.timeout(timeoutMs),
+      redirect: "follow",
+    });
+  } catch (error) {
+    // Rete assente, timeout o CORS: mai il testo grezzo del browser.
+    const timedOut =
+      error instanceof DOMException && error.name === "TimeoutError";
+    throw new SubmitError(
+      timedOut
+        ? "La connessione è troppo lenta. Riprova: la tua idea è ancora nel modulo."
+        : "Connessione non riuscita. Controlla la rete e riprova: la tua idea è ancora nel modulo.",
     );
+  }
 
-  const result = (await response.json()) as SubmissionResult;
-  if (result.ok !== true || result.submissionId !== data.submissionId) {
-    throw new Error(result.error || "Invio non confermato. Riprova tra poco.");
+  if (!response.ok) throw new SubmitError(unconfirmed);
+
+  let result: SubmissionResult;
+  try {
+    result = (await response.json()) as SubmissionResult;
+  } catch {
+    throw new SubmitError(unconfirmed);
+  }
+  if (result?.ok !== true || result.submissionId !== data.submissionId) {
+    // Gli errori del ricevitore Apps Script sono già scritti in italiano.
+    throw new SubmitError(
+      typeof result?.error === "string" && result.error
+        ? result.error
+        : "Invio non confermato. Riprova tra poco.",
+    );
   }
 
   return result;

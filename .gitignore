@@ -3,13 +3,8 @@ dist/
 .env
 .env.local
 .env.*.local
-.playwright/
 .DS_Store
 *.tsbuildinfo
-.impeccable/review/
-.artifacts/
-/Poppins-*.ttf
-/DxPlayhigh-Expanded.otf
 *.blend1
 .vercel
 

@@ -1,14 +1,14 @@
 import { useRef } from "react";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
+import { Link } from "react-router-dom";
 import { CandidateSection } from "@/components/sections/CandidateSection";
 import { CountdownSection } from "@/components/sections/CountdownSection";
-import { GadgetGallery } from "@/components/sections/GadgetGallery";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { IdeaSection } from "@/components/sections/IdeaSection";
 import { IntroSection } from "@/components/sections/IntroSection";
 import { ManifestoSection } from "@/components/sections/ManifestoSection";
 import { ProgramSection } from "@/components/sections/ProgramSection";
+import { StickerSection } from "@/components/sections/StickerSection";
+import { colophon } from "@/content/site";
 import { useLandingMotion } from "@/motion/useLandingMotion";
 
 export function LandingPage() {
@@ -17,24 +17,19 @@ export function LandingPage() {
 
   return (
     <div className="site-shell">
-      <a className="skip-link" href="#intro">
-        Vai al contenuto
-      </a>
-      <SiteHeader />
       <main ref={root}>
-        <div className="story-progress" aria-hidden="true">
-          <span className="story-progress-fill" />
-        </div>
         <HeroSection />
         <IntroSection />
         <CandidateSection />
         <CountdownSection />
         <ManifestoSection />
         <ProgramSection />
-        <GadgetGallery />
+        <StickerSection />
         <IdeaSection />
+        <p className="colophon section-pad">
+          {colophon.copyright} · <Link to="/privacy">{colophon.privacy}</Link>
+        </p>
       </main>
-      <SiteFooter />
     </div>
   );
 }

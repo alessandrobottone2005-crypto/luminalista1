@@ -2,18 +2,6 @@ export const siteConfig = {
   electionDate: "2026-10-05T08:00:00+01:00",
 };
 
-export const hero = {
-  scrollCue: "Scorri",
-  scrollTarget: "intro",
-};
-
-export const navigation = [
-  { label: "I candidati", id: "candidati" },
-  { label: "Il programma", id: "programma" },
-  { label: "Lumina IRL", id: "irl" },
-  { label: "La tua idea", id: "idea" },
-];
-
 export const candidates = [
   {
     id: "01",
@@ -103,4 +91,9 @@ export const stickerSection = {
     lumina: "Sticker Lumina Lista 1",
     voce: "Sticker La tua voce fa luce",
   },
+};
+
+export const colophon = {
+  copyright: "© 2026 LUMINA",
+  privacy: "PRIVACY",
 };

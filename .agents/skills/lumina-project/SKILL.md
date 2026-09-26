@@ -17,7 +17,7 @@ Usa questa sequenza per valutare ogni sezione:
 
 ### One owner per effect
 
-Usa CSS per micro-feedback, Motion per stati React, GSAP per scroll e timeline e il render Blender per l’header. Non animare la stessa proprietà con due sistemi.
+Usa CSS per micro-feedback, Motion per stati React, GSAP per scroll e timeline, pointer event in `useStickerDrag` per il trascinamento degli sticker e il render Blender per l’hero. Non animare la stessa proprietà con due sistemi. Lo stile è CSS semplice in `src/styles`: niente Tailwind né librerie di componenti.
 
 ### Content truth
 
@@ -25,7 +25,7 @@ Preserva le etichette provvisorie. Non inventare persone, date, account o propos
 
 ### Performance envelope
 
-Mantieni il primo fotogramma dell’hero visibile subito, pausa fuori viewport, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
+Mantieni il primo fotogramma dell’hero visibile subito, il set di frame leggero su telefoni e tablet, pausa fuori viewport, trasformazioni al posto di proprietà di layout e modalità ridotta completa.
 
 ## Topic index
 
@@ -34,7 +34,8 @@ Mantieni il primo fotogramma dell’hero visibile subito, pausa fuori viewport, 
 - **Design DNA** → [`docs/DESIGN-SYSTEM.md`](../../../docs/DESIGN-SYSTEM.md)
 - **Form e dati** → [`docs/FORM-AND-DATA.md`](../../../docs/FORM-AND-DATA.md)
 - **Motion** → [`docs/MOTION-SYSTEM.md`](../../../docs/MOTION-SYSTEM.md)
-- **Animazione header** → [`docs/HEADER-ANIMATION.md`](../../../docs/HEADER-ANIMATION.md)
+- **Animazione hero** → [`docs/HERO-ANIMATION.md`](../../../docs/HERO-ANIMATION.md)
+- **Asset sorgente** → [`assets/source/SOURCES.md`](../../../assets/source/SOURCES.md)
 
 ## Definition of done
 

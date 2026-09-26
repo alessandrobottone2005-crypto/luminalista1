@@ -18,7 +18,7 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
       duration: 1.05,
       smoothWheel: true,
       syncTouch: false,
-      anchors: { offset: -76 },
+      anchors: true,
     });
     const update = (time: number) => lenis.raf(time * 1_000);
 
@@ -38,17 +38,6 @@ export function useLandingMotion(root: RefObject<HTMLElement | null>) {
       if (reduceMotion) return;
 
       const select = gsap.utils.selector(root);
-      gsap.to(select(".story-progress-fill"), {
-        scaleX: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: root.current,
-          start: "top top",
-          end: "bottom bottom",
-          scrub: 0.2,
-        },
-      });
-
       select(".light-reveal").forEach((element: HTMLElement) => {
         gsap.from(element, {
           clipPath: "inset(0 100% 0 0)",

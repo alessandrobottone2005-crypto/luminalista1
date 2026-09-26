@@ -1,8 +1,8 @@
-import { LightReveal } from "@/components/motion/LightReveal";
+import { LightReveal } from "@/components/LightReveal";
 
 export function IntroSection() {
   return (
-    <section id="intro" className="intro section-pad">
+    <section className="intro section-pad">
       <div className="intro-line" />
       <LightReveal>
         <h1>

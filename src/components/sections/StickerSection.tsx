@@ -11,7 +11,7 @@ function pulse(event: MouseEvent<HTMLButtonElement>) {
   sticker.setAttribute("data-pulse", "");
 }
 
-export function GadgetGallery() {
+export function StickerSection() {
   const { canvas, background, stickers } = STICKER_WALL;
   const sectionRef = useRef<HTMLElement>(null);
   const { handlers, consumeDrag } = useStickerDrag(sectionRef);

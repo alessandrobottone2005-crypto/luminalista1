@@ -38,5 +38,3 @@ export const STICKER_WALL = {
     },
   ],
 } as const;
-
-export type StickerId = (typeof STICKER_WALL.stickers)[number]["id"];

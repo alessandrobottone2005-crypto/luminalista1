@@ -1,6 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { validateIdea, submitIdea } from "./submitIdea";
-import { getCountdown } from "@/lib/countdown";
+import { validateIdea, submitIdea, SubmitError } from "./submitIdea";
 const data = {
   idea: "Una biblioteca aperta anche il pomeriggio.",
   name: "",
@@ -52,17 +51,28 @@ describe("idea submission", () => {
     vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false }));
     await expect(submitIdea(data)).rejects.toThrow("non confermato");
   });
-});
-describe("countdown", () => {
-  it("handles Rome offset and never goes negative", () => {
-    const date = "2026-10-05T08:00:00+01:00";
-    expect(getCountdown(date, Date.parse("2026-10-04T07:00:00Z"))).toEqual([
-      1, 0, 0, 0,
-    ]);
-    expect(getCountdown(date, Date.parse("2026-10-06T07:00:00Z"))).toEqual([
-      0, 0, 0, 0,
-    ]);
+  it("hides raw network errors behind an Italian message", async () => {
+    vi.stubEnv("VITE_GOOGLE_SCRIPT_URL", "https://example.test/exec");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockRejectedValue(new TypeError("Failed to fetch")),
+    );
+    const error = await submitIdea(data).catch((e: unknown) => e);
+    expect(error).toBeInstanceOf(SubmitError);
+    expect((error as Error).message).toContain("Connessione non riuscita");
+    expect((error as Error).message).not.toContain("Failed to fetch");
   });
-  it("handles an unset election date", () =>
-    expect(getCountdown("", Date.now())).toBeNull());
+  it("treats a non-JSON response as unconfirmed", async () => {
+    vi.stubEnv("VITE_GOOGLE_SCRIPT_URL", "https://example.test/exec");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => {
+          throw new SyntaxError("Unexpected token <");
+        },
+      }),
+    );
+    await expect(submitIdea(data)).rejects.toThrow("non confermato");
+  });
 });

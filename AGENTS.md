@@ -10,9 +10,9 @@
 
 ## Engineering rules
 
-- Keep route composition in `src/pages`, reusable structure in `src/components`, copy in `src/content`, effects in `src/motion`, and form transport in `src/features/ideas`.
-- Use GSAP only for timelines and scroll-linked choreography. Use Motion for React state transitions and CSS for simple hover or press feedback.
-- Render changes to the header from the approved `.blend` source; never reproduce its materials or animation by eye.
+- Keep route composition in `src/pages`, reusable structure in `src/components`, copy in `src/content`, generated media config in `src/config`, effects in `src/motion`, and form transport in `src/features/ideas`.
+- Use GSAP only for timelines and scroll-linked choreography. Use Motion for React state transitions and CSS for simple hover or press feedback. Style with plain CSS in `src/styles`; do not reintroduce Tailwind or UI kits.
+- Render changes to the hero from the approved `.blend` source (`npm run media:hero:render`); never reproduce its materials or animation by eye.
 - Respect `prefers-reduced-motion`, keyboard focus, 44 px touch targets and readable 16 px functional copy.
 - Never commit `.env.local`, credentials, Google account data or spreadsheet exports.
 

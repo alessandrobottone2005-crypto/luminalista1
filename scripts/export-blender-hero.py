@@ -3,7 +3,7 @@
 Run from the repository root:
   /Applications/Blender.app/Contents/MacOS/Blender \
     -b LogoLumina_Animazione.blend \
-    --python scripts/export-blender-header.py
+    --python scripts/export-blender-hero.py
 """
 
 from pathlib import Path

@@ -11,7 +11,7 @@ const quality = 82;
 // A pixel belongs to a sticker when its alpha exceeds this value.
 const alphaThreshold = 8;
 
-// Ordine di impilamento: dal livello più basso al più alto, come in Esempio.png.
+// Ordine di impilamento: dal livello più basso al più alto.
 const stickers = [
   { id: "candidati", file: "Sticker3.png" },
   { id: "lumina", file: "Sticker2.png" },
@@ -85,16 +85,16 @@ for (const sticker of stickers) {
     .webp({ quality, alphaQuality: 90, effort: 5 })
     .toFile(path.join(output, `sticker-${sticker.id}.webp`));
 
-  entries.push(`  {
-    id: "${sticker.id}",
-    src: "/media/stickers/sticker-${sticker.id}.webp",
-    width: ${box.width},
-    height: ${box.height},
-    // Posizione sulla tela ${canvasWidth}×${canvasHeight}, in percentuale.
-    left: ${pct(box.left, canvasWidth)},
-    top: ${pct(box.top, canvasHeight)},
-    size: ${pct(box.width, canvasWidth)},
-  },`);
+  entries.push(`    {
+      id: "${sticker.id}",
+      src: "/media/stickers/sticker-${sticker.id}.webp",
+      width: ${box.width},
+      height: ${box.height},
+      // Posizione sulla tela ${canvasWidth}×${canvasHeight}, in percentuale.
+      left: ${pct(box.left, canvasWidth)},
+      top: ${pct(box.top, canvasHeight)},
+      size: ${pct(box.width, canvasWidth)},
+    },`);
 }
 
 await writeFile(
@@ -110,8 +110,6 @@ export const STICKER_WALL = {
 ${entries.join("\n")}
   ],
 } as const;
-
-export type StickerId = (typeof STICKER_WALL.stickers)[number]["id"];
 `,
 );
 

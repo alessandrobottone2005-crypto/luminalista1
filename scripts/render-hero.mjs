@@ -24,7 +24,7 @@ const render = spawnSync(
     "-b",
     source,
     "--python",
-    path.join(root, "scripts", "export-blender-header.py"),
+    path.join(root, "scripts", "export-blender-hero.py"),
   ],
   { cwd: root, stdio: "inherit" },
 );
