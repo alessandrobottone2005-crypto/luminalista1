@@ -15,7 +15,7 @@ Questa cartella conserva gli originali. Non viene pubblicata su Vercel (`.vercel
 
 ## Candidati
 
-Le fotografie di Valeria Bottone, Luca Pagliarulo, Marco Mondiello e Giulia Bisceglia sono state fornite con il progetto. Gli originali (PNG o JPEG a seconda della consegna) sono conservati qui; il sito usa copie WebP da 900 × 900 px, qualità 84, con lo stesso nome file indicato in `src/content/site.ts`. Non c’è uno script dedicato: quando una fotografia viene sostituita, aggiorna sia la sorgente sia la versione ottimizzata.
+Le fotografie di Valeria Bottone, Luca Pagliarulo, Marco Mondiello e Giulia Bisceglia sono state fornite con il progetto. Gli originali (PNG o JPEG a seconda della consegna) sono conservati qui; il sito usa copie WebP da 900 × 900 px, qualità 84, con lo stesso nome file indicato in `src/content/site.ts`. Fa eccezione Valeria Bottone: la sua è un ritaglio verticale di `ValeriaBottone.jpeg` (804 × 1125 px, qualità 82), inquadrato nella card con `position: "center 30%"`. Non c’è uno script dedicato: quando una fotografia viene sostituita, aggiorna sia la sorgente sia la versione ottimizzata.
 
 Le classi dei candidati (`VCE`, `VAC`, `IVBSU`) sono confermate dai 4 design Figma delle card social.
 

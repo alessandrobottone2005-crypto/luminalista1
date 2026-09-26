@@ -320,11 +320,9 @@ p {
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
-.candidate-name {
-  font-size: clamp(16px, 5.2vw, 21px);
-}
+.candidate-name,
 .candidate-code {
-  font-size: clamp(16px, 5.2vw, 21px);
+  font-size: clamp(20px, 7vw, 28px);
 }
 .countdown {
   padding-top: 31px;
@@ -333,7 +331,7 @@ p {
   color: var(--foreground);
 }
 .countdown h2 {
-  font-size: 71px;
+  font-size: clamp(44px, calc(20vw - 10px), 71px);
 }
 .countdown-grid {
   display: grid;
@@ -1065,7 +1063,7 @@ p {
 
   .candidate-name,
   .candidate-code {
-    font-size: clamp(15px, 1.35vw, 19px);
+    font-size: clamp(18px, 1.8vw, 26px);
   }
 
   .countdown {

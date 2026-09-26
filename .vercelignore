@@ -4,3 +4,5 @@ docs/
 dist/
 *.blend
 *.docx
+._*
+.DS_Store

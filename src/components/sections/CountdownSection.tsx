@@ -37,9 +37,9 @@ export function CountdownSection() {
       aria-labelledby="countdown-title"
     >
       <h2 id="countdown-title">
-        OGNI VOCE
+        QUANTO MANCA
         <br />
-        <span className="yellow">CONTA.</span>
+        <span className="yellow">ALLE ELEZIONI:</span>
       </h2>
       <div className="countdown-grid" role="group" aria-label={accessibleLabel}>
         {labels.map((label, index) => (

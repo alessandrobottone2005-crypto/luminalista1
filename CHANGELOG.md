@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 1.0.0 — 2026-09-26
+
+Versione definitiva del sito, pubblicata su [luminalista1.vercel.app](https://luminalista1.vercel.app).
+
+- Countdown puntato su mercoledì 14 ottobre 2026 alle 08:00 (ora legale italiana, `+02:00`); il titolo della sezione ora è “QUANTO MANCA / ALLE ELEZIONI:” e su mobile ridimensiona il testo per stare nello schermo fino a 320 px.
+- Nuova foto di Valeria Bottone (ritaglio verticale WebP, inquadratura `center 30%`).
+- Nomi e classi dei candidati più grandi: fino a 28 px su telefono e 26 px su desktop.
+- `._*` di macOS esclusi da Git e dal caricamento su Vercel.
 - Sticker dei candidati aggiornato con la nuova grafica (nomi e classi rivisti); tolta la scritta “LISTA 01” dal countdown.
 - Pulizia prima del rilascio. **Correzioni**: errori del modulo sempre in italiano tramite `SubmitError` (rete, timeout, risposta non valida), countdown con un’unica etichetta accessibile, timer fermo a data passata e intervallo creato una sola volta, UUID di invio con fallback fuori dai contesti sicuri, focus sul titolo della conferma dopo l’invio, hero che parte con i fotogrammi arrivati anche se qualcuno manca e usa il set 960 px su tablet (1920 px solo da 1200 px di larghezza), meta description senza “Anteprima dimostrativa”. **Stile**: rimossi Tailwind CSS e shadcn/ui; al loro posto CSS semplice con un reset in `@layer reset` e l’utility `.sr-only`. **Dipendenze rimosse**: `tailwindcss`, `@tailwindcss/vite`, `tw-animate-css`, `shadcn`, `radix-ui`, `class-variance-authority`, `clsx`, `cn`, `tailwind-merge`, `@types/three`, `ffmpeg-static`. **File eliminati**: primitive `components/ui`, `lib/utils.ts`, `components.json`, `skills-lock.json`, `PRODUCT.md`, `.impeccable/`, le skill esterne in `.agents/skills/` (resta `lumina-project`), `docs/SKILLS-APPLIED.md`, `public/images/SOURCES.md`, il mockup `Stickers_Mockup.jpeg` ed `Esempio.png`. **Riorganizzazione**: `components/brand/HeroAnimation.tsx` → `components/sections/HeroAnimation.tsx`, `components/motion/LightReveal.tsx` → `components/LightReveal.tsx`, `GadgetGallery.tsx` → `StickerSection.tsx`, `Lumina-testi-sito.docx` → `assets/source/content/`, fonti in `assets/source/SOURCES.md`, `docs/HEADER-ANIMATION.md` → `docs/HERO-ANIMATION.md`; aggiunto `src/lib/countdown.test.ts`. **Script rinominati**: `media:header` → `media:hero:render`, `render-header-animation.mjs` → `render-hero.mjs`, `export-blender-header.py` → `export-blender-hero.py`. Documentazione riallineata al sito attuale.
 - Rimossi la nota privacy sotto il modulo idee, la linea con il link “E la tua idea? Mettila in luce” in fondo al programma e l’indicatore “Scorri” nell’hero. Il logo dell’hero ora è centrato in verticale. La privacy resta raggiungibile dalla riga finale.

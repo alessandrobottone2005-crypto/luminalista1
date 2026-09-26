@@ -4,6 +4,7 @@ dist/
 .env.local
 .env.*.local
 .DS_Store
+._*
 *.tsbuildinfo
 *.blend1
 .vercel

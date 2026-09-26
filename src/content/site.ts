@@ -1,5 +1,5 @@
 export const siteConfig = {
-  electionDate: "2026-10-05T08:00:00+01:00",
+  electionDate: "2026-10-14T08:00:00+02:00",
 };
 
 export const candidates = [
@@ -9,7 +9,7 @@ export const candidates = [
     surname: "Bottone",
     className: "VCE",
     image: "/images/candidates/valeria-bottone.webp",
-    position: "center 50%",
+    position: "center 30%",
   },
   {
     id: "02",
