@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Nuova foto di Giulia Bisceglia (ritaglio verticale WebP 4:5, 720 × 900 px).
+
 ## 1.0.0 — 2026-09-26
 
 Versione definitiva del sito, pubblicata su [luminalista1.vercel.app](https://luminalista1.vercel.app).
