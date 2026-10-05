@@ -30,3 +30,7 @@ Le classi dei candidati (`VCE`, `VAC`, `IVBSU`) sono confermate dai 4 design Fig
 ## Contenuti
 
 `Lumina-testi-sito.docx` è il documento con i testi del sito consegnato dalla lista. È escluso da Vercel (`*.docx`).
+
+## Gallery
+
+`gallery/giorno1-lunedi5ottobre/` contiene le 72 fotografie consegnate per il primo giorno di propaganda. Le cartelle `giorno2-…` fino a `giorno5-…` ospitano le giornate successive. `npm run media:gallery` genera WebP responsive in `public/media/gallery/`, `src/config/gallery.json` e l’ingresso statico. Gli originali restano esclusi da Vercel. Procedura in [`GALLERY.md`](../../docs/GALLERY.md).

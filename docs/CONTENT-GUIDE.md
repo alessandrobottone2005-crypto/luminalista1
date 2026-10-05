@@ -19,7 +19,7 @@ Il testo di riferimento consegnato dalla lista è in `assets/source/content/Lumi
 
 1. Verifica nomi, classi e ritratti dei candidati prima della pubblicazione.
 2. Inserisci la data reale delle elezioni con offset di Roma.
-3. `programPoints` contiene le otto proposte ufficiali della Lista 1 (forma `{ id, title, text }`); aggiorna qui se il programma cambia.
+3. `programPoints` contiene le sette proposte ufficiali della Lista 1 (forma `{ id, title, text }`); aggiorna qui se il programma cambia.
 4. Completa informativa privacy, responsabile e contatti.
 5. Rimuovi le etichette “provvisoria” solo dopo la verifica con la lista.
 
@@ -34,3 +34,7 @@ Usa testi alternativi descrittivi e aggiorna [`assets/source/SOURCES.md`](../ass
 ## Verità editoriale
 
 Non inventare account social, endorsement, date, risultati o persone. Se un dato non è confermato, mantieni il segnaposto e l’etichetta provvisoria.
+
+## Foto della propaganda
+
+Le foto si aggiornano tramite le cartelle `assets/source/gallery/giorno1-…` fino a `giorno5-…` e il comando `npm run media:gallery`. I testi della pagina sono in `src/content/gallery.ts`; non modificare a mano `src/config/gallery.json`. Vedi [`GALLERY.md`](GALLERY.md).

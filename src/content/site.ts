@@ -1,4 +1,5 @@
 export const siteConfig = {
+  title: "Lumina — Lista 1 | Liceo Gentileschi Napoli",
   electionDate: "2026-10-14T08:00:00+02:00",
 };
 
@@ -45,8 +46,8 @@ export const programPoints = [
   },
   {
     id: "02",
-    title: "GENTILESCHI X\nFONDAZIONE CIRILLO.",
-    text: "Vogliamo rafforzare il legame tra il nostro istituto e la Fondazione Domenico Cirillo, una realtà vicina al nostro territorio e ai giovani. L’obiettivo è portare in Auditorium incontri su sicurezza stradale, uso consapevole dell’alcol, educazione e responsabilità, oltre a far conoscere agli studenti le numerose attività, conferenze e iniziative organizzate dalla Fondazione durante l’anno.\n\nScuola e territorio insieme, per parlare ai ragazzi attraverso altri ragazzi.",
+    title: "GENTILESCHI X\nGLI UNICORNI DI DIANA",
+    text: "Gli Unicorni di Diana è un'associazione di volontariato di Napoli, fondata dalla famiglia della piccola Diana, che promuove la cultura della solidarietà, il supporto ai piccoli pazienti ospedalizzati e la sensibilizzazione alla donazione di midollo osseo, sangue e piastrine.\n\nIniziative a scuola:\n\nAssemblee di sensibilizzazione: Incontri informativi e formativi sulla donazione dedicati agli studenti. L’associazione mira al diffondere consapevolezza su una realtà di cui non siamo tutti informati.\n\nIniziative solidali:\nMercatini di beneficenza, incontri a teatro, uova e panettoni solidali per raccogliere fondi e destinarli interamente al sostegno dei bambini ricoverati nei reparti di oncologia.",
   },
   {
     id: "03",
@@ -70,11 +71,6 @@ export const programPoints = [
   },
   {
     id: "07",
-    title: "PIÙ SCELTA\nALLE MACCHINETTE.",
-    text: "Quella delle macchinette è una proposta che gli studenti portano avanti da tempo e che vogliamo finalmente provare a trasformare in realtà. Vogliamo ampliare l’offerta dei distributori con alternative più sostanziose e varie, come mandorle, tramezzini e altri snack, soprattutto per chi rimane a scuola fino a tardi. Vogliamo inoltre garantire una maggiore presenza di prodotti senza glutine, così da permettere anche agli studenti celiaci di avere più scelta. Perché a volte sono proprio le piccole attenzioni a rendere la scuola più comoda e inclusiva per tutti.",
-  },
-  {
-    id: "08",
     title: "IL SITO\nDI LUMINA.",
     text: "Il sito ufficiale di Lumina, dove trovare tutto ciò che riguarda la nostra lista: i quattro candidati, le nostre storie, le proposte, la nostra identità e tutto quello che c’è da sapere su di noi.\n\nCi sarà un box aperto a tutti gli studenti, anche in forma anonima, dove lasciare idee, proposte. E soprattutto, il sito non finirà con le elezioni: vogliamo trasformarlo in uno spazio ufficiale del Gentileschi, mantenendo il box sempre attivo e portando le proposte più interessanti nelle assemblee d’istituto mensili.",
   },

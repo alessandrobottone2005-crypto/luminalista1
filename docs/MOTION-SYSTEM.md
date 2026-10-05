@@ -41,3 +41,9 @@ Con `prefers-reduced-motion: reduce`:
 - Il loop dell’hero resta attivo per scelta concordata (vedi [`HERO-ANIMATION.md`](HERO-ANIMATION.md)).
 
 Nessuna informazione dipende esclusivamente dal movimento.
+
+## Gallery
+
+`useGalleryCarousel` gestisce con Motion due molle concatenate per la traslazione e per inclinazione/scala delle foto a cascata. I pointer event collegano lo spostamento al gesto, poi rilasciano la molla verso la foto di destinazione. Il carosello è circolare e monta al massimo sette foto vicine. Non usa GSAP né scroll aggiuntivo.
+
+L'autoplay di tre secondi si ferma dopo un'interazione manuale e riparte solo da “Riprendi”; viene sospeso con mouse sopra, fuori vista e in background. Con movimento ridotto parte in pausa e salta direttamente alla nuova posizione. Motion gestisce anche la breve comparsa della foto nel dialogo. Timer, osservatori e listener vengono rimossi all'uscita.

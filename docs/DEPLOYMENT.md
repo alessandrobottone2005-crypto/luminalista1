@@ -33,8 +33,12 @@ Configura `VITE_GOOGLE_SCRIPT_URL` sia per Production sia per Preview. Se il val
 
 1. Apri home, `/privacy` e un URL inesistente tramite link diretto.
 2. Verifica l’hero a schermo intero: primo fotogramma immediato, loop senza flash, logo intero su telefono.
-3. Scorri fino in fondo: manifesto che si accende, otto proposte, sticker trascinabili, riga finale “© 2026 LUMINA · PRIVACY”.
+3. Scorri fino in fondo: manifesto che si accende, sette proposte, sticker trascinabili, riga finale “© 2026 LUMINA · PRIVACY”.
 4. Controlla countdown e data delle elezioni.
 5. Invia un’idea di test chiaramente etichettata e verifica la conferma.
 6. Controlla la riga nel Foglio Lumina.
 7. Verifica mobile 320, 360 e 430 px, tablet e desktop.
+
+## Gallery
+
+Prima di una futura pubblicazione, genera e includi gli asset `public/media/gallery/`, il manifesto `src/config/gallery.json` e `gallery/index.html`. Gli originali non sono richiesti su Vercel. Le riscritture per `/gallery` e `/gallery/` precedono quella generale. Verifica accesso diretto, ricaricamento, versione senza JavaScript e navigazione dalla home. Vedi [`GALLERY.md`](GALLERY.md).

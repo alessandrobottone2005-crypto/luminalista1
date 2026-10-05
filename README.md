@@ -28,7 +28,7 @@ Il comando verifica formato, TypeScript, test e build di produzione.
 
 Hero (sequenza Blender su canvas) → Intro (unico `h1`) → Candidati → Countdown → Manifesto → Programma → Sticker → La tua idea → riga finale “© 2026 LUMINA · PRIVACY”.
 
-Il sito non ha navbar, menu né footer. Le route sono `/`, `/privacy` e una pagina 404.
+Il sito non ha navbar, menu né footer. Un pulsante Gallery fisso in alto a destra apre la pagina fotografica dedicata. Le route sono `/`, `/gallery`, `/privacy` e una pagina 404.
 
 ## Struttura
 
@@ -56,7 +56,13 @@ Vite 8, React 19, TypeScript, React Router, GSAP con ScrollTrigger e `@gsap/reac
 
 ## Contenuti provvisori
 
-Le otto proposte del programma, i quattro candidati e i tre sticker sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare l’informativa privacy in [`src/content/site.ts`](src/content/site.ts) e [`src/pages/PrivacyPage.tsx`](src/pages/PrivacyPage.tsx), seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+Le sette proposte del programma, i quattro candidati e i tre sticker sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare l’informativa privacy in [`src/content/site.ts`](src/content/site.ts) e [`src/pages/PrivacyPage.tsx`](src/pages/PrivacyPage.tsx), seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+
+## Gallery fotografica
+
+La pagina `/gallery` mostra un carosello fotografico a cascata, con autoplay controllabile, swipe e visualizzatore a schermo intero. Tutte le foto formano una sequenza unica, senza griglia o divisione visibile per giorni.
+
+Aggiungi le foto in `assets/source/gallery/giorno1-lunedi5ottobre/` e nelle cartelle dei giorni successivi, poi esegui `npm run media:gallery` o riavvia il server. La preparazione avviene anche prima della build. Guida completa in [`docs/GALLERY.md`](docs/GALLERY.md).
 
 ## Animazione dell’hero
 

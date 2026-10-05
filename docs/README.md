@@ -10,6 +10,8 @@ Apri il documento relativo al lavoro che devi fare:
 
 Altri riferimenti:
 
+- [`GALLERY.md`](GALLERY.md) — carosello fotografico, aggiornamento quotidiano e visualizzatore.
+
 - [`CONTENT-GUIDE.md`](CONTENT-GUIDE.md) — dove vivono i testi e come aggiornarli.
 - [`FORM-AND-DATA.md`](FORM-AND-DATA.md) — invio delle idee, errori e Google Sheets.
 - [`DEPLOYMENT.md`](DEPLOYMENT.md) — build, variabili, Preview e Production su Vercel.

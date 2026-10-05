@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- **Gallery fotografica**: nuova pagina `/gallery` con carosello a cascata, scorrimento circolare continuo, autoplay controllabile con pausa per mouse/sfondo e visualizzatore a schermo intero (lightbox); foto responsive WebP (480, 960, 1600 px) organizzate per giorni sorgente (`giorno1-lunedi5ottobre`).
+- **Pulsante Gallery nella home**: pulsante fisso in alto a destra per accedere direttamente alla raccolta fotografica.
+- **Aggiornamento programma elettorale**: proposta 02 aggiornata con "Gentileschi x Gli Unicorni di Diana"; rimossa la proposta sulle macchinette e consolidato il programma a 7 proposte ufficiali.
+- **Architettura di build e routing**: configurazione Vite multi-input per `main` e `gallery`, generazione statica della gallery (`scripts/static-gallery.mjs`), riscritture dedicate in `vercel.json` e suite di test automatizzati per carosello e asset gallery.
 - Nuova foto di Giulia Bisceglia (ritaglio verticale WebP 4:5, 720 × 900 px).
 
 ## 1.0.0 — 2026-09-26

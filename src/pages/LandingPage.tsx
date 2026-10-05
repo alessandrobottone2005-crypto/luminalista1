@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Images } from "lucide-react";
 import { Link } from "react-router-dom";
 import { CandidateSection } from "@/components/sections/CandidateSection";
 import { CountdownSection } from "@/components/sections/CountdownSection";
@@ -8,6 +9,7 @@ import { IntroSection } from "@/components/sections/IntroSection";
 import { ManifestoSection } from "@/components/sections/ManifestoSection";
 import { ProgramSection } from "@/components/sections/ProgramSection";
 import { StickerSection } from "@/components/sections/StickerSection";
+import { galleryCopy } from "@/content/gallery";
 import { colophon } from "@/content/site";
 import { useLandingMotion } from "@/motion/useLandingMotion";
 
@@ -17,6 +19,10 @@ export function LandingPage() {
 
   return (
     <div className="site-shell">
+      <Link className="gallery-entry" to="/gallery">
+        <Images size={18} aria-hidden="true" />
+        {galleryCopy.entry}
+      </Link>
       <main ref={root}>
         <HeroSection />
         <IntroSection />

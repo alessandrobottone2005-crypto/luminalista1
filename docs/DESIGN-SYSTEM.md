@@ -49,3 +49,7 @@ Lo stile è CSS semplice, senza framework né librerie di componenti. [`src/styl
 - Il giallo indica scelta o rivelazione; non riempie superfici decorative senza funzione.
 - I testi funzionali rimangono almeno a 16 px sulle viste mobili.
 - I contenuti provvisori devono restare esplicitamente riconoscibili.
+
+## Gallery
+
+Il pulsante Gallery della home è fisso in alto a destra, giallo e squadrato, con area minima di 44 px. La pagina `/gallery` usa gli stessi token, un carosello a cascata su fondo nero: foto centrale intera in cornice 4:3, foto laterali inclinate e ridotte, contatore e controlli squadrati. Nessuna griglia o divisione per giorni. Il visualizzatore mostra la foto intera, senza ritaglio. Non aggiunge una sezione al percorso della landing.
