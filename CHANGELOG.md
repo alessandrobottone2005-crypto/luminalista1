@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Gallery fotografica (Giorno 2)**: aggiunte 55 fotografie di Martedì 6 ottobre (`assets/source/gallery/giorno2-martedi6ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 127 foto).
 - **Gallery fotografica**: nuova pagina `/gallery` con carosello a cascata, scorrimento circolare continuo, autoplay controllabile con pausa per mouse/sfondo e visualizzatore a schermo intero (lightbox); foto responsive WebP (480, 960, 1600 px) organizzate per giorni sorgente (`giorno1-lunedi5ottobre`).
 - **Pulsante Gallery nella home**: pulsante fisso in alto a destra per accedere direttamente alla raccolta fotografica.
 - **Aggiornamento programma elettorale**: proposta 02 aggiornata con "Gentileschi x Gli Unicorni di Diana"; rimossa la proposta sulle macchinette e consolidato il programma a 7 proposte ufficiali.
