@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { siteConfig } from "@/content/site";
 import { galleryCopy } from "@/content/gallery";
 import { LandingPage } from "@/pages/LandingPage";
@@ -25,6 +26,7 @@ export default function App() {
   return (
     <>
       <RouteReset />
+      <Analytics />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route

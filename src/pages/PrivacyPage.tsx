@@ -26,8 +26,10 @@ export function PrivacyPage() {
       </p>
       <h2>Sul sito</h2>
       <p>
-        Non sono presenti strumenti di analisi o cookie pubblicitari. Font, logo
-        e immagini sono distribuiti insieme al sito.
+        Non sono presenti cookie pubblicitari o di profilazione. Le metriche di
+        visita sono aggregate e anonime tramite Vercel Web Analytics, senza
+        l'uso di cookie né tracciamento dell'identità personale. Font, logo e
+        immagini sono distribuiti insieme al sito.
       </p>
       <Link className="text-link" to="/">
         TORNA ALLA LANDING <ArrowUpRight size={18} />
