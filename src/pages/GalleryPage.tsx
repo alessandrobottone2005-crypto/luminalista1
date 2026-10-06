@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { GalleryCarousel } from "@/components/gallery/GalleryCarousel";
+import type { GalleryDay, GalleryPhoto } from "@/components/gallery/types";
 import gallery from "@/config/gallery.json";
 import { galleryCopy } from "@/content/gallery";
 import "@/styles/gallery.css";
 
-const photos = [...gallery.days]
+const days = (gallery.days ?? []) as GalleryDay[];
+const photos: GalleryPhoto[] = [...days]
   .sort((a, b) => b.number - a.number)
   .flatMap((day) => day.photos);
 

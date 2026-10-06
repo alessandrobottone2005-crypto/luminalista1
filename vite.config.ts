@@ -1,9 +1,5 @@
-import {
-  defineConfig,
-  type Plugin,
-  type PreviewServer,
-  type ViteDevServer,
-} from "vite";
+import { defineConfig } from "vitest/config";
+import type { Plugin, PreviewServer, ViteDevServer } from "vite";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
 
@@ -36,4 +32,7 @@ export default defineConfig({
     },
   },
   server: { port: 4174, strictPort: true },
+  test: {
+    exclude: ["**/node_modules/**", "**/dist/**", "**/._*"],
+  },
 });

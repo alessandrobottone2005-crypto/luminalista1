@@ -94,6 +94,16 @@ describe("gallery generation", () => {
     await expect(buildGallery(root)).rejects.toThrow();
   });
 
+  it("reuses generated assets when source folders exist but contain no photos (.vercelignore)", async () => {
+    const root = await fixture();
+    await photo(root, "giorno1-lunedi5ottobre", "a.jpg");
+    await buildGallery(root);
+    await fs.unlink(
+      path.join(root, "assets/source/gallery/giorno1-lunedi5ottobre/a.jpg"),
+    );
+    expect((await buildGallery(root)).cached).toBe(true);
+  });
+
   it("rejects duplicate days and unknown folder names", async () => {
     const root = await fixture();
     await photo(root, "giorno1-lunedi5ottobre", "a.jpg");

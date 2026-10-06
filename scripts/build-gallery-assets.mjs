@@ -22,11 +22,43 @@ export async function buildGallery(root = projectRoot) {
   const previous = await fs
     .readFile(config, "utf8")
     .then(JSON.parse, () => null);
-  if (!(await exists(source))) {
+  const sourceExists = await exists(source);
+  const entries = sourceExists
+    ? (await fs.readdir(source, { withFileTypes: true }))
+        .filter((entry) => !entry.name.startsWith(".") && entry.isDirectory())
+        .sort((a, b) => natural.compare(a.name, b.name))
+    : [];
+
+  const folders = new Map();
+  let hasSourcePhotos = false;
+  if (sourceExists) {
+    for (const entry of entries) {
+      const match = /^giorno([1-5])-/.exec(entry.name);
+      if (!match)
+        throw new Error(`Gallery: cartella non riconosciuta ${entry.name}`);
+      const number = Number(match[1]);
+      if (folders.has(number))
+        throw new Error(`Gallery: giorno ${number} duplicato.`);
+      folders.set(number, entry.name);
+      const dayFiles = await fs
+        .readdir(path.join(source, entry.name))
+        .catch(() => []);
+      if (
+        dayFiles.some(
+          (file) => !file.startsWith(".") && /\.(jpe?g|png|webp)$/i.test(file),
+        )
+      ) {
+        hasSourcePhotos = true;
+      }
+    }
+  }
+
+  if (!sourceExists || !hasSourcePhotos) {
     if (
       !previous ||
       previous.version !== version ||
-      !Array.isArray(previous.days)
+      !Array.isArray(previous.days) ||
+      previous.days.length === 0
     ) {
       throw new Error(
         "Gallery: originali assenti e manifesto generato non disponibile.",
@@ -56,19 +88,6 @@ export async function buildGallery(root = projectRoot) {
     return { days: previous.days, converted: 0, cached: true };
   }
 
-  const entries = (await fs.readdir(source, { withFileTypes: true }))
-    .filter((entry) => !entry.name.startsWith(".") && entry.isDirectory())
-    .sort((a, b) => natural.compare(a.name, b.name));
-  const folders = new Map();
-  for (const entry of entries) {
-    const match = /^giorno([1-5])-/.exec(entry.name);
-    if (!match)
-      throw new Error(`Gallery: cartella non riconosciuta ${entry.name}`);
-    const number = Number(match[1]);
-    if (folders.has(number))
-      throw new Error(`Gallery: giorno ${number} duplicato.`);
-    folders.set(number, entry.name);
-  }
   const oldPhotos = new Map(
     (previous?.version === version ? previous.days : []).flatMap((day) =>
       day.photos.map((photo) => [photo.id, photo]),
