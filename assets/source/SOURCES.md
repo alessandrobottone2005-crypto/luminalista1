@@ -35,4 +35,5 @@ Le classi dei candidati (`VCE`, `VAC`, `IVBSU`) sono confermate dai 4 design Fig
 
 `gallery/giorno1-lunedi5ottobre/` contiene le 72 fotografie consegnate per il primo giorno di propaganda.
 `gallery/giorno2-martedi6ottobre/` contiene le 55 fotografie consegnate per il secondo giorno di propaganda.
-Le cartelle successive `giorno3-…` fino a `giorno5-…` ospitano le giornate seguenti. `npm run media:gallery` genera WebP responsive in `public/media/gallery/`, `src/config/gallery.json` e l’ingresso statico. Gli originali restano esclusi da Vercel. Procedura in [`GALLERY.md`](../../docs/GALLERY.md).
+`gallery/giorno3-mercoledi7ottobre/` contiene le 50 fotografie consegnate per il terzo giorno di propaganda.
+Le cartelle successive `giorno4-…` e `giorno5-…` ospitano le giornate seguenti. `npm run media:gallery` genera WebP responsive in `public/media/gallery/`, `src/config/gallery.json` e l’ingresso statico. Gli originali restano esclusi da Vercel. Procedura in [`GALLERY.md`](../../docs/GALLERY.md).

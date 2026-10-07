@@ -3059,6 +3059,1209 @@
           ]
         }
       ]
+    },
+    {
+      "id": "giorno3",
+      "number": 3,
+      "date": "2026-10-07",
+      "label": "Giorno 3 · Mercoledì 7 ottobre",
+      "photos": [
+        {
+          "id": "g3-84e2221f26698fa7",
+          "source": "giorno3-mercoledi7ottobre/1e58b2db-3e5b-4f04-bd1d-e3f957575f32.JPG",
+          "fingerprint": "9dd644517f6bd64be1325dbc5d410ad5595bc7af2626a8c95ee3393bdebaf9de",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-84e2221f26698fa7-9dd644517f6bd64b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-84e2221f26698fa7-9dd644517f6bd64b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-84e2221f26698fa7-9dd644517f6bd64b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-03afa21a54f3fe74",
+          "source": "giorno3-mercoledi7ottobre/1e340ff3-730b-4e80-bc2d-fe30f504b651.JPG",
+          "fingerprint": "1b72b624e530d7a3cf8e09f232b3768715c3f76ecee4ebb28a4df14657497143",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-03afa21a54f3fe74-1b72b624e530d7a3-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-03afa21a54f3fe74-1b72b624e530d7a3-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-03afa21a54f3fe74-1b72b624e530d7a3-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-5b254de516074f28",
+          "source": "giorno3-mercoledi7ottobre/4b30bda6-2c28-4282-9469-64f0801a441e.JPG",
+          "fingerprint": "86d62cc0a86a494aa14175087462d05dda2047ca4f441d276a3b243ee8b38d61",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-5b254de516074f28-86d62cc0a86a494a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-5b254de516074f28-86d62cc0a86a494a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-5b254de516074f28-86d62cc0a86a494a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-dbec345a81c3b395",
+          "source": "giorno3-mercoledi7ottobre/4c111786-6690-41cc-8843-059ef56ba01a.JPG",
+          "fingerprint": "99e952b3ec99bd811b2503955ed62b07a8be5afb9713e92cb9894f89b2905387",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-dbec345a81c3b395-99e952b3ec99bd81-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-dbec345a81c3b395-99e952b3ec99bd81-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-dbec345a81c3b395-99e952b3ec99bd81-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-2f0e02b904747fb9",
+          "source": "giorno3-mercoledi7ottobre/4d83ae52-548f-41d9-9d81-64d67151a297.JPG",
+          "fingerprint": "92d33bdafbde9af6bd4a6a93bf557898c72635687a4dcf69536618604233a74d",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-2f0e02b904747fb9-92d33bdafbde9af6-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-2f0e02b904747fb9-92d33bdafbde9af6-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-2f0e02b904747fb9-92d33bdafbde9af6-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-1cf6c15206f02a6e",
+          "source": "giorno3-mercoledi7ottobre/4e16bb47-47a4-4df3-8f13-271731380cd0.JPG",
+          "fingerprint": "9206951c5ccbe39ed3132cb743973729df8d3841874e8f8fd70deae7aee665ba",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-1cf6c15206f02a6e-9206951c5ccbe39e-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-1cf6c15206f02a6e-9206951c5ccbe39e-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-1cf6c15206f02a6e-9206951c5ccbe39e-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-5c837d72ea46c4ab",
+          "source": "giorno3-mercoledi7ottobre/5bbd3d8c-962e-4e9b-a949-af5d3f3c18b9.JPG",
+          "fingerprint": "78ea2351ba6f5046b0a02f6a0326246c3f49a028287a977a304d3c8fbe52f00e",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-5c837d72ea46c4ab-78ea2351ba6f5046-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-5c837d72ea46c4ab-78ea2351ba6f5046-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-5c837d72ea46c4ab-78ea2351ba6f5046-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-b8c63515598c41dc",
+          "source": "giorno3-mercoledi7ottobre/6bb8d13e-91f1-46c3-8173-d89c032e5dfb.JPG",
+          "fingerprint": "0d9ce5847c3cbfd8a73d918b7c6db9276e25d30dff5b0d383352174c5186b09b",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-b8c63515598c41dc-0d9ce5847c3cbfd8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-b8c63515598c41dc-0d9ce5847c3cbfd8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-b8c63515598c41dc-0d9ce5847c3cbfd8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-c2bc93c16216afff",
+          "source": "giorno3-mercoledi7ottobre/7ce4040e-648c-4f2a-8021-6a3ce88c829f.JPG",
+          "fingerprint": "8e4f9c3681fbfdd84ff91db9755d63137f1b07c9d367aa3e763c614264e6cd69",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-c2bc93c16216afff-8e4f9c3681fbfdd8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-c2bc93c16216afff-8e4f9c3681fbfdd8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-c2bc93c16216afff-8e4f9c3681fbfdd8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-7c8839be9346e5a7",
+          "source": "giorno3-mercoledi7ottobre/8b928558-e88a-43f9-bfc9-db041f0725f7.JPG",
+          "fingerprint": "9333ab6367904c215c23ababfcfdf6d8d7593bc8dbda66ec4d92c911cbebc071",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-7c8839be9346e5a7-9333ab6367904c21-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-7c8839be9346e5a7-9333ab6367904c21-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-7c8839be9346e5a7-9333ab6367904c21-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-c934a7ddac12fd53",
+          "source": "giorno3-mercoledi7ottobre/8db65673-3e1e-4e7e-99f1-5a696325de6f.JPG",
+          "fingerprint": "8defe77487fc7b15685cf122bd00bafc19097619ef31247576b593571783ec44",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-c934a7ddac12fd53-8defe77487fc7b15-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-c934a7ddac12fd53-8defe77487fc7b15-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-c934a7ddac12fd53-8defe77487fc7b15-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-f634cc1b5a9f485e",
+          "source": "giorno3-mercoledi7ottobre/8dde294c-133e-4e54-b31d-f99599d0db71.JPG",
+          "fingerprint": "f973eb71144f2798ee82fbb23bddb6447611e1da865f48e8ac7d496200a5e744",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-f634cc1b5a9f485e-f973eb71144f2798-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-f634cc1b5a9f485e-f973eb71144f2798-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-f634cc1b5a9f485e-f973eb71144f2798-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-3ba9f350d0e501d9",
+          "source": "giorno3-mercoledi7ottobre/8f125e20-3fa8-4a48-affd-b687ea993215.JPG",
+          "fingerprint": "bde3e958ea0296930797a1fc8a28a2816d026221ba0e02c4e4259a42207a162e",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-3ba9f350d0e501d9-bde3e958ea029693-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-3ba9f350d0e501d9-bde3e958ea029693-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-3ba9f350d0e501d9-bde3e958ea029693-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-9636389687226c3b",
+          "source": "giorno3-mercoledi7ottobre/9a542a69-ffd5-4282-ab28-2dc0fdf1187a.JPG",
+          "fingerprint": "4884882003bb641a532eec368822ed15e3c8bea3d3d853ed51e78f8736ff90e6",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-9636389687226c3b-4884882003bb641a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-9636389687226c3b-4884882003bb641a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-9636389687226c3b-4884882003bb641a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-0062d1ac581fc141",
+          "source": "giorno3-mercoledi7ottobre/09e5a653-b09a-4a01-a2be-a1921d8ef8b2.JPG",
+          "fingerprint": "f4847631aba8ba53e6e61214f1cb8bb02d7e510ef02fa91d199fbe21af5c499b",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-0062d1ac581fc141-f4847631aba8ba53-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-0062d1ac581fc141-f4847631aba8ba53-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-0062d1ac581fc141-f4847631aba8ba53-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-baad16c5917233c3",
+          "source": "giorno3-mercoledi7ottobre/28af70e4-65f5-4a0e-9fc7-ca1a046e304a.JPG",
+          "fingerprint": "89705442b242a30fc7c08f5de765c4ec06f0a1d0350f360afc6808cf3c0ec730",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-baad16c5917233c3-89705442b242a30f-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-baad16c5917233c3-89705442b242a30f-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-baad16c5917233c3-89705442b242a30f-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-285fb3e19be4a59d",
+          "source": "giorno3-mercoledi7ottobre/35ddf849-cd0e-48ac-bad4-56414a08e722.JPG",
+          "fingerprint": "87ef3c2292dd38bd83c863cb52fd45b4ef85546c84e46bc48c793b64308f060e",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-285fb3e19be4a59d-87ef3c2292dd38bd-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-285fb3e19be4a59d-87ef3c2292dd38bd-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-285fb3e19be4a59d-87ef3c2292dd38bd-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-46fb0703d3c00767",
+          "source": "giorno3-mercoledi7ottobre/53bb6991-3369-436b-a5d1-bfc4f39b307d.JPG",
+          "fingerprint": "210078e26207e4a84b2bf4fe6fbac102a25a07b769c5fc77b2a83f44c8d18811",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-46fb0703d3c00767-210078e26207e4a8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-46fb0703d3c00767-210078e26207e4a8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-46fb0703d3c00767-210078e26207e4a8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-d9fbf946cd4c027f",
+          "source": "giorno3-mercoledi7ottobre/78dfa197-c918-40f3-9e11-55290e2a2d01.JPG",
+          "fingerprint": "5b2cdbfbddf7f9e1d6c62222d153dd25dbf69e2a6708f2795dc9708b1ab1e6cf",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-d9fbf946cd4c027f-5b2cdbfbddf7f9e1-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-d9fbf946cd4c027f-5b2cdbfbddf7f9e1-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-d9fbf946cd4c027f-5b2cdbfbddf7f9e1-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-f3117f388f140b1a",
+          "source": "giorno3-mercoledi7ottobre/83b44be6-e15c-445a-bddb-c41f4a0b5990.JPG",
+          "fingerprint": "43dc3f72c5d803f87169e4804775c7bbde71cf062d3f88bdea1922c29aabd311",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-f3117f388f140b1a-43dc3f72c5d803f8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-f3117f388f140b1a-43dc3f72c5d803f8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-f3117f388f140b1a-43dc3f72c5d803f8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-342b00cfd5f08a23",
+          "source": "giorno3-mercoledi7ottobre/89df0dc6-3ec4-4ff3-bb32-5313e46cfbc9.JPG",
+          "fingerprint": "1abf7ab21ef7aee3b7cdf66700afa70f9c5bf8acc9126e726782c305e7d99746",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-342b00cfd5f08a23-1abf7ab21ef7aee3-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-342b00cfd5f08a23-1abf7ab21ef7aee3-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-342b00cfd5f08a23-1abf7ab21ef7aee3-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-31d422a24ae52969",
+          "source": "giorno3-mercoledi7ottobre/163f9047-0d20-4c93-8939-7fb4f6a8b5f8.JPG",
+          "fingerprint": "21e2a38b777b6c449f96c23aff97fe92069b92b98f613f93a1029737bd055620",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-31d422a24ae52969-21e2a38b777b6c44-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-31d422a24ae52969-21e2a38b777b6c44-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-31d422a24ae52969-21e2a38b777b6c44-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-6ded888ed14a0b46",
+          "source": "giorno3-mercoledi7ottobre/362d7ced-ce96-4223-b020-9959e91b783d.JPG",
+          "fingerprint": "a655f3af0eaeafdfdd71cac61832b268c705c8caa582c0bb2554bb56d3827ae4",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-6ded888ed14a0b46-a655f3af0eaeafdf-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-6ded888ed14a0b46-a655f3af0eaeafdf-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-6ded888ed14a0b46-a655f3af0eaeafdf-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-909d37014bc1af1d",
+          "source": "giorno3-mercoledi7ottobre/416d5919-bb1a-43bc-80bd-9a042bf6acc9.JPG",
+          "fingerprint": "3900397cc1ef2cf75d9ccc93cdf6b2778af88556864412448697fcc2e308bcbe",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-909d37014bc1af1d-3900397cc1ef2cf7-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-909d37014bc1af1d-3900397cc1ef2cf7-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-909d37014bc1af1d-3900397cc1ef2cf7-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-965c31bce05866bc",
+          "source": "giorno3-mercoledi7ottobre/512d1602-f42b-4d7d-8e04-d92f6b44c17a.JPG",
+          "fingerprint": "e5bdfb224d1786ef13db40d20afe40082111ca3930beb55b830dac4efaf5db35",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-965c31bce05866bc-e5bdfb224d1786ef-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-965c31bce05866bc-e5bdfb224d1786ef-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-965c31bce05866bc-e5bdfb224d1786ef-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-6bb065015e2fb4ad",
+          "source": "giorno3-mercoledi7ottobre/822d1f11-2367-46ec-a51d-d10f4a8f0381.JPG",
+          "fingerprint": "be91fcd95266e4d307652e6dc8fbbb460bbc340c2101597db34c778efd021173",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-6bb065015e2fb4ad-be91fcd95266e4d3-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-6bb065015e2fb4ad-be91fcd95266e4d3-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-6bb065015e2fb4ad-be91fcd95266e4d3-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-628a6cfa2617c019",
+          "source": "giorno3-mercoledi7ottobre/2256a1fe-4099-4076-b8c5-40c8ace6c7a6.JPG",
+          "fingerprint": "84583c647cdddafdaba60ee1f58deabd20adb34b24de582d5a5382fc0961b621",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-628a6cfa2617c019-84583c647cdddafd-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-628a6cfa2617c019-84583c647cdddafd-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-628a6cfa2617c019-84583c647cdddafd-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-028533c9afab6b87",
+          "source": "giorno3-mercoledi7ottobre/6924b7b1-7c2f-4f37-909d-113f8723d303.JPG",
+          "fingerprint": "14661cec5103420a1c7947880cf56fac1ba2fd3cae56d11ebe20682aaa065ea4",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-028533c9afab6b87-14661cec5103420a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-028533c9afab6b87-14661cec5103420a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-028533c9afab6b87-14661cec5103420a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-6a586b200112fb20",
+          "source": "giorno3-mercoledi7ottobre/87819ee2-e0bb-49e4-8bf5-796633514c32.JPG",
+          "fingerprint": "3ad32e59691e11a1a6718793f4813beffcc673c1cb132e78a4ce00a16bfd3236",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-6a586b200112fb20-3ad32e59691e11a1-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-6a586b200112fb20-3ad32e59691e11a1-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-6a586b200112fb20-3ad32e59691e11a1-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-027c54da40271ed2",
+          "source": "giorno3-mercoledi7ottobre/092677d9-f094-41c6-8a01-aa2f564e4b6a.JPG",
+          "fingerprint": "eab4e4e279c51bd315090a064ed75d4a55d729edb82aff24005ca8de20ab16b0",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-027c54da40271ed2-eab4e4e279c51bd3-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-027c54da40271ed2-eab4e4e279c51bd3-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-027c54da40271ed2-eab4e4e279c51bd3-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-09f24d96e990cb7c",
+          "source": "giorno3-mercoledi7ottobre/412959c4-5553-438f-a95f-ed1dbd8de705.JPG",
+          "fingerprint": "c457b765ffc706102a6c88eba6fb5e446f85406e0bf7b5ca64405dc7b5633d71",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-09f24d96e990cb7c-c457b765ffc70610-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-09f24d96e990cb7c-c457b765ffc70610-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-09f24d96e990cb7c-c457b765ffc70610-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-ca902480b8400ddc",
+          "source": "giorno3-mercoledi7ottobre/4011291e-ab40-47e0-88a8-0f227e0d2604.JPG",
+          "fingerprint": "0b04059e71415b59589864000a377bf3b327300fbea9bb706dcd6f8611f980f9",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-ca902480b8400ddc-0b04059e71415b59-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-ca902480b8400ddc-0b04059e71415b59-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-ca902480b8400ddc-0b04059e71415b59-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-b9dd3750ae046c2d",
+          "source": "giorno3-mercoledi7ottobre/a0fe5cda-2be0-4650-a20f-8c3e0c6c93bf.JPG",
+          "fingerprint": "1b6982332a90b67d35491813836546ee6b0387fb6939929b748b60e9b8eb2d89",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-b9dd3750ae046c2d-1b6982332a90b67d-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-b9dd3750ae046c2d-1b6982332a90b67d-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-b9dd3750ae046c2d-1b6982332a90b67d-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-274a060eecc69946",
+          "source": "giorno3-mercoledi7ottobre/aca96229-f72d-47a2-938d-5a670c20895f.JPG",
+          "fingerprint": "001a9be61fbe90422965a4453bf71e71456dce1c4bbb1133c7df58df295f3ad6",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-274a060eecc69946-001a9be61fbe9042-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-274a060eecc69946-001a9be61fbe9042-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-274a060eecc69946-001a9be61fbe9042-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-45ccce24cf194683",
+          "source": "giorno3-mercoledi7ottobre/b0fd327e-3e14-4b0d-9000-db5b4fb9ff13.JPG",
+          "fingerprint": "a080527095478594208d8341d588de1ca6970bdbd7e7727669009d1236429fec",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-45ccce24cf194683-a080527095478594-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-45ccce24cf194683-a080527095478594-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-45ccce24cf194683-a080527095478594-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-bda62d422dbae188",
+          "source": "giorno3-mercoledi7ottobre/b14da8aa-bb94-43e5-9974-b5bd7f848823.JPG",
+          "fingerprint": "78a583721f134edec77f338e8d9bcae17c8481e581beb4b968ca795bdd25b2a0",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-bda62d422dbae188-78a583721f134ede-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-bda62d422dbae188-78a583721f134ede-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-bda62d422dbae188-78a583721f134ede-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-e481a99049489d22",
+          "source": "giorno3-mercoledi7ottobre/b30f0b1e-6e8d-4dee-9ad2-f9bbcb9c0425.JPG",
+          "fingerprint": "db022ba015df1e8a51a488fdd771ec08c1940ac6e56d249afadd12aebe904329",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-e481a99049489d22-db022ba015df1e8a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-e481a99049489d22-db022ba015df1e8a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-e481a99049489d22-db022ba015df1e8a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-4b3e8a8bb6fbc0fa",
+          "source": "giorno3-mercoledi7ottobre/b747d1af-39bf-4922-90f5-5022c6da99f6.JPG",
+          "fingerprint": "792adf54c4ff6796c43459a05c756e5b491845cf30ccf8bb3f8b6f748b3d59d8",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-4b3e8a8bb6fbc0fa-792adf54c4ff6796-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-4b3e8a8bb6fbc0fa-792adf54c4ff6796-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-4b3e8a8bb6fbc0fa-792adf54c4ff6796-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-d44e0e0095a7cae7",
+          "source": "giorno3-mercoledi7ottobre/c05ece54-83f0-4757-9cae-e07c612449f8.JPG",
+          "fingerprint": "c6ed12d3d09c19418a5dfae926423f7f79c31f2dd0391e22413c85e864b2b92d",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-d44e0e0095a7cae7-c6ed12d3d09c1941-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-d44e0e0095a7cae7-c6ed12d3d09c1941-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-d44e0e0095a7cae7-c6ed12d3d09c1941-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-cf4cbd090d095888",
+          "source": "giorno3-mercoledi7ottobre/d9c19c63-26ef-4aba-b669-aac8e0e6318e.JPG",
+          "fingerprint": "14f74f52a0b80595dd79ec9b447b0b8e4585a85fd5696f0bdb262e4653748ddb",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-cf4cbd090d095888-14f74f52a0b80595-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-cf4cbd090d095888-14f74f52a0b80595-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-cf4cbd090d095888-14f74f52a0b80595-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-93f55dda046c7e42",
+          "source": "giorno3-mercoledi7ottobre/d84b7165-d1a0-4d9d-a360-edffd3a385c6.JPG",
+          "fingerprint": "ccb7664d5242cb88889ff6390e4308b35144ac7b7444d78e6ad0b4d04d676269",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-93f55dda046c7e42-ccb7664d5242cb88-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-93f55dda046c7e42-ccb7664d5242cb88-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-93f55dda046c7e42-ccb7664d5242cb88-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-23887fe2752a23df",
+          "source": "giorno3-mercoledi7ottobre/e960a644-b1b2-49df-86b1-ea93129b5f86.JPG",
+          "fingerprint": "bb782566fceb4ee23cf41073c02da5a517b8050df6e0db6cd41da54ea15cb142",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-23887fe2752a23df-bb782566fceb4ee2-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-23887fe2752a23df-bb782566fceb4ee2-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-23887fe2752a23df-bb782566fceb4ee2-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-cb48c2e0150d90fe",
+          "source": "giorno3-mercoledi7ottobre/e3975898-a89c-4f0a-bfda-893003d8d308.JPG",
+          "fingerprint": "fd747def22b7db0db20313bcba5ee08108937505259f1c2ff2c2b24973f7dcfb",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-cb48c2e0150d90fe-fd747def22b7db0d-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-cb48c2e0150d90fe-fd747def22b7db0d-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-cb48c2e0150d90fe-fd747def22b7db0d-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-e893d468e434e3e7",
+          "source": "giorno3-mercoledi7ottobre/eb513c4e-232a-41b8-98f2-2436b60d3cbe.JPG",
+          "fingerprint": "731155b2c09f3906c8edc55aa82e1ff3cd109cdc53db6685c7d0378f4055ad94",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-e893d468e434e3e7-731155b2c09f3906-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-e893d468e434e3e7-731155b2c09f3906-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-e893d468e434e3e7-731155b2c09f3906-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-57e60300dfd05477",
+          "source": "giorno3-mercoledi7ottobre/f2252c6f-04f7-474a-a7f0-15a212c797c2.JPG",
+          "fingerprint": "d978b03714b6b2e8b70eb736b2d96eb898072b4065385742c657359ec8c91469",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-57e60300dfd05477-d978b03714b6b2e8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-57e60300dfd05477-d978b03714b6b2e8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-57e60300dfd05477-d978b03714b6b2e8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-45dd7d5d908f9ec4",
+          "source": "giorno3-mercoledi7ottobre/f38954cc-5522-4a7e-8435-64a7673e0409.JPG",
+          "fingerprint": "bff7365709c5051316b2d458d8459632298e32357f718592873009d9aaf1c341",
+          "width": 1600,
+          "height": 1200,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-45dd7d5d908f9ec4-bff7365709c50513-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g3-45dd7d5d908f9ec4-bff7365709c50513-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g3-45dd7d5d908f9ec4-bff7365709c50513-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g3-a01dafed9235d7a6",
+          "source": "giorno3-mercoledi7ottobre/FB3221A5-29AF-49A8-B526-495777DA8F79.JPG",
+          "fingerprint": "ffa255439a4470983d139c547d0593f0d9ee3a7cb3a6f724e2d74fdc5f2e4059",
+          "width": 872,
+          "height": 644,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-a01dafed9235d7a6-ffa255439a447098-480.webp",
+              "width": 480,
+              "height": 354
+            },
+            {
+              "src": "/media/gallery/g3-a01dafed9235d7a6-ffa255439a447098-872.webp",
+              "width": 872,
+              "height": 644
+            }
+          ]
+        },
+        {
+          "id": "g3-8edae0b6c097b654",
+          "source": "giorno3-mercoledi7ottobre/IMG_6560.PNG",
+          "fingerprint": "471be9ec80a835956a618211ea2824d4e1dc2bb50bb6755f68a056acf73a98d8",
+          "width": 1170,
+          "height": 2532,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-8edae0b6c097b654-471be9ec80a83595-480.webp",
+              "width": 480,
+              "height": 1039
+            },
+            {
+              "src": "/media/gallery/g3-8edae0b6c097b654-471be9ec80a83595-960.webp",
+              "width": 960,
+              "height": 2078
+            },
+            {
+              "src": "/media/gallery/g3-8edae0b6c097b654-471be9ec80a83595-1170.webp",
+              "width": 1170,
+              "height": 2532
+            }
+          ]
+        },
+        {
+          "id": "g3-a0687539e215f110",
+          "source": "giorno3-mercoledi7ottobre/IMG_6561.PNG",
+          "fingerprint": "91908636b44f5bd03f234d229f895a21e351d6f25776c6cc16f178f5f92e8ed1",
+          "width": 1170,
+          "height": 2532,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-a0687539e215f110-91908636b44f5bd0-480.webp",
+              "width": 480,
+              "height": 1039
+            },
+            {
+              "src": "/media/gallery/g3-a0687539e215f110-91908636b44f5bd0-960.webp",
+              "width": 960,
+              "height": 2078
+            },
+            {
+              "src": "/media/gallery/g3-a0687539e215f110-91908636b44f5bd0-1170.webp",
+              "width": 1170,
+              "height": 2532
+            }
+          ]
+        },
+        {
+          "id": "g3-4301d2e34382e351",
+          "source": "giorno3-mercoledi7ottobre/IMG_6562.PNG",
+          "fingerprint": "aef51da5e39b426d78f6de54bd0b50f1f264eb5f044ff1737c6229932a69dc8e",
+          "width": 1170,
+          "height": 2532,
+          "variants": [
+            {
+              "src": "/media/gallery/g3-4301d2e34382e351-aef51da5e39b426d-480.webp",
+              "width": 480,
+              "height": 1039
+            },
+            {
+              "src": "/media/gallery/g3-4301d2e34382e351-aef51da5e39b426d-960.webp",
+              "width": 960,
+              "height": 2078
+            },
+            {
+              "src": "/media/gallery/g3-4301d2e34382e351-aef51da5e39b426d-1170.webp",
+              "width": 1170,
+              "height": 2532
+            }
+          ]
+        }
+      ]
     }
   ]
 }
