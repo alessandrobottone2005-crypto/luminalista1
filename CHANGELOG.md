@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Gallery fotografica (Giorno 5 — Conclusione propaganda)**: aggiunte 57 fotografie di Venerdì 9 ottobre (`assets/source/gallery/giorno5-venerdi9ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 274 foto per l'intera settimana di propaganda).
 - **Gallery fotografica (Giorno 4)**: aggiunte 40 fotografie di Giovedì 8 ottobre (`assets/source/gallery/giorno4-giovedi8ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 217 foto).
 - **Gallery fotografica (Giorno 3)**: aggiunte 50 fotografie di Mercoledì 7 ottobre (`assets/source/gallery/giorno3-mercoledi7ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 177 foto).
 - **Integrazione Vercel Web Analytics**: aggiunto `@vercel/analytics/react` in `App.tsx` per il tracciamento aggregato e cookieless delle visite, dei visitatori unici e delle interazioni.

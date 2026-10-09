@@ -5230,6 +5230,1382 @@
           ]
         }
       ]
+    },
+    {
+      "id": "giorno5",
+      "number": 5,
+      "date": "2026-10-09",
+      "label": "Giorno 5 · Venerdì 9 ottobre",
+      "photos": [
+        {
+          "id": "g5-3b4ce9c7c051ecac",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-50.jpg",
+          "fingerprint": "e13cbc505fe005c274aacac569c5aa95ac1d596c0671cbf29d705b0a95f08a9d",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-3b4ce9c7c051ecac-e13cbc505fe005c2-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-3b4ce9c7c051ecac-e13cbc505fe005c2-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-3b4ce9c7c051ecac-e13cbc505fe005c2-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-596865e275f06a15",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-50 2.jpg",
+          "fingerprint": "e57e8602739828ec116b4ed5c4bc669e85d6ee8354bfff030a3bcc8ade512cdd",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-596865e275f06a15-e57e8602739828ec-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-596865e275f06a15-e57e8602739828ec-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-596865e275f06a15-e57e8602739828ec-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-4537f553d8d95a5d",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-50 3.jpg",
+          "fingerprint": "e417d9738da791f7f0b8ad18a72d901ad3bc9e4a86c7da9ba31ab161924fc563",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-4537f553d8d95a5d-e417d9738da791f7-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-4537f553d8d95a5d-e417d9738da791f7-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-4537f553d8d95a5d-e417d9738da791f7-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-13566c0782e46f0b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51.jpg",
+          "fingerprint": "cf565e1943899d87b20a7e3ccc1d72c3f63530e465fd5a2e07d71a7971e3ceca",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-13566c0782e46f0b-cf565e1943899d87-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-13566c0782e46f0b-cf565e1943899d87-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-13566c0782e46f0b-cf565e1943899d87-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-899a7e3f1455bc6b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 2.jpg",
+          "fingerprint": "c7e635325dae4b3b316cc3bc82a56511f8c9e79dd0acb032c0e7e7aee48b207e",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-899a7e3f1455bc6b-c7e635325dae4b3b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-899a7e3f1455bc6b-c7e635325dae4b3b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-899a7e3f1455bc6b-c7e635325dae4b3b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-8041f7bc99e21947",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 3.jpg",
+          "fingerprint": "a6be7a5677882609765c9cbb2943c363a8d9591ac297802a03fcea9b98ee4224",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-8041f7bc99e21947-a6be7a5677882609-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-8041f7bc99e21947-a6be7a5677882609-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-8041f7bc99e21947-a6be7a5677882609-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-2234ba1dda8be1c2",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 4.jpg",
+          "fingerprint": "e97cb2864c349b19bb1eeb45d4f3463623f1da10e2ef0791ee1254bc093bf190",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-2234ba1dda8be1c2-e97cb2864c349b19-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-2234ba1dda8be1c2-e97cb2864c349b19-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-2234ba1dda8be1c2-e97cb2864c349b19-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-f91a637896e31e9b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 5.jpg",
+          "fingerprint": "944902c874737ff0a0edc0f47641dbae729beb74930daa1c82015ea0ee552041",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-f91a637896e31e9b-944902c874737ff0-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-f91a637896e31e9b-944902c874737ff0-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-f91a637896e31e9b-944902c874737ff0-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-25b7348bf93cc130",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 6.jpg",
+          "fingerprint": "5f527cebca64e8baf352e946552e5d246bdb5157d9b9a52eb113545202813d1a",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-25b7348bf93cc130-5f527cebca64e8ba-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-25b7348bf93cc130-5f527cebca64e8ba-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-25b7348bf93cc130-5f527cebca64e8ba-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-73f81d132144136e",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 7.jpg",
+          "fingerprint": "9e7d77b25bc50a02aa8af312a17f7444e7359d4ebbcbda6beac7b124470b9e54",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-73f81d132144136e-9e7d77b25bc50a02-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-73f81d132144136e-9e7d77b25bc50a02-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-73f81d132144136e-9e7d77b25bc50a02-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-b6427a55c45017ef",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-51 8.jpg",
+          "fingerprint": "7b1453e0b00beb8069d4a6daa697a72d9dd9275b7486e0bd468fb07aeac6cb72",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-b6427a55c45017ef-7b1453e0b00beb80-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-b6427a55c45017ef-7b1453e0b00beb80-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-b6427a55c45017ef-7b1453e0b00beb80-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-04f8f0e166a9c056",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-52.jpg",
+          "fingerprint": "1f500259f04595e7cf9689f040836eb4c592e5e96fbf077d37b36896432adfa2",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-04f8f0e166a9c056-1f500259f04595e7-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-04f8f0e166a9c056-1f500259f04595e7-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-04f8f0e166a9c056-1f500259f04595e7-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-58c8a215efcd6be9",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-52 2.jpg",
+          "fingerprint": "aa04a21372117de7cf79084b60b7940cbaed47facf5dedbbb8f1199d81bca3e6",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-58c8a215efcd6be9-aa04a21372117de7-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-58c8a215efcd6be9-aa04a21372117de7-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-58c8a215efcd6be9-aa04a21372117de7-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-2018140a37365649",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-52 3.jpg",
+          "fingerprint": "db818dbd7a9ed0074d7fadcb545bee7ea437a7cd177817241308f0193f277106",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-2018140a37365649-db818dbd7a9ed007-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-2018140a37365649-db818dbd7a9ed007-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-2018140a37365649-db818dbd7a9ed007-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-65ba64640bc088c3",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-52 4.jpg",
+          "fingerprint": "38bd7090b9c11c82eb16f9c9ac180673393cc4883eef7e8256467246fb12054d",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-65ba64640bc088c3-38bd7090b9c11c82-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-65ba64640bc088c3-38bd7090b9c11c82-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-65ba64640bc088c3-38bd7090b9c11c82-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-c71b4b55e82ce66a",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-52 5.jpg",
+          "fingerprint": "aaf90938a9b2cade4581580945ab62f2ec336c8321dce47f2b01ef547e93b4c6",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-c71b4b55e82ce66a-aaf90938a9b2cade-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-c71b4b55e82ce66a-aaf90938a9b2cade-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-c71b4b55e82ce66a-aaf90938a9b2cade-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-7a0c5b53cf7a6237",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-53.jpg",
+          "fingerprint": "691add839a728d96a6d1da785fe696845615dadc62f360d8b735f7d1d032dd45",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-7a0c5b53cf7a6237-691add839a728d96-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-7a0c5b53cf7a6237-691add839a728d96-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-7a0c5b53cf7a6237-691add839a728d96-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-79fee78de14e2540",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-53 2.jpg",
+          "fingerprint": "17ff055f1144bd0922de498bb32b792ec2ae3ac7f33014e63352bc8b1c8ed8e9",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-79fee78de14e2540-17ff055f1144bd09-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-79fee78de14e2540-17ff055f1144bd09-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-79fee78de14e2540-17ff055f1144bd09-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-dbc047160967441c",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-53 3.jpg",
+          "fingerprint": "fe5a89194eced05bd3e3a045264e9f8687014e49dbc784b5cc6f3b0059433344",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-dbc047160967441c-fe5a89194eced05b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-dbc047160967441c-fe5a89194eced05b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-dbc047160967441c-fe5a89194eced05b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-0929d66e291045ea",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-53 4.jpg",
+          "fingerprint": "f32eb78b8d5cff158a50075122922cdae7a0d6f279484a58bb2d10a1ba0868b2",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-0929d66e291045ea-f32eb78b8d5cff15-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-0929d66e291045ea-f32eb78b8d5cff15-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-0929d66e291045ea-f32eb78b8d5cff15-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-fe2eda015a72205a",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54.jpg",
+          "fingerprint": "b7c2567178b672ae009db809fdb71ec1bc3508b2d906cebd00899c8b5613f610",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-fe2eda015a72205a-b7c2567178b672ae-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-fe2eda015a72205a-b7c2567178b672ae-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-fe2eda015a72205a-b7c2567178b672ae-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-d8e3aa1c437441b7",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 2.jpg",
+          "fingerprint": "78a2e6225d30f00a44fa42400e48c0170811be4e7f0c05b822a4920611ff11ce",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-d8e3aa1c437441b7-78a2e6225d30f00a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-d8e3aa1c437441b7-78a2e6225d30f00a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-d8e3aa1c437441b7-78a2e6225d30f00a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-35255903ea750b18",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 3.jpg",
+          "fingerprint": "bfdeb00a051dceed2862f77d2361900bc6e90afcffc4fb2c14dcc1356d3bed66",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-35255903ea750b18-bfdeb00a051dceed-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-35255903ea750b18-bfdeb00a051dceed-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-35255903ea750b18-bfdeb00a051dceed-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-dd9badbf9da9daf3",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 4.jpg",
+          "fingerprint": "7709656bc32b25919d8ef460b27669e64c673398bc80f88a7851f4d88a0bd61c",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-dd9badbf9da9daf3-7709656bc32b2591-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-dd9badbf9da9daf3-7709656bc32b2591-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-dd9badbf9da9daf3-7709656bc32b2591-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-9b4c71784316ac91",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 5.jpg",
+          "fingerprint": "3635d23c75df9dd541aabbe9412da7c3f4764b216292d5b545cc50c661685312",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-9b4c71784316ac91-3635d23c75df9dd5-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-9b4c71784316ac91-3635d23c75df9dd5-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-9b4c71784316ac91-3635d23c75df9dd5-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-384ffd985b6ac949",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 6.jpg",
+          "fingerprint": "b5920f1ab3e03687e6b51da7c8bf6d04eff20abc130b07f9d13461f7dc6b21e3",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-384ffd985b6ac949-b5920f1ab3e03687-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-384ffd985b6ac949-b5920f1ab3e03687-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-384ffd985b6ac949-b5920f1ab3e03687-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-4606ed78d041a6f9",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 7.jpg",
+          "fingerprint": "3addb07a97a91d8613b343a65f1a4053a47b260828ac8b4579b3fc82aa3f745f",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-4606ed78d041a6f9-3addb07a97a91d86-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-4606ed78d041a6f9-3addb07a97a91d86-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-4606ed78d041a6f9-3addb07a97a91d86-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-c4e1057de5ddcd90",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-54 8.jpg",
+          "fingerprint": "d0b5b7f6fa40cdd5daae271363c58cc6621a6f7db424295f56803c69e4297c5e",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-c4e1057de5ddcd90-d0b5b7f6fa40cdd5-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-c4e1057de5ddcd90-d0b5b7f6fa40cdd5-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-c4e1057de5ddcd90-d0b5b7f6fa40cdd5-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-66716b5bdb5a94db",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55.jpg",
+          "fingerprint": "038b3c826a901074df9bb21dd0b80a7d9298a45f7d1eb23681b5c5e68e69f43e",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-66716b5bdb5a94db-038b3c826a901074-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-66716b5bdb5a94db-038b3c826a901074-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-66716b5bdb5a94db-038b3c826a901074-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-dfdbc0909dacb661",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55 2.jpg",
+          "fingerprint": "7fea6b37eaf8ff5b69263f2303c7ac8b6c12d8c519256f02231fbb6c8bbf54af",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-dfdbc0909dacb661-7fea6b37eaf8ff5b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-dfdbc0909dacb661-7fea6b37eaf8ff5b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-dfdbc0909dacb661-7fea6b37eaf8ff5b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-1b6d40fa5017daee",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55 3.jpg",
+          "fingerprint": "87b26a579e6dcf5b8afbd14ec6fac0503aa226b31f95c5fabd6d40c9d8e1153d",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-1b6d40fa5017daee-87b26a579e6dcf5b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-1b6d40fa5017daee-87b26a579e6dcf5b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-1b6d40fa5017daee-87b26a579e6dcf5b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-7b853e68d41dcc75",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55 4.jpg",
+          "fingerprint": "66de4b89cfa27e563fb4479b7279c376d0749f32cf3ff1aa60a0d79e43493c06",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-7b853e68d41dcc75-66de4b89cfa27e56-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-7b853e68d41dcc75-66de4b89cfa27e56-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-7b853e68d41dcc75-66de4b89cfa27e56-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-c1ca4fe46bea28cf",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55 5.jpg",
+          "fingerprint": "8c0ff0653fcaa4ee7832d8ea2348a5ddb731409443a683cf85c429de690ea7ad",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-c1ca4fe46bea28cf-8c0ff0653fcaa4ee-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-c1ca4fe46bea28cf-8c0ff0653fcaa4ee-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-c1ca4fe46bea28cf-8c0ff0653fcaa4ee-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-9165f6efae029908",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-55 6.jpg",
+          "fingerprint": "acaa27707a179f29d9282daa5eacb41be78507d4f670be6a43cc791c6bdf0ba9",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-9165f6efae029908-acaa27707a179f29-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-9165f6efae029908-acaa27707a179f29-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-9165f6efae029908-acaa27707a179f29-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-1427889086b1aa11",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-56.jpg",
+          "fingerprint": "bcc195d66d0d68501a415c16daa3f41d33f12c3315aaa736235fea88d255e905",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-1427889086b1aa11-bcc195d66d0d6850-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-1427889086b1aa11-bcc195d66d0d6850-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-1427889086b1aa11-bcc195d66d0d6850-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-a282254dc0dabafa",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-56 2.jpg",
+          "fingerprint": "b2d2717497b104a84fc006b7b3161b35119460383d29012bd9a681fa168235e9",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-a282254dc0dabafa-b2d2717497b104a8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-a282254dc0dabafa-b2d2717497b104a8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-a282254dc0dabafa-b2d2717497b104a8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-2b49b38b3d46a191",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-56 3.jpg",
+          "fingerprint": "f3e756c1e59f8cc8a53f226cf7ce48d0006a52cb6dcb0c831f250db9cbcadc60",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-2b49b38b3d46a191-f3e756c1e59f8cc8-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-2b49b38b3d46a191-f3e756c1e59f8cc8-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-2b49b38b3d46a191-f3e756c1e59f8cc8-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-4eb9bcb435c13c42",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-56 4.jpg",
+          "fingerprint": "91d894eb34213b66dd675d80ae8fa6b76f000f44a7476d595344e8b8717c2844",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-4eb9bcb435c13c42-91d894eb34213b66-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-4eb9bcb435c13c42-91d894eb34213b66-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-4eb9bcb435c13c42-91d894eb34213b66-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-99b638458f56638a",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-57.jpg",
+          "fingerprint": "e7e64530839995397c4e55e35d4627fc8d63a9731b5c064b3bbb68ad5d81d0b8",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-99b638458f56638a-e7e6453083999539-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-99b638458f56638a-e7e6453083999539-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-99b638458f56638a-e7e6453083999539-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-dacefea7b4b56c1b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-57 2.jpg",
+          "fingerprint": "4b6416919b60c1755911d44d90ad3e29122328c2f5e60f40acf6d1f83eb24a73",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-dacefea7b4b56c1b-4b6416919b60c175-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-dacefea7b4b56c1b-4b6416919b60c175-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-dacefea7b4b56c1b-4b6416919b60c175-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-e533b490295ed6b1",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-57 3.jpg",
+          "fingerprint": "4d304817a3d6b065688b74af700c2a0a03f353a0d1797f10c057efa362d73663",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-e533b490295ed6b1-4d304817a3d6b065-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-e533b490295ed6b1-4d304817a3d6b065-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-e533b490295ed6b1-4d304817a3d6b065-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-c772d5e285cd1198",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-57 4.jpg",
+          "fingerprint": "c068e91b59e16f78514ce937e359d9780cc7def784cbc92d8d4015460d08f861",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-c772d5e285cd1198-c068e91b59e16f78-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-c772d5e285cd1198-c068e91b59e16f78-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-c772d5e285cd1198-c068e91b59e16f78-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-429517c9eadf4e61",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-57 5.jpg",
+          "fingerprint": "407d6d2e4eef69d3d88389fda759c07196debb3a5bac5fff477e3d97f9d6c4ea",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-429517c9eadf4e61-407d6d2e4eef69d3-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-429517c9eadf4e61-407d6d2e4eef69d3-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-429517c9eadf4e61-407d6d2e4eef69d3-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-b42e3a309abfcd55",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-58.jpg",
+          "fingerprint": "624d5872059c358f858a30c7210ff856edd3a6ded9aafcd1a2a53277b533bc34",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-b42e3a309abfcd55-624d5872059c358f-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-b42e3a309abfcd55-624d5872059c358f-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-b42e3a309abfcd55-624d5872059c358f-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-ffd7e1982919a074",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-58 2.jpg",
+          "fingerprint": "a1998b135ca8008adad9bffe88c616b6e311ae7c58c9acaae24b18081437a250",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-ffd7e1982919a074-a1998b135ca8008a-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-ffd7e1982919a074-a1998b135ca8008a-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-ffd7e1982919a074-a1998b135ca8008a-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-dbbacef244203489",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-58 3.jpg",
+          "fingerprint": "ccc02788204f68a72be83cd8d24177d5f848106eb31ba93577bdf8f802e46464",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-dbbacef244203489-ccc02788204f68a7-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-dbbacef244203489-ccc02788204f68a7-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-dbbacef244203489-ccc02788204f68a7-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-161b38fa3f97271e",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-58 4.jpg",
+          "fingerprint": "f0ad2b273285ce2691cf4df958a1d7181a5156f3a88d753f215b10e6016e0165",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-161b38fa3f97271e-f0ad2b273285ce26-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-161b38fa3f97271e-f0ad2b273285ce26-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-161b38fa3f97271e-f0ad2b273285ce26-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-c3f8ad43bec1969d",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-58 5.jpg",
+          "fingerprint": "2c7cfdfa2eef50fb9ca5a16a63a4cb7147e48dc8c28ecd6795501e9aed11fc70",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-c3f8ad43bec1969d-2c7cfdfa2eef50fb-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-c3f8ad43bec1969d-2c7cfdfa2eef50fb-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-c3f8ad43bec1969d-2c7cfdfa2eef50fb-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-deb8b126f160032e",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59.jpg",
+          "fingerprint": "7836f0d9afcd8510390e3827b1893f258226c825a2b46f97f395646699e5cbf0",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-deb8b126f160032e-7836f0d9afcd8510-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-deb8b126f160032e-7836f0d9afcd8510-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-deb8b126f160032e-7836f0d9afcd8510-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-fcfbe09f1fa0694b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 2.jpg",
+          "fingerprint": "f437513337490ebdf93c2fca904879973d9296cbd5e662f9211d95ef2ea02f6b",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-fcfbe09f1fa0694b-f437513337490ebd-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-fcfbe09f1fa0694b-f437513337490ebd-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-fcfbe09f1fa0694b-f437513337490ebd-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-4a76eb1c5fb23e6b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 3.jpg",
+          "fingerprint": "55a6138d9b39e35e3241e3cee9b4c74ca2473de89bfa2ab670a502452fe5db11",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-4a76eb1c5fb23e6b-55a6138d9b39e35e-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-4a76eb1c5fb23e6b-55a6138d9b39e35e-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-4a76eb1c5fb23e6b-55a6138d9b39e35e-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-92d67a5c5b84b18a",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 4.jpg",
+          "fingerprint": "4e73fa369536428215420d1054435b60fee4f5df2d47bff0aaff964ecbe69232",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-92d67a5c5b84b18a-4e73fa3695364282-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-92d67a5c5b84b18a-4e73fa3695364282-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-92d67a5c5b84b18a-4e73fa3695364282-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-7244a4379d3ae823",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 5.jpg",
+          "fingerprint": "8d05840de434085b9abc80387e0514f8fa7a0f2506d582a5b1dc2d26ed064eb7",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-7244a4379d3ae823-8d05840de434085b-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-7244a4379d3ae823-8d05840de434085b-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-7244a4379d3ae823-8d05840de434085b-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-0e3789edf51c1447",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 6.jpg",
+          "fingerprint": "e376812e21e1acdbb23f1a48e11d7f876abc79ff75dbd2d4cbf916513b1a1c21",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-0e3789edf51c1447-e376812e21e1acdb-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-0e3789edf51c1447-e376812e21e1acdb-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-0e3789edf51c1447-e376812e21e1acdb-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-cc2d6306dde0f80b",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-01-59 7.jpg",
+          "fingerprint": "1a4e885278d05559a7b5124237ed9ef8221d839468f77ef941ad04198933e9cc",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-cc2d6306dde0f80b-1a4e885278d05559-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-cc2d6306dde0f80b-1a4e885278d05559-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-cc2d6306dde0f80b-1a4e885278d05559-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-ca4ebe6256757b84",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-02-00.jpg",
+          "fingerprint": "5304b4acf755bfdda329ad2d8667d04209a4fd35eb3a7323ba52b27e40575b1b",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-ca4ebe6256757b84-5304b4acf755bfdd-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-ca4ebe6256757b84-5304b4acf755bfdd-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-ca4ebe6256757b84-5304b4acf755bfdd-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        },
+        {
+          "id": "g5-8e755e43506dde30",
+          "source": "giorno5-venerdi9ottobre/PHOTO-2026-10-09-19-02-00 2.jpg",
+          "fingerprint": "699f7a95c084ca282baaaaf2d87f22d7350d322edd41f05e0246eb4385da30b1",
+          "width": 2048,
+          "height": 1536,
+          "variants": [
+            {
+              "src": "/media/gallery/g5-8e755e43506dde30-699f7a95c084ca28-480.webp",
+              "width": 480,
+              "height": 360
+            },
+            {
+              "src": "/media/gallery/g5-8e755e43506dde30-699f7a95c084ca28-960.webp",
+              "width": 960,
+              "height": 720
+            },
+            {
+              "src": "/media/gallery/g5-8e755e43506dde30-699f7a95c084ca28-1600.webp",
+              "width": 1600,
+              "height": 1200
+            }
+          ]
+        }
+      ]
     }
   ]
 }
