@@ -1,5 +1,11 @@
 # Lumina project rules
 
+## Final project status
+
+Version 2.0.0 (2026-10-09) is complete and archived as a reference; active development is closed and no further work is planned. The gallery contains all 274 photos from the five campaign days, 5–9 October 2026. Make further changes only when explicitly requested.
+
+Preserve the two day-five MP4 videos and all candidate source variants as archive material, the project brief as historical documentation, and `.agents/` plus this file for future maintainers. The privacy page intentionally retains its existing provisional text and labels.
+
 ## Start here
 
 1. Read [`README.md`](README.md) and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).

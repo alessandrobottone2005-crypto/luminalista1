@@ -6,6 +6,10 @@ Landing page mobile-first, animata e interattiva per la campagna studentesca Lum
 
 La direzione creativa segue un percorso dal buio alla luce: l’animazione originale realizzata in Blender apre il racconto a schermo intero, i contenuti emergono durante lo scroll e il percorso termina con un modulo collegato al Foglio Google Lumina.
 
+## Stato finale
+
+Versione **2.0.0 — 9 ottobre 2026**. Il progetto è completo e archiviato come riferimento, non è più in sviluppo attivo e non sono previsti ulteriori lavori. La gallery raccoglie tutte le **274 foto dei cinque giorni di propaganda**, da lunedì 5 a venerdì 9 ottobre 2026. Le istruzioni tecniche restano disponibili per riprodurre il sito e per eventuali interventi esplicitamente richiesti.
+
 ## Avvio rapido
 
 ```bash
@@ -35,17 +39,17 @@ Il sito non ha navbar, menu né footer. Un pulsante Gallery fisso in alto a dest
 ```text
 src/
 ├── app/                 router e reset dello scroll tra le route
-├── pages/               LandingPage, PrivacyPage, NotFoundPage
+├── pages/               LandingPage, GalleryPage, PrivacyPage, NotFoundPage
 ├── components/
 │   ├── LightReveal.tsx  wrapper per i reveal di luce
 │   └── sections/        sezioni narrative, HeroAnimation e StickerSection
-├── config/              heroFrames.ts e stickerWall.ts, generati dagli script
+├── config/              heroFrames.ts, stickerWall.ts e gallery.json, generati dagli script
 ├── content/             site.ts: testi, candidati, programma, sticker
 ├── features/ideas/      validazione, invio e test del modulo
 ├── lib/                 countdown e relativi test
 ├── motion/              useLandingMotion (GSAP, ScrollTrigger, Lenis) e useStickerDrag
 └── styles/              index.css, tokens.css, site.css
-scripts/                 render Blender, frame hero, sticker e fallback statico
+scripts/                 render Blender, frame hero, sticker, gallery e fallback statici
 assets/source/           sorgenti non pubblicate (vedi SOURCES.md)
 google-apps-script/      ricevitore del modulo
 ```
@@ -56,13 +60,13 @@ Vite 8, React 19, TypeScript, React Router, GSAP con ScrollTrigger e `@gsap/reac
 
 ## Contenuti provvisori
 
-Le sette proposte del programma, i quattro candidati e i tre sticker sono contenuti ufficiali. Restano da verificare la data delle elezioni e da completare l’informativa privacy in [`src/content/site.ts`](src/content/site.ts) e [`src/pages/PrivacyPage.tsx`](src/pages/PrivacyPage.tsx), seguendo [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
+Le sette proposte del programma, i quattro candidati e i tre sticker sono contenuti ufficiali. Il countdown è configurato al 14 ottobre 2026 alle 08:00 (`+02:00`) in [`src/content/site.ts`](src/content/site.ts). Per scelta del committente, l’informativa in [`src/pages/PrivacyPage.tsx`](src/pages/PrivacyPage.tsx) resta provvisoria, con il testo e le etichette esistenti. Questa scelta è mantenuta nella versione finale; non è un’attività di sviluppo pianificata. Riferimento: [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md).
 
 ## Gallery fotografica
 
 La pagina `/gallery` mostra un carosello fotografico a cascata, con autoplay controllabile, swipe e visualizzatore a schermo intero. Tutte le foto formano una sequenza unica, senza griglia o divisione visibile per giorni.
 
-Aggiungi le foto in `assets/source/gallery/giorno1-lunedi5ottobre/` e nelle cartelle dei giorni successivi, poi esegui `npm run media:gallery` o riavvia il server. La preparazione avviene anche prima della build. Guida completa in [`docs/GALLERY.md`](docs/GALLERY.md).
+La raccolta completa comprende 72, 55, 50, 40 e 57 foto rispettivamente per i cinque giorni del 5–9 ottobre 2026, per un totale di **274 foto**. Gli originali sono conservati nelle cinque cartelle `assets/source/gallery/giorno1-…` fino a `giorno5-…`; i due MP4 del quinto giorno restano soltanto nell’archivio sorgente. Gli asset WebP responsive, il manifesto e il fallback statico sono già generati e tracciati. `npm run media:gallery` permette di rigenerarli ed è eseguito anche prima di dev e build. Guida completa in [`docs/GALLERY.md`](docs/GALLERY.md).
 
 ## Animazione dell’hero
 

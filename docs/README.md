@@ -1,6 +1,8 @@
 # Documentazione
 
-Apri il documento relativo al lavoro che devi fare:
+Documentazione della versione finale **2.0.0 — 9 ottobre 2026**. Il progetto è completo, archiviato e non più in sviluppo attivo: la gallery conserva tutte le **274 foto dei cinque giorni di propaganda (5–9 ottobre 2026)**. Non sono previsti ulteriori lavori; le guide restano come riferimento tecnico. L’informativa privacy resta provvisoria per scelta del committente.
+
+Indice dei riferimenti:
 
 1. [`DEVELOPMENT.md`](DEVELOPMENT.md) — installazione, comandi e struttura quotidiana.
 2. [`ARCHITECTURE.md`](ARCHITECTURE.md) — responsabilità delle cartelle e flussi principali.
@@ -10,7 +12,7 @@ Apri il documento relativo al lavoro che devi fare:
 
 Altri riferimenti:
 
-- [`GALLERY.md`](GALLERY.md) — carosello fotografico, aggiornamento quotidiano e visualizzatore.
+- [`GALLERY.md`](GALLERY.md) — archivio completo, generazione degli asset e visualizzatore.
 
 - [`CONTENT-GUIDE.md`](CONTENT-GUIDE.md) — dove vivono i testi e come aggiornarli.
 - [`FORM-AND-DATA.md`](FORM-AND-DATA.md) — invio delle idee, errori e Google Sheets.

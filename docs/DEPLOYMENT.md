@@ -31,7 +31,7 @@ Configura `VITE_GOOGLE_SCRIPT_URL` sia per Production sia per Preview. Se il val
 
 ## Controllo dopo il rilascio
 
-1. Apri home, `/privacy` e un URL inesistente tramite link diretto.
+1. Apri home, `/gallery`, `/privacy` e un URL inesistente tramite link diretto.
 2. Verifica l’hero a schermo intero: primo fotogramma immediato, loop senza flash, logo intero su telefono.
 3. Scorri fino in fondo: manifesto che si accende, sette proposte, sticker trascinabili, riga finale “© 2026 LUMINA · PRIVACY”.
 4. Controlla countdown e data delle elezioni.
@@ -41,4 +41,4 @@ Configura `VITE_GOOGLE_SCRIPT_URL` sia per Production sia per Preview. Se il val
 
 ## Gallery
 
-Prima di una futura pubblicazione, genera e includi gli asset `public/media/gallery/`, il manifesto `src/config/gallery.json` e `gallery/index.html`. Gli originali non sono richiesti su Vercel. Le riscritture per `/gallery` e `/gallery/` precedono quella generale. Verifica accesso diretto, ricaricamento, versione senza JavaScript e navigazione dalla home. Vedi [`GALLERY.md`](GALLERY.md).
+La versione finale 2.0.0 comprende tutte le 274 foto dei cinque giorni di propaganda (5–9 ottobre 2026). Gli asset `public/media/gallery/`, il manifesto `src/config/gallery.json` e `gallery/index.html` sono già generati e tracciati nel repository. Gli originali non sono richiesti su Vercel. Le riscritture per `/gallery` e `/gallery/` precedono quella generale. Verifica accesso diretto, ricaricamento, versione senza JavaScript e navigazione dalla home. Vedi [`GALLERY.md`](GALLERY.md).

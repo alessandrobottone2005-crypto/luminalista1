@@ -12,21 +12,22 @@ Apri `http://localhost:4174` (porta fissa, esposta anche in rete locale).
 
 ## Comandi
 
-| Comando                     | Scopo                                                                                              |
-| --------------------------- | -------------------------------------------------------------------------------------------------- |
-| `npm run dev`               | Rigenera il fallback statico in `index.html` e avvia Vite.                                         |
-| `npm run build`             | Rigenera il fallback statico, controlla i tipi e genera la build in `dist`.                        |
-| `npm run preview`           | Serve la build di `dist` in locale.                                                                |
-| `npm test`                  | Esegue i test Vitest: client del modulo, ricevitore Apps Script, countdown, trascinamento sticker. |
-| `npm run typecheck`         | Controlla TypeScript senza produrre file.                                                          |
-| `npm run format`            | Formatta sorgenti, script, configurazione e Markdown con Prettier.                                 |
-| `npm run format:check`      | Verifica il formato senza modificare file.                                                         |
-| `npm run check`             | Esegue formato, tipi, test e build.                                                                |
-| `npm run media:hero:render` | Renderizza il file Blender in PNG e rigenera i frame web dell’hero.                                |
-| `npm run media:hero`        | Rigenera i frame WebP e `heroFrames.ts` dai PNG in `assets/source/RenderHero`.                     |
-| `npm run media:stickers`    | Rigenera sticker, sfondo e `stickerWall.ts` da `assets/source/stickers`.                           |
+| Comando                     | Scopo                                                                                                                         |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`               | Rigenera gallery e fallback statici, poi avvia Vite.                                                                          |
+| `npm run build`             | Rigenera gallery e fallback statici, controlla i tipi e genera la build in `dist`.                                            |
+| `npm run preview`           | Serve la build di `dist` in locale.                                                                                           |
+| `npm test`                  | Esegue i test Vitest: client del modulo, ricevitore Apps Script, countdown, trascinamento sticker, carosello e asset gallery. |
+| `npm run typecheck`         | Controlla TypeScript senza produrre file.                                                                                     |
+| `npm run format`            | Formatta sorgenti, script, configurazione e Markdown con Prettier.                                                            |
+| `npm run format:check`      | Verifica il formato senza modificare file.                                                                                    |
+| `npm run check`             | Esegue formato, tipi, test e build.                                                                                           |
+| `npm run media:hero:render` | Renderizza il file Blender in PNG e rigenera i frame web dell’hero.                                                           |
+| `npm run media:hero`        | Rigenera i frame WebP e `heroFrames.ts` dai PNG in `assets/source/RenderHero`.                                                |
+| `npm run media:stickers`    | Rigenera sticker, sfondo e `stickerWall.ts` da `assets/source/stickers`.                                                      |
+| `npm run media:gallery`     | Rigenera i WebP delle 274 foto, `gallery.json` e il fallback `gallery/index.html`.                                            |
 
-`predev` e `prebuild` eseguono automaticamente [`scripts/static-page.mjs`](../scripts/static-page.mjs), che legge `src/content/site.ts` e `VITE_GOOGLE_SCRIPT_URL`.
+`predev` e `prebuild` eseguono automaticamente `npm run media:gallery` e [`scripts/static-page.mjs`](../scripts/static-page.mjs), che legge `src/content/site.ts` e `VITE_GOOGLE_SCRIPT_URL`.
 
 ## Workflow concentrato
 

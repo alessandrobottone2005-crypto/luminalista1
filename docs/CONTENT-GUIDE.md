@@ -20,7 +20,7 @@ Il testo di riferimento consegnato dalla lista è in `assets/source/content/Lumi
 1. Verifica nomi, classi e ritratti dei candidati prima della pubblicazione.
 2. Inserisci la data reale delle elezioni con offset di Roma.
 3. `programPoints` contiene le sette proposte ufficiali della Lista 1 (forma `{ id, title, text }`); aggiorna qui se il programma cambia.
-4. Completa informativa privacy, responsabile e contatti.
+4. Nella versione finale l’informativa privacy resta provvisoria per scelta del committente: conserva testo ed etichette esistenti.
 5. Rimuovi le etichette “provvisoria” solo dopo la verifica con la lista.
 
 ## Immagini
@@ -37,4 +37,4 @@ Non inventare account social, endorsement, date, risultati o persone. Se un dato
 
 ## Foto della propaganda
 
-Le foto si aggiornano tramite le cartelle `assets/source/gallery/giorno1-…` fino a `giorno5-…` e il comando `npm run media:gallery`. I testi della pagina sono in `src/content/gallery.ts`; non modificare a mano `src/config/gallery.json`. Vedi [`GALLERY.md`](GALLERY.md).
+La gallery è completa: **274 fotografie dei cinque giorni di propaganda, dal 5 al 9 ottobre 2026**. Le cartelle `assets/source/gallery/giorno1-…` fino a `giorno5-…` sono tutte popolate, rispettivamente con 72, 55, 50, 40 e 57 foto. I due MP4 del quinto giorno restano in archivio e non compaiono sul sito. Gli asset pubblicati sono già generati; `npm run media:gallery` ne permette la riproduzione. I testi della pagina sono in `src/content/gallery.ts`; non modificare a mano `src/config/gallery.json`. Vedi [`GALLERY.md`](GALLERY.md).

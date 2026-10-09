@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## 2.0.0 — 2026-10-09
+
+Versione finale con gallery completa.
+
+- Documentazione consolidata allo stato finale: 274 foto dei cinque giorni di propaganda (5–9 ottobre 2026), progetto archiviato e sviluppo attivo concluso.
+- Configurazione TypeScript riformattata; conservati sorgenti candidati, due MP4 del quinto giorno, brief storico e istruzioni per agenti. L’informativa privacy mantiene il testo provvisorio per scelta del committente.
 
 - **Gallery fotografica (Giorno 5 — Conclusione propaganda)**: aggiunte 57 fotografie di Venerdì 9 ottobre (`assets/source/gallery/giorno5-venerdi9ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 274 foto per l'intera settimana di propaganda).
 - **Gallery fotografica (Giorno 4)**: aggiunte 40 fotografie di Giovedì 8 ottobre (`assets/source/gallery/giorno4-giovedi8ottobre/`) elaborate in WebP responsive e visualizzate in cima alla sequenza (totale 217 foto).

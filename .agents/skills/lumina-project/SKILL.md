@@ -5,6 +5,12 @@ description: Applica il brief, il Design DNA, il sistema di movimento e le regol
 
 # Lumina project skill
 
+## Stato finale
+
+Versione **2.0.0 — 9 ottobre 2026**: progetto completo e archiviato come riferimento, senza sviluppo attivo né ulteriori lavori pianificati. La gallery contiene tutte le **274 foto dei cinque giorni di propaganda (5–9 ottobre 2026)**. Questa skill resta disponibile per interventi futuri esplicitamente richiesti.
+
+Conserva i due MP4 del quinto giorno, tutte le varianti sorgenti dei candidati, il brief storico, `.agents/` e `AGENTS.md`. La privacy mantiene per scelta del committente il testo provvisorio e le relative etichette.
+
 ## Core framework
 
 ### Darkness → Light → Voice
@@ -35,6 +41,7 @@ Mantieni il primo fotogramma dell’hero visibile subito, il set di frame legger
 - **Form e dati** → [`docs/FORM-AND-DATA.md`](../../../docs/FORM-AND-DATA.md)
 - **Motion** → [`docs/MOTION-SYSTEM.md`](../../../docs/MOTION-SYSTEM.md)
 - **Animazione hero** → [`docs/HERO-ANIMATION.md`](../../../docs/HERO-ANIMATION.md)
+- **Gallery completa** → [`docs/GALLERY.md`](../../../docs/GALLERY.md)
 - **Asset sorgente** → [`assets/source/SOURCES.md`](../../../assets/source/SOURCES.md)
 
 ## Definition of done
